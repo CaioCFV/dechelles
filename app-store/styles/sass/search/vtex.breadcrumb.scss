@@ -1,0 +1,65 @@
+.container {
+    &--search__breadcrumb {
+        @extend %maxcontainer;
+        padding: 0;
+        display: flex;
+        align-items: center;
+
+        @media all and (max-width: 1024px) {
+            margin-bottom: 20px;
+        }
+
+        .arrow {
+            padding: 0;
+            height: 16px;
+            display: flex;
+            align-items: center;
+
+            &:last-child .link {
+                color: #1a1a1a;
+                font-weight: 500;
+            }
+        }
+
+        .caretIcon {
+            margin: 0px 4px;
+        }
+
+        .link {
+            color: #1a1a1a;
+            font-size: 11px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: 0.55px;
+            line-height: 16px;
+            text-align: left;
+            color: #999999;
+            padding: 0;
+        }
+
+        .arrow {
+            padding: 0;
+        }
+
+        .homeLink {
+            padding: 0;
+
+            .homeIcon {
+                display: none;
+            }
+
+            &::before {
+                content: "home";
+                color: #1a1a1a;
+                font-size: 11px;
+                font-weight: 500;
+                font-style: normal;
+                letter-spacing: 0.55px;
+                line-height: 16px;
+                text-align: left;
+                color: #999999;
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,92 @@
+.container {
+    &--grid-text {
+        .paragraph {
+            color: var(--color);
+        }
+    }
+
+    &--search__filter--triggertext {
+        .paragraph {
+            color: #4d4d4d;
+            font-size: 13px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: 0.65px;
+        }
+    }
+
+    &--search__filter--header-title {
+        color: #1a1a1a;
+        font-size: 13px;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: 0.65px;
+        line-height: 21px;
+    }
+
+    &--search__seo {
+        @extend %maxcontainer;
+        border-top: 1px solid #e5e0d2;
+        padding: 60px 0;
+        justify-content: center;
+
+        .headingLevel2 {
+            color: #1a1a1a;
+            font-size: 18px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: 0.9px;
+            text-align: center;
+            margin: 0 auto 18px;
+        }
+
+        .paragraph {
+            color: #999999;
+            font-size: 13px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: 0.65px;
+            line-height: 19px;
+            max-width: 890px;
+            margin: 0 auto 20px;
+            text-align: center;
+
+            &:last-child {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    &--search__not-found__text {
+        width: 100%;
+
+        .wrapper {
+            width: 100%;
+        }
+
+        .headingLevel2 {
+            color: #282828;
+            font-family: 'Inter', sans-serif;
+            font-size: 28px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: 1.4px;
+            display: block;
+            text-align: center;
+            margin-top: 100px;
+            margin-bottom: 30px;
+        }
+
+        .paragraph {
+            margin-bottom: 200px;
+            color: #4d4d4d;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: 0.9px;
+            display: block;
+            text-align: center;
+        }
+    }
+}

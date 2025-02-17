@@ -1,0 +1,34 @@
+{
+  "menu#wishlist__breadcrumb": {
+    "title": "breadcrumb",
+    "props": {
+      "blockClass": "wishlist__breadcrumb",
+      "items": [
+        {
+          "id": "breadcrumb-1",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "home",
+            "text": "home"
+          }
+        },
+        {
+          "id": "breadcrumb-2",
+          "type": "custom",
+          "highlight": true,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "wishlist",
+            "text": "wishlist"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "slider-layout#home__categories": {
+    "title": "HOME - Carousel de categorias",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 7,
+        "tablet": 11,
+        "phone": 11
+      },
+      "infinite": false,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "home__categories"
+    },
+    "children": [
+      "info-card#home__categories--item1",
+      "info-card#home__categories--item2",
+      "info-card#home__categories--item3",
+      "info-card#home__categories--item4",
+      "info-card#home__categories--item5",
+      "info-card#home__categories--item6",
+      "info-card#home__categories--item7",
+      "info-card#home__categories--item8",
+      "info-card#home__categories--item9",
+      "info-card#home__categories--item10",
+      "info-card#home__categories--item11"
+    ]
+  },
+  "info-card#home__categories--item1": {
+    "title": "item 1",
+    "props": {
+      "imageUrl": "/assetsmock/home/home-novidades.png",
+      "callToActionText": "novidades",
+      "callToActionUrl": "/novidades?O=OrderByReleaseDateDESC",
+      "imageActionUrl": "/novidades?O=OrderByReleaseDateDESC",
+      "blockClass": "home__categories--item"
+    }
+  },
+  "info-card#home__categories--item2": {
+    "title": "item 2",
+    "props": {
+      "imageUrl": "/assetsmock/home/home-biquinins.png",
+      "callToActionText": "biquínis",
+      "callToActionUrl": "/praia/biquinis?O=OrderByReleaseDateDESC",
+      "imageActionUrl": "/praia/biquinis?O=OrderByReleaseDateDESC",
+      "blockClass": "home__categories--item"
+    }
+  },
+  "info-card#home__categories--item3": {
+    "title": "item 3",
+    "props": {
+      "imageUrl": "/assetsmock/home/home-maios.png",
+      "callToActionText": "maiôs",
+      "callToActionUrl": "/praia/maios?O=OrderByReleaseDateDESC",
+      "imageActionUrl": "/praia/maios?O=OrderByReleaseDateDESC",
+      "blockClass": "home__categories--item"
+    }
+  },
+  "info-card#home__categories--item4": {
+    "title": "item 4",
+    "props": {
+      "imageUrl": "/assetsmock/home/home-roupas.png",
+      "callToActionText": "roupas",
+      "callToActionUrl": "/roupas?O=OrderByReleaseDateDESC",
+      "imageActionUrl": "/roupas?O=OrderByReleaseDateDESC",
+      "blockClass": "home__categories--item"
+    }
+  },
+  "info-card#home__categories--item5": {
+    "title": "item 5",
+    "props": {
+      "imageUrl": "/assetsmock/home/home-fitness.png",
+      "callToActionText": "fitness",
+      "callToActionUrl": "/fitness?O=OrderByReleaseDateDESC",
+      "imageActionUrl": "/fitness?O=OrderByReleaseDateDESC",
+      "blockClass": "home__categories--item"
+    }
+  },
+  "info-card#home__categories--item6": {
+    "title": "item 6",
+    "props": {
+      "imageUrl": "/assetsmock/home/home-chinelos.png",
+      "callToActionText": "chinelos",
+      "callToActionUrl": "/",
+      "imageActionUrl": "/",
+      "blockClass": "home__categories--item"
+    }
+  },
+  "info-card#home__categories--item7": {
+    "title": "item 8",
+    "props": {
+      "imageUrl": "https://via.placeholder.com/150x150",
+      "callToActionText": "acessórios",
+      "callToActionUrl": "/",
+      "imageActionUrl": "/",
+      "blockClass": "home__categories--item"
+    }
+  },
+  "info-card#home__categories--item8": {
+    "title": "item 9",
+    "props": {
+      "imageUrl": "https://via.placeholder.com/150x150",
+      "callToActionText": "Bonés",
+      "callToActionUrl": "/acessorios/bones",
+      "imageActionUrl": "/acessorios/bones",
+      "blockClass": "home__categories--item"
+    }
+  },
+  "info-card#home__categories--item9": {
+    "title": "item 10",
+    "props": {
+      "imageUrl": "https://via.placeholder.com/150x150",
+      "callToActionText": "Mochilas",
+      "callToActionUrl": "/acessorios/bolsas-mochilas",
+      "imageActionUrl": "/acessorios/bolsas-mochilas",
+      "blockClass": "home__categories--item"
+    }
+  },
+  "info-card#home__categories--item10": {
+    "title": "item 11",
+    "props": {
+      "imageUrl": "https://via.placeholder.com/150x150",
+      "callToActionText": "Saídas de Praia",
+      "callToActionUrl": "/roupas/saidas-de-praia?O=OrderByReleaseDateDESC",
+      "imageActionUrl": "/roupas/saidas-de-praia?O=OrderByReleaseDateDESC",
+      "blockClass": "home__categories--item"
+    }
+  },
+  "info-card#home__categories--item11": {
+    "title": "item 12",
+    "props": {
+      "imageUrl": "https://via.placeholder.com/150x150",
+      "callToActionText": "Kimonos",
+      "callToActionUrl": "/roupas/kimonos",
+      "imageActionUrl": "/roupas/kimonos",
+      "blockClass": "home__categories--item"
+    }
+  }
+}

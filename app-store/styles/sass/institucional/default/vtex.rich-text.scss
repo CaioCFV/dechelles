@@ -1,0 +1,110 @@
+.container {
+    &--institucional-default__title {
+        width: 100%;
+
+        .wrapper {
+            width: 100%;
+        }
+
+        .headingLevel1 {
+            color: #282828;
+            font-size: 28px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: 1.4px;
+            display: block;
+            line-height: 1;
+            margin: 0;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ddd;
+            display: block;
+            width: 100%;
+
+            @media all and (max-width: 1024px) {
+                border-bottom: 0;
+                padding-bottom: 0;
+            }
+        }
+
+    }
+
+    &--institucional-default__text {
+        .headingLevel2 {
+            color: #282828;
+            font-size: 18px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: 0.9px;
+            display: block;
+            margin: 0 0 15px;
+        }
+
+        .headingLevel3 {
+            color: #1a1a1a;
+            font-size: 13px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: 0.65px;
+            line-height: 1;
+            margin: 0 auto 4px;
+        }
+
+        .list {
+            list-style: none;
+
+            .listItem {
+                color: #4d4d4d;
+                font-family: 'Inter', sans-serif;
+                font-size: 13px;
+                font-weight: 400;
+                font-style: normal;
+                letter-spacing: 0.65px;
+                line-height: 19px;
+                display: block;
+                margin-bottom: 20px;
+
+                &::before {
+                    content: "- ";
+                }
+            }
+        }
+
+        .strong {
+            font-weight: 500;
+            color: #1a1a1a;
+        }
+
+        .paragraph {
+            color: #4d4d4d;
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: 0.65px;
+            line-height: 19px;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .link {
+            color: #e6964b;
+            font-weight: 500;
+            font-size: 13px;
+            font-style: normal;
+            letter-spacing: 0.65px;
+            line-height: 19px;
+        }
+    }
+
+    &--institucional-default__menu-triggertext {
+        .paragraph {
+            color: #999999;
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: 0.65px;
+        }
+    }
+}

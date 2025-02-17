@@ -1,0 +1,24 @@
+.buttonDataContainer {
+    &--product__info--buy {
+        height: 35px;
+        background-color: #e6964b;
+        display: block;
+        line-height: 35px;
+        color: #ffffff;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        display: block;
+        width: 100%;
+        font-family: 'Inter', sans-serif;
+        text-transform: lowercase;
+        letter-spacing: 0.65px;
+        font-size: 0;
+        margin-bottom: 40px;
+
+        &::before {
+            content: "adicionar à sacola";
+            font-size: 13px;
+        }
+    }
+}

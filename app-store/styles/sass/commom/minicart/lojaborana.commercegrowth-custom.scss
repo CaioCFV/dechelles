@@ -1,0 +1,180 @@
+%label {
+    color: #1a1a1a;
+    font-size: 13px;
+    font-style: normal;
+    letter-spacing: 0.65px;
+    line-height: 16px;
+    text-transform: lowercase;
+    font-weight: 400;
+
+    @media all and (max-width: 1024px) {
+        font-size: 12px;
+    }
+}
+
+%flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.CommonForm {
+    @extend %flex;
+    margin-bottom: 15px;
+
+    .CommonForm_label {
+        @extend %label;
+    }
+
+    .CommonForm_inputContainer {
+        @extend %flex;
+        flex-wrap: wrap;
+        width: 200px;
+
+        @media all and (max-width: 1024px) {
+            justify-content: flex-end;
+            width: 145px;
+        }
+    }
+
+    .CommonForm_input {
+        width: 150px;
+        height: 30px;
+        border: 0;
+        border-bottom: 1px solid #e5e0d2;
+        margin-right: 15px;
+        color: #999999;
+        font-size: 11px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.55px;
+        outline: none;
+
+        @media all and (max-width: 1024px) {
+            width: 95px;
+        }
+    }
+
+    .CommonForm_button {
+        width: 35px;
+        height: 30px;
+        background-color: #e5e0d2;
+        border: 0;
+        color: #4d4d4d;
+        font-size: 11px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.55px;
+        line-height: 30px;
+        display: block;
+        cursor: pointer;
+    }
+
+    .CommonForm_buttonRemove {
+        color: #1a1a1a;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        line-height: 1;
+        background: transparent;
+        filter: brightness(0);
+        cursor: pointer;
+    }
+
+    .CommonForm_Success {
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #1a1a1a;
+        padding-bottom: 7px;
+        min-height: 30px;
+    }
+
+    .CommonForm_SuccessText {
+        color: #1a1a1a;
+        font-family: 'Inter', sans-serif;
+        font-size: 11px;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: 0.55px;
+        line-height: 1;
+    }
+
+    .CommonForm_errorMessage {
+        width: 100%;
+        margin-top: 7px;
+        color: #ce0c0c;
+        font-size: 11px
+    }
+}
+
+.minicartFooter_totalizer_subtotalwrapper {
+    @extend %flex;
+    margin-bottom: 15px;
+
+    .minicartFooter_totalizer_label {
+        @extend %label;
+    }
+
+    .minicartFooter_totalizer_value {
+        @extend %label;
+        text-transform: uppercase;
+    }
+}
+
+.minicartFooter_totalizer_totalwrapper {
+    @extend %flex;
+    margin-top: 15px;
+
+    .minicartFooter_totalizer_label {
+        @extend %label;
+        color: #1a1a1a;
+        font-weight: 600
+    }
+
+    .minicartFooter_totalizer_value {
+        @extend %label;
+        color: #1a1a1a;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}
+
+.minicartFooter_finish {
+    display: block;
+    margin-top: 15px;
+    height: 35px;
+    background-color: #e6964b;
+    width: 100%;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.65px;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 15px;
+    border: 0;
+    text-transform: lowercase;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+
+.minicartFooter_keepBuying {
+    text-align: center;
+    display: block;
+    color: #e6964b;
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.65px;
+    line-height: 1;
+    text-transform: lowercase;
+    margin: 0 auto;
+    background: transparent;
+    border: 0;
+    text-decoration: underline;
+    cursor: pointer;
+}

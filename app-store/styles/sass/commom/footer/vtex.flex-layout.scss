@@ -1,0 +1,94 @@
+.flexRowContent {
+    &--footer {
+        display: block;
+    }
+
+    &--footer__links {
+        @extend %maxcontainer;
+        padding: 60px 0;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 20px;
+
+        .stretchChildrenWidth {
+            display: block;
+        }
+
+        @media all and (max-width: 991px) {
+            padding: 40px 0;
+            display: block;
+        }
+    }
+
+    &--footer__column--payments {
+        align-items: center;
+        margin-bottom: 40px;
+
+        @media all and (max-width:991px) {
+            margin-top: 40px;
+            justify-content: flex-start;
+            display: flex;
+        }
+
+        .stretchChildrenWidth {
+            &:nth-child(n+2) {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    &--footer__column--social {
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 40px;
+
+        @media all and (max-width:991px) {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .stretchChildrenWidth {
+            &:nth-child(n+2) {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    &--footer__column--selo {
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 40px;
+
+        @media all and (max-width:991px) {
+            display: flex;
+            justify-content: flex-start;
+            margin: 0;
+        }
+
+        .stretchChildrenWidth {
+            &:nth-child(n+2) {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    &--footer__copyright {
+        @extend %maxcontainer;
+        border-top: 1px solid #eae4da;
+        padding: 20px 0;
+        align-items: center;
+
+        @media all and (max-width: 767px) {
+            .stretchChildrenWidth:nth-child(n+2) {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+.flexColChild {
+    &--footer__column--images {
+        height: auto !important;
+
+    }
+}

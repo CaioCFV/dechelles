@@ -1,0 +1,131 @@
+.productImageContainer {
+    &--header__minicart--image {
+        .productImage {
+            display: block;
+            border-radius: 0;
+        }
+
+        .productImageAnchor {
+            display: block;
+            margin-right: 20px;
+        }
+    }
+}
+
+.productName {
+    &--header__minicart--name {
+        color: #4d4d4d;
+        font-size: 13px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.65px;
+        line-height: 16px;
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+.removeButtonContainer {
+    &--header__minicart--remove {
+        margin-left: 25px;
+
+        .deleteIcon {
+            display: none;
+        }
+
+        .removeButton {
+            padding: 0;
+
+            &::before {
+                content: "";
+                background: url(/assetsicons/icon-close.png) no-repeat;
+                width: 11px;
+                height: 11px;
+                background-size: contain;
+                display: block;
+            }
+        }
+    }
+}
+
+.productPrice {
+    &--header__minicart--price {
+        .price {
+            color: #242424;
+            font-size: 13px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: 0.65px;
+            line-height: 16px;
+            display: block;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.quantitySelectorContainer {
+    &--header__minicart--quantity {
+        width: 80px;
+        height: 30px;
+        border: 1px solid #e5e0d2;
+        display: block;
+
+        .quantitySelectorWrapper {
+            align-items: center;
+            height: 100%;
+        }
+
+        .quantitySelectorButton {
+            padding: 0;
+            background: none;
+            border: 0;
+            height: 100%;
+            color: #999999;
+            font-size: 15px;
+            font-weight: 300;
+
+            &::before {
+                content: "";
+                display: block;
+                width: 20px;
+                height: 100%;
+                line-height: 30px;
+                text-align: center;
+            }
+
+            :nth-child(n+1) {
+                display: none;
+            }
+        }
+
+        .quantitySelectorIncrease {
+            &::before {
+                content: "+";
+            }
+        }
+
+        .quantitySelectorDecrease {
+            &::before {
+                content: "-";
+                line-height: 26px;
+                font-size: 18px;
+            }
+        }
+
+        .inputContainer {
+            padding: 0;
+            width: auto;
+            flex: 1;
+            height: 100%;
+            border: 0;
+
+            :nth-child(n+1) {
+                height: 100%;
+                padding: 0;
+                display: block;
+                color: #282828;
+                font-size: 11px;
+            }
+        }
+    }
+}

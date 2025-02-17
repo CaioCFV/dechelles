@@ -1,0 +1,95 @@
+.menuContainerNav {
+    &--institucional-default__menu {
+        width: 100%;
+
+        .menuContainer {
+            display: block;
+        }
+
+        .styledLinkContainer {
+            padding: 0;
+            margin: 0 auto 20px;
+            width: 350px;
+
+            @media all and (max-width: 1024px) {
+                width: 100%;
+            }
+        }
+
+        .styledLink {
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            background: #e5e0d2;
+            color: #4d4d4d;
+            font-size: 13px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: 0.65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            @media all and (max-width: 1024px) {
+                all: unset;
+                color: #999999;
+                font-size: 13px;
+                font-weight: 400;
+                font-style: normal;
+                letter-spacing: 0.65px;
+            }
+
+            &--highlight {
+                @media all and (min-width: 1025px) {
+                    background: #e6964b;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    &--institucional-default__breadcrumb {
+        @extend %maxcontainer;
+        //@extend %whiteheader;
+        margin-bottom: 40px;
+
+        .styledLinkContainer {
+            margin: 0;
+            padding: 0;
+        }
+
+        .menuItem {
+            display: flex;
+            align-items: center;
+
+            &:last-child::after {
+                display: none;
+            }
+
+            &:last-child {
+                .styledLink {
+                    color: #242424;
+                }
+            }
+
+            &::after {
+                content: ">";
+                color: #999;
+                font-size: 11px;
+                line-height: 1;
+                margin: 0px 5px;
+            }
+        }
+
+        .styledLink {
+            color: #999;
+            font-family: 'Inter', sans-serif;
+            font-size: 11px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: 0.55px;
+            line-height: 1
+        }
+    }
+}

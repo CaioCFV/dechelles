@@ -1,0 +1,61 @@
+body.emptycart {
+
+    .cart-links-bottom,
+    #cart-title {
+        display: none !important;
+    }
+
+    .container.container-main.container-cart {
+        overflow: hidden;
+        min-height: unset;
+        padding: 150px 0;
+    }
+
+    h2.empty-cart-title {
+        font-size: 0;
+
+        &::after {
+            content: "sua sacola está vazia";
+            color: #282828;
+            font-family: "Inter", sans-serif;
+            font-size: 28px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: 1.4px;
+            display: block;
+            text-align: center;
+            margin: 0 auto 20px;
+        }
+    }
+
+    .empty-cart-message p {
+        display: block;
+        max-width: 360px;
+        color: #4d4d4d;
+        font-family: "Inter", sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.65px;
+        line-height: 19px;
+        margin: 0 auto 30px;
+        text-align: center;
+    }
+
+    a#cart-choose-products {
+        @extend %btn;
+        background: #e5e0d2;
+        font-family: "Inter", sans-serif;
+        margin: 0 auto;
+        border: 1px solid #e5e0d2;
+        width: 280px;
+        color: #282828;
+        color: #4d4d4d;
+        font-size: 13px;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: 0.65px;
+        text-align: center;
+        display: block;
+    }
+}

@@ -1,0 +1,124 @@
+.container {
+    &--shelf {
+        display: block;
+        border-radius: 0;
+        padding: 0px 12px;
+        box-sizing: border-box;
+        max-width: unset !important;
+
+        :global(.vtex-store-components-3-x-discountInsideContainer) {
+            padding: 6px 8px;
+            background: #f26c4f;
+            border-radius: 2px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 12px;
+            text-align: center;
+            letter-spacing: -.02em;
+            color: #fff;
+            left: 0;
+            right: unset;
+        }
+
+        @media all and (max-width:1024px) {
+            padding: 0px 6px;
+        }
+
+        .clearLink {
+            display: block;
+            height: auto;
+        }
+
+        .discountContainer {
+            width: 100%;
+            height: auto;
+        }
+
+        .element {
+            padding: 0;
+            height: auto;
+            display: block;
+        }
+
+
+        .image,
+        .imageContainer {
+            display: block;
+            width: 100% !important;
+            height: auto !important;
+            object-fit: contain;
+            max-height: unset;
+            aspect-ratio: 2/3;
+        }
+
+        .nameContainer {
+            padding: 0;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .brandName {
+            color: #4d4d4d;
+            font-size: 15px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: 0.65px;
+            line-height: 16px;
+        }
+    }
+
+    &--shelf-search {
+        display: block;
+        border-radius: 0;
+        box-sizing: border-box;
+        max-width: unset !important;
+
+        .clearLink {
+            padding: 0;
+        }
+
+        .discountContainer {
+            width: 100%;
+            height: auto;
+        }
+
+        .element {
+            padding: 0;
+            height: auto;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .imageContainer {
+            margin-right: 20px;
+            max-width: 90px;
+        }
+
+        .image,
+        .imageContainer {
+            display: block;
+            width: 100% !important;
+            aspect-ratio: 2/3;
+            height: auto !important;
+            max-width: 90px !important;
+        }
+
+        .nameContainer {
+            padding: 0;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .brandName {
+            color: #4d4d4d;
+            font-size: 13px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: 0.65px;
+            line-height: 16px;
+            text-align: left;
+            display: block;
+        }
+    }
+}

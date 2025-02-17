@@ -1,0 +1,32 @@
+{
+  "name": "adventures-store",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "vtex:setup": "cd app-custom && cd react && vtex setup",
+    "lint": "eslint --ext js,jsx,ts,tsx .",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json}\"",
+    "linkstore": "cd app-store && vtex link",
+    "buildstore": "cd app-store && yarn dev",
+    "linkcustom": "cd app-custom && vtex link",
+    "checkout": "cd app-checkout && yarn dev",
+    "vlink": "concurrently \"yarn linkcustom\" \"yarn linkstore\" \"yarn buildstore\""
+  },
+  "devDependencies": {
+    "@vtex/prettier-config": "0.1.4",
+    "concurrently": "^7.6.0",
+    "eslint": "7.12.1",
+    "eslint-config-vtex": "12.3.2",
+    "eslint-config-vtex-react": "6.3.2",
+    "prettier": "2.0.2",
+    "typescript": "3.8.3"
+  },
+  "dependencies": {
+    "vtex": "^3.0.0"
+  },
+  "workspaces": [
+    "app-custom",
+    "app-store",
+    "app-admin"
+  ]
+}

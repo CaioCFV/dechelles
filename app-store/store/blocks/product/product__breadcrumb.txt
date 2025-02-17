@@ -1,0 +1,13 @@
+{
+  "breadcrumb#product__breadcrumb": {
+    "props": {
+      "blockClass": "product__breadcrumb"
+    }
+  },
+  "breadcrumb#product__breadcrumb-mobile": {
+    "props": {
+      "blockClass": "product__breadcrumb-mobile",
+      "showOnMobile": true
+    }
+  }
+}

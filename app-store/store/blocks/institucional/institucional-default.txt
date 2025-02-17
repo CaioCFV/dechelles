@@ -1,0 +1,197 @@
+{
+  "store.custom#institucional-default": {
+    "blocks": [
+      "menu#institucional-default__breadcrumb",
+      "flex-layout.row#institucional-default"
+    ]
+  },
+  "flex-layout.row#institucional-default": {
+    "title": "INSTITUCIONAL",
+    "children": [
+      "disclosure-layout#institucional-default__menu-dropdown",
+      "flex-layout.col#institucional-default__text"
+    ],
+    "props": {
+      "blockClass": "institucional-default__container",
+      "colSizing": "auto"
+    }
+  },
+  "menu#institucional-default__breadcrumb": {
+    "title": "INSTITUCIONAL - breadcrumb",
+    "props": {
+      "blockClass": "institucional-default__breadcrumb",
+      "items": [
+        {
+          "id": "breadcrumb-1",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "home",
+            "text": "home"
+          }
+        },
+        {
+          "id": "breadcrumb-2",
+          "type": "custom",
+          "highlight": true,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "dúvidas frequentes",
+            "text": "dúvidas frequentes"
+          }
+        }
+      ]
+    }
+  },
+  "menu#institucional-default__menu": {
+    "title": "INSTITUCIONAL - menu",
+    "props": {
+      "blockClass": "institucional-default__menu",
+      "items": [
+        {
+          "id": "menu-item-1",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/duvidas-frequentes",
+            "noFollow": false,
+            "tagTitle": "dúvidas frequentes",
+            "text": "dúvidas frequentes"
+          }
+        },
+        {
+          "id": "menu-item-2",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/vem-trabalhar-com-a-gente",
+            "noFollow": false,
+            "tagTitle": "vem trabalhar com a gente",
+            "text": "vem trabalhar com a gente"
+          }
+        },
+        {
+          "id": "menu-item-3",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/compras-em-atacado",
+            "noFollow": false,
+            "tagTitle": "compras no atacado",
+            "text": "compras no atacado"
+          }
+        },
+        {
+          "id": "menu-item-4",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/lojas",
+            "noFollow": false,
+            "tagTitle": "lojas",
+            "text": "lojas"
+          }
+        },
+        {
+          "id": "menu-item-5",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/trocas-e-devolucoes",
+            "noFollow": false,
+            "tagTitle": "trocas e devoluções",
+            "text": "trocas e devoluções"
+          }
+        },
+        {
+          "id": "menu-item-6",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/entrega-e-frete",
+            "noFollow": false,
+            "tagTitle": "entrega e frete",
+            "text": "entrega e frete"
+          }
+        },
+        {
+          "id": "menu-item-7",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/seguranca-e-privacidade",
+            "noFollow": false,
+            "tagTitle": "segurança e privacidade",
+            "text": "segurança e privacidade"
+          }
+        }
+      ]
+    }
+  },
+  "flex-layout.col#institucional-default__text": {
+    "title": "INSTITUCIONAL - conteúdo",
+    "children": [
+      "rich-text#institucional-default__title",
+      "rich-text#institucional-default__text"
+    ],
+    "props": {
+      "blockClass": "institucional-default__text",
+      "preventHorizontalStretch": true
+    }
+  },
+  "rich-text#institucional-default__title": {
+    "title": "TITULO",
+    "props": {
+      "text": "# título",
+      "blockClass": "institucional-default__title"
+    }
+  },
+  "rich-text#institucional-default__text": {
+    "title": "TEXTO",
+    "props": {
+      "text": "## subtitulo\n\n### Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nDonec ac justo lobortis, ullamcorper quam ac, scelerisque sapien. Quisque ut suscipit purus. Vestibulum dapibus dui ut velit interdum, sed hendrerit ex lobortis. Phasellus tristique placerat odio nec faucibus. Fusce convallis eu est ut imperdiet. Etiam auctor nisl eget nulla feugiat, id eleifend neque accumsan. Etiam in vestibulum ipsum. Fusce id ex non mauris congue aliquet vitae porta nunc. Donec ut dui aliquet, tempus mi sed, rhoncus turpis. [link](https://#)\n\nex non mauris congue",
+      "blockClass": "institucional-default__text"
+    }
+  },
+  "disclosure-layout#institucional-default__menu-dropdown": {
+    "children": [
+      "disclosure-trigger#institucional-default__menu-trigger",
+      "disclosure-content#institucional-default__menu-content"
+    ],
+    "props": {
+      "animated": true,
+      "initialVisibility": "hidden"
+    }
+  },
+  "disclosure-trigger#institucional-default__menu-trigger": {
+    "children": ["rich-text#institucional-default__menu-triggertext"],
+    "props": {
+      "blockClass": "institucional-default__menu-trigger"
+    }
+  },
+  "rich-text#institucional-default__menu-triggertext": {
+    "title": "TITULO",
+    "props": {
+      "text": "titulo",
+      "blockClass": "institucional-default__menu-triggertext"
+    }
+  },
+  "disclosure-content#institucional-default__menu-content": {
+    "children": ["menu#institucional-default__menu"],
+    "props": {
+      "blockClass": "institucional-default__menu-content"
+    }
+  }
+}

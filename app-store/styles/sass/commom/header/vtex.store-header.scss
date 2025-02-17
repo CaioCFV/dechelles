@@ -1,0 +1,78 @@
+.headerStickyRow {
+    &--main-header {
+        position: sticky;
+        z-index: 999;
+        top: 0;
+
+        .headerRowContainer {
+            display: block;
+        }
+
+        .headerRowBackground {
+            background: #fff;
+            transition: 0.3s;
+        }
+    }
+
+    // &--transparent {
+    //     position: fixed;
+    //     top: 0;
+    //     width: 100%;
+    //     z-index: 999;
+
+    //     :global(.vtex-store-components-3-x-imageElementLink--header__icon),
+    //     :global(.vtex-store-components-3-x-imageElement--logo),
+    //     :global(.vtex-flex-layout-0-x-flexRowContent--header__icons),
+    //     :global(.vtex-disclosure-layout-1-x-trigger--header__search--mobile),
+    //     :global(.vtex-store-components-3-x-searchBarIcon) {
+    //         filter: brightness(100);
+    //     }
+
+    //     @media all and (min-width:1025px) {
+
+    //         :global(.vtex-styleguide-9-x-input),
+    //         :global(.vtex-store-components-3-x-searchBarIcon) {
+    //             color: #fff;
+
+    //             &::placeholder {
+    //                 color: #fff;
+    //             }
+    //         }
+    //     }
+
+    //     .headerRowBackground {
+    //         background: transparent;
+
+    //         &:hover {
+    //             background: #fff;
+
+    //             :global(.vtex-store-components-3-x-imageElementLink--header__icon),
+    //             :global(.vtex-store-components-3-x-imageElement--logo),
+    //             :global(.vtex-store-components-3-x-searchBarIcon),
+    //             :global(.vtex-flex-layout-0-x-flexRowContent--header__icons),
+    //             :global(.vtex-disclosure-layout-1-x-trigger--header__search--mobile) {
+    //                 filter: unset;
+    //             }
+
+    //             :global(.vtex-styleguide-9-x-input) {
+    //                 color: #242424;
+
+    //                 &::placeholder {
+    //                     color: #242424;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
+    // &--float {
+    //     position: fixed;
+    //     top: 0;
+    //     width: 100%;
+    //     z-index: 999;
+
+    //     .headerRowBackground {
+    //         background: #fff;
+    //     }
+    // }
+}

@@ -1,0 +1,41 @@
+.flexRow {
+    &--header__content {
+        @extend %maxcontainer;
+        padding: 20px 0px;
+
+        @media all and (max-width:1024px) {
+            padding: 15px 0;
+        }
+
+        .flexRowContent {
+            align-items: center;
+            display: flex;
+        }
+    }
+
+    &--header__minicart--header {
+        .flexRowContent {
+            display: flex;
+        }
+    }
+
+    &--header__icons {
+        min-width: 236px;
+
+        @media all and (max-width: 1024px) {
+            min-width: unset;
+        }
+
+        .flexRowContent {
+            justify-content: flex-end;
+        }
+
+        .stretchChildrenWidth {
+            width: auto !important;
+
+            &:nth-child(n+2) {
+                margin-left: 30px;
+            }
+        }
+    }
+}

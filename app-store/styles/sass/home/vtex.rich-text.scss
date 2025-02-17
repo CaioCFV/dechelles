@@ -1,0 +1,66 @@
+.container {
+    &--home__shelf--title-1 {
+        justify-content: center;
+
+        .headingLevel1 {
+            color: #282828;
+            font-size: 28px;
+            font-weight: 500;
+            font-style: normal;
+            display: block;
+            text-align: center;
+
+            @media all and (max-width:767px) {
+                font-size: 24px;
+            }
+        }
+
+        .link {
+            display: block;
+            color: #e6964b;
+            font-size: 13px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: 0.65px;
+            margin-top: 15px;
+            margin-bottom: 40px;
+            display: block;
+
+            @media all and (max-width:767px) {
+                margin-bottom: 30px;
+                font-size: 13px;
+            }
+        }
+    }
+
+    &--home__benefits--item {
+        position: relative;
+        color: #999999;
+        font-size: 13px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.65px;
+        padding-left: 50px;
+
+        @media all and (max-width:1200px) {
+            min-width: unset
+        }
+
+        .strong {
+            color: #282828;
+            font-size: 18px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: 0.9px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .image {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+    }
+}

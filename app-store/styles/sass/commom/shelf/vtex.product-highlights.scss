@@ -1,0 +1,12 @@
+.productHighlightText {
+    &--shelf__highlight {
+        display: block;
+        margin-bottom: 5px;
+        background: #242424;
+        color: #fff;
+        font-size: 12px;
+        padding: 4px 10px;
+        box-sizing: border-box;
+        text-transform: lowercase;
+    }
+}

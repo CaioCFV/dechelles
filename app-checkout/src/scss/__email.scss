@@ -1,0 +1,240 @@
+.container-order-form {
+    .checkout-container {
+        min-height: 600px;
+    }
+
+    #orderform-title {
+        color: #000;
+        font-size: 28px;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: 1.4px;
+        display: block;
+        text-align: center;
+        line-height: 1;
+        margin-bottom: 30px;
+        text-transform: lowercase;
+    }
+
+    .client-pre-email {
+        border-top: 0;
+        top: -5px;
+        left: 0;
+        text-align: center;
+        align-items: center;
+        padding: 0;
+        flex-direction: column;
+        height: auto;
+
+        #btn-client-pre-email {
+            height: 50px;
+            top: 0;
+            margin: 0;
+            width: 160px;
+            border: 1px solid #e6964b;
+            background: #e6964b !important;
+            border-radius: 0;
+            text-transform: lowercase;
+            color: #fff;
+            font-size: 13px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: 0.65px;
+            line-height: 21px;
+            right: 0;
+            // @media all and (max-width: 767px) {
+            //     width: 100%;
+            // }
+        }
+
+        .pre-email {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .client-email {
+            max-width: 600px;
+            margin: 0 auto 60px;
+        }
+
+        input {
+            margin: 0;
+            height: 50px;
+            border-radius: 0;
+            padding: 0 15px;
+            box-shadow: none !important;
+            width: 100%;
+            background: transparent;
+            border: 1px solid #e5e0d2;
+            color: #999999;
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: 0.65px;
+
+            @media (max-width:991px) {
+                margin-bottom: 25px;
+            }
+        }
+
+        .client-pre-email-h {
+            label {
+                margin: 0;
+                font-size: 15px;
+                margin-bottom: 40px;
+
+                @media (max-width:991px) {
+                    margin-bottom: 20px;
+                }
+            }
+
+            span {
+                padding-top: 1px;
+                margin-bottom: 5px;
+                text-transform: lowercase;
+                display: block;
+                color: #1a1a1a;
+                font-family: 'Inter', sans-serif;
+                font-size: 24px;
+                font-weight: 500;
+                font-style: normal;
+                letter-spacing: 0.9px;
+                line-height: 32px;
+
+                // @media all and (max-width: 767px) {
+                //     max-width: 250px;
+                //     margin: 0 auto 5px;
+                //     display: block;
+                // }
+            }
+
+            small {
+                margin-bottom: 5px;
+                text-transform: lowercase;
+                display: block;
+                font-family: 'Inter', sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                font-style: normal;
+                letter-spacing: 0.9px;
+                line-height: 32px;
+                color: #4d4d4d;
+
+                // @media all and (max-width: 767px) {
+                //     font-size: 15px;
+                // }
+            }
+        }
+
+        .link-cart {
+            float: unset;
+        }
+
+        .link-cart a {
+            margin: 0 auto;
+            display: block;
+            color: #e6964b;
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: 0.65px;
+            line-height: 22px;
+            text-transform: lowercase;
+            text-decoration: underline;
+            margin-bottom: 80px;
+
+            @media (max-width: 991px) {
+                margin-bottom: 40px;
+            }
+
+            // @media all and (max-width: 767px) {
+            //     top: 300px;
+            //     display: block;
+            //     width: 100%;
+            // }
+        }
+
+        .emailInfo {
+            border: 1px solid #fff;
+            border-radius: 0;
+            box-sizing: border-box;
+            background: #faf8f2;
+            padding: 30px;
+            width: auto;
+            display: block;
+            margin: 0 auto;
+            max-width: 420px;
+
+            // @media all and (max-width: 567px) {
+            //     width: 100%;
+            //     max-width: 375px;
+            // }
+
+            .icon-lock {
+                display: none;
+            }
+
+            h3 {
+                display: block;
+                margin-bottom: 18px;
+                color: #1a1a1a;
+                font-size: 13px;
+                font-weight: 500;
+                font-style: normal;
+                letter-spacing: 0.65px;
+                line-height: 1;
+                text-transform: lowercase;
+                // @media (max-width: 991px) {
+                //     font-size: 18px;
+                //     margin-bottom: 20px;
+                // }
+            }
+
+            ul {
+                margin: 0;
+            }
+
+            li {
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+
+                i {
+                    font-size: 10px;
+                    width: 20px;
+                    height: 20px;
+                    background: #e6964b;
+                    display: block;
+                    border-radius: 100%;
+                    text-align: center;
+                    line-height: 20px;
+                    color: #fff;
+                    margin-right: 10px;
+                }
+
+                span {
+                    color: #4d4d4d;
+                    font-size: 13px;
+                    font-weight: 400;
+                    font-style: normal;
+                    letter-spacing: 0.65px;
+                    line-height: 18px;
+
+                    // @media (max-width: 991px) {
+                    //     font-size: 14px;
+                    // }
+                }
+            }
+        }
+    }
+}
+
+.step-email {
+    .container.container-main.container-order-form {
+        @media (max-width: 991px) {
+            min-height: 800px;
+        }
+    }
+}

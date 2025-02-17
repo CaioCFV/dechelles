@@ -1,0 +1,32 @@
+{
+  "flex-layout.row#home__benefits": {
+    "title": "HOME - Benefícios",
+    "children": [
+      "rich-text#home__benefits--item-1",
+      "rich-text#home__benefits--item-2",
+      "rich-text#home__benefits--item-3"
+    ],
+    "props": {
+      "blockClass": "home__benefits",
+      "colSizing": "auto"
+    }
+  },
+  "rich-text#home__benefits--item-1": {
+    "props": {
+      "text": "![troca fácil](/assetsicons/icon-troca.svg) **troca fácil** é rápido e totalmente descomplicado :)",
+      "blockClass": "home__benefits--item"
+    }
+  },
+  "rich-text#home__benefits--item-2": {
+    "props": {
+      "text": "![novidades](/assetsicons/icon-biquini.svg) **monte seu biquíni** compre as peças separadamente",
+      "blockClass": "home__benefits--item"
+    }
+  },
+  "rich-text#home__benefits--item-3": {
+    "props": {
+      "text": "![em até 10x](/assetsicons/icon-card-black.svg) **em até 10x** sem juros :)",
+      "blockClass": "home__benefits--item"
+    }
+  }
+}

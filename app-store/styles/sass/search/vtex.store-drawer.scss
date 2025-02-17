@@ -1,0 +1,70 @@
+.drawer {
+    &--search__filter {
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.drawerContent {
+    &--search__filter {
+        display: block;
+        position: relative;
+    }
+}
+
+.overlay {
+    &--search__filter {
+        background-color: #ffffff;
+        opacity: 0.7;
+    }
+}
+
+.childrenContainer {
+    &--search__filter {
+        display: block;
+        position: relative;
+    }
+}
+
+.openIconContainer {
+    &--search__filter {
+        padding: 0;
+        margin-right: 40px;
+        border: 1px solid #e5e0d2;
+        display: flex;
+        align-items: center;
+        height: 40px;
+        min-width: 150px;
+        justify-content: center;
+
+        @media all and (max-width: 1024px) {
+            width: calc(50vw - 20px) !important;
+            margin: 0;
+            min-width: unset;
+        }
+    }
+}
+
+.closeIconContainer {
+    &--search__filter {
+        position: absolute;
+        left: 20px;
+        z-index: 20;
+        height: 50px;
+        width: 19px;
+        display: flex;
+        top: 2px;
+        align-items: center;
+
+        @media all and (max-width: 1024px) {
+            left: 15px;
+        }
+
+        .closeIcon {
+            width: 17px;
+        }
+
+        .closeIconButton {
+            padding: 0;
+        }
+    }
+}

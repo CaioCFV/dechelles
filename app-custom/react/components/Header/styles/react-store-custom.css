@@ -1,0 +1,84 @@
+:global(.vtex-toast-container) {
+  background-color: #e5e0d2;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  margin: 0;
+  max-width: 358px;
+  width: calc(100% - 30px);
+  bottom: unset;
+}
+:global(.vtex-toast-container) :global(.vtex-toast) {
+  border-radius: 0;
+  box-shadow: none;
+  background-color: unset;
+}
+:global(.vtex-toast-container) :global(.lh-copy) {
+  color: #4d4d4d;
+  font-size: 14px;
+  line-height: 20px;
+}
+:global(.vtex-toast-container) :global(.vtex-button__label) {
+  white-space: nowrap;
+  background: #e6964b;
+  font-weight: 400;
+  font-family: "Inter";
+  padding: 10px !important;
+  text-transform: lowercase;
+}
+:global(.vtex-toast-container) :global(.vtex__icon-close) {
+  width: 18px;
+  height: 18px;
+  filter: brightness(0.3);
+}
+
+:global(.vtex-store-components-3-x-portalWrapper--header__search) :global(.absolute),
+:global(.vtex-store-components-3-x-portalWrapper--header__search) :global(.flex.justify-end) {
+  position: unset !important;
+  left: unset !important;
+  top: unset !important;
+  display: block;
+}
+
+:global(.vtex-login-2-x-portalWrapper) :global(.absolute),
+:global(.vtex-login-2-x-portalWrapper) :global(.flex.justify-start) {
+  position: unset !important;
+  left: unset !important;
+  top: unset !important;
+  display: block;
+}
+
+@media all and (max-width: 1024px) {
+  :global(.vtex-flex-layout-0-x-flexRowContent--header__content) :global(.items-stretch):nth-child(3) {
+    width: 100% !important;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+}
+
+:global(.dechelles-commercegrowth-custom-0-x-slider__dots) :global(.swiper-pagination-bullet) {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #ffffff;
+  border-radius: 100%;
+  margin: 0px 5px;
+  display: block;
+  background: transparent;
+  opacity: 1;
+  position: relative;
+}
+:global(.dechelles-commercegrowth-custom-0-x-slider__dots) :global(.swiper-pagination-bullet-active)::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 100%;
+  opacity: 1;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

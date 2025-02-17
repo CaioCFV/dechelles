@@ -1,0 +1,100 @@
+{
+  "flex-layout.row#search__filter-container": {
+    "children": [
+      "search-title.v2#search__filter--title",
+      "drawer#search__filter",
+      "gallery-layout-switcher#search__filter--gridbtn",
+      "order-by.v2"
+    ],
+    "props": {
+      "blockClass": "search__filter-container",
+      "colSizing": "auto"
+    }
+  },
+  "search-title.v2#search__filter--title": {
+    "props": {
+      "blockClass": "search__filter--title"
+    }
+  },
+  "gallery-layout-switcher#search__filter--gridbtn": {
+    "children": ["gallery-layout-option#grid-3", "gallery-layout-option#grid-4"]
+  },
+  "gallery-layout-option#grid-3": {
+    "props": {
+      "name": "grid-3"
+    },
+    "children": ["rich-text#grid-3"]
+  },
+  "gallery-layout-option#grid-4": {
+    "props": {
+      "name": "grid-4"
+    },
+    "children": ["rich-text#grid-4"]
+  },
+  "rich-text#grid-3": {
+    "props": {
+      "text": "3",
+      "blockClass": "grid-text"
+    }
+  },
+  "rich-text#grid-4": {
+    "props": {
+      "text": "4",
+      "blockClass": "grid-text"
+    }
+  },
+  "drawer#search__filter": {
+    "children": [
+      "flex-layout.row#search__filter-header",
+      "filter-navigator.v3"
+    ],
+    "blocks": ["drawer-trigger#search__filter--trigger"],
+    "props": {
+      "slideDirection": "rightToLeft",
+      "renderingStrategy": "lazy",
+      "blockClass": "search__filter"
+    }
+  },
+  "drawer-trigger#search__filter--trigger": {
+    "children": ["rich-text#search__filter--triggertext"],
+    "props": {
+      "blockClass": "search__filter--triggerbutton"
+    }
+  },
+  "rich-text#search__filter--triggertext": {
+    "props": {
+      "text": "filtrar",
+      "blockClass": "search__filter--triggertext"
+    }
+  },
+  "filter-navigator.v3": {
+    "props": {
+      "categoryFiltersMode": "href",
+      "layout": "desktop",
+      "initiallyCollapsed": false,
+      "appliedFiltersOverview": "hide"
+      //   "maxItemsDepartment": 1,
+      //   "maxItemsCategory": 1
+    }
+  },
+  "flex-layout.row#search__filter-header": {
+    "children": ["rich-text#search__filter-headertitle", "image#icon-filter"],
+    "props": {
+      "blockClass": "search__filter--header",
+      "colSizing": "auto"
+    }
+  },
+  "rich-text#search__filter-headertitle": {
+    "props": {
+      "text": "filtros",
+      "blockClass": "search__filter--header-title"
+    }
+  },
+  "image#icon-filter": {
+    "props": {
+      "src": "/assetsicons/icon-filtro.svg",
+      "blockClass": "search__filter--header-icon",
+      "maxWidth": 22
+    }
+  }
+}

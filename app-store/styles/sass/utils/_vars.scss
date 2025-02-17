@@ -1,0 +1,101 @@
+%maxcontainer {
+    width: calc(100% - 60px);
+    max-width: 1800px;
+    margin: 0 auto;
+
+    @media all and (max-width: 1024px) {
+        width: calc(100% - 30px);
+    }
+}
+
+%whiteheader {
+    margin-top: 134px;
+
+    @media all and (max-width: 1024px) {
+        margin-top: 88px;
+    }
+}
+
+%shelfsliderdefault {
+    .sliderTrackContainer {
+        margin: 0 auto;
+        display: block;
+        width: calc(100% + 30px);
+        margin-left: -15px;
+
+        @media all and (max-width:767px) {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    .paginationDotsContainer {
+        position: relative;
+        margin-top: 30px;
+
+        .paginationDot {
+            width: 14px;
+            height: 14px;
+            border: 1px solid #e6964b;
+            background: #fff;
+            padding: 0;
+            margin: 0px 4px;
+            border-radius: 100%;
+            position: relative;
+
+            &--isActive::before {
+                content: "";
+                display: block;
+                width: 6px;
+                height: 6px;
+                background-color: #e6964b;
+                position: absolute;
+                left: 1px;
+                top: 1px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .slildeTrack {
+        transition: 0.4s;
+    }
+
+    .sliderRightArrow,
+    .sliderLeftArrow {
+        width: 35px;
+        height: 35px;
+        background: #e6964b !important;
+        border-radius: 100%;
+        display: block;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        z-index: 10;
+        top: calc(50% - 50px);
+        transform: translateY(-50%);
+
+        .caretIcon {
+            filter: invert(1);
+            width: 18px;
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            left: 1px;
+        }
+    }
+
+    .sliderLeftArrow {
+        .caretIcon {
+            left: -1px;
+        }
+    }
+
+    .sliderRightArrow {
+        right: 20px;
+    }
+
+    .sliderLeftArrow {
+        left: 20px;
+    }
+}

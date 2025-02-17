@@ -1,0 +1,197 @@
+%btn {
+    background: #e5e0d2 !important;
+    height: 40px;
+    text-transform: lowercase;
+    color: #4d4d4d;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: .65px;
+    line-height: 35px;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    border: 1px solid #e5e0d2 !important;
+    box-shadow: none;
+    transition: 0.3s;
+    box-sizing: border-box;
+    padding: 0px 20px;
+
+    &:hover {
+        border: 1px solid #e6964b !important;
+        color: #fff;
+        background: #e6964b !important;
+    }
+}
+
+%label {
+    margin-bottom: 10px;
+    display: block;
+    color: #1a1a1a;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.65px;
+    text-transform: lowercase;
+}
+
+%text {
+    display: block;
+    color: #999;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.65px;
+    text-transform: lowercase;
+}
+
+%title {
+    font-size: 28px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 1.4px;
+    line-height: 1;
+    margin-bottom: 40px;
+    text-transform: lowercase;
+    color: #1a1a1a;
+}
+
+%link {
+    text-decoration: underline;
+    display: block;
+    color: #e6964b;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: .65px;
+    line-height: 1;
+    text-transform: lowercase;
+}
+
+%input {
+    height: auto;
+    border: 0;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    background: rgba(0, 0, 0, 0) !important;
+    box-sizing: border-box;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none !important;
+    max-width: unset;
+    color: #1a1a1a;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: .65px;
+    padding: 0px 5px 5px;
+    border-radius: 0;
+}
+
+:global(.vtex-account) {
+    @extend %maxcontainer;
+    //@extend %whiteheader;
+    margin-bottom: 30px;
+
+    :global(.vtex-button__label),
+    :global(.vtex-button) {
+        margin: 0;
+        background: transparent;
+        border: 0;
+        min-height: unset;
+    }
+
+    :global(.vtex-account__page) {
+        width: 100% !important;
+    }
+
+    :global(.vtex-my-account-1-x-newsletterContainerTitle) {
+        color: #1a1a1a;
+        font-family: Inter;
+        font-size: 28px;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: 1.4px;
+        line-height: 1;
+    }
+
+    :global(.vtex-my-account-1-x-passwordBox .vtex-checkbox__label) {
+        color: #e6964b;
+        font-weight: 400;
+    }
+
+    :global(.vtex-checkbox__inner-container) {
+        border: 1px solid #e6964b;
+        border-radius: 100%;
+        background: #e6964b;
+    }
+
+    :global(.vtex-my-account-1-x-boxContainer),
+    :global(.vtex-my-authentication-1-x-box_container) {
+        border: 0;
+        border-radius: 0;
+        background: #faf8f2;
+    }
+
+    :global(.vtex-button__label) {
+        @extend %link;
+        padding: 10px !important;
+        background: transparent !important;
+        height: auto;
+        border: 0 !important;
+    }
+
+    :global(.vtex-pageHeader__title) {
+        @extend %title;
+    }
+
+    :global(.vtex-pageHeader__container) {
+        padding: 0 0 20px !important;
+    }
+
+    :global(.vtex-account__page-body) {
+        padding: 0;
+    }
+
+    :global(.vtex-my-account-1-x-newsletterContainerMessage),
+    :global(.vtex-checkbox__label),
+    :global(.vtex-my-account-1-x-dataEntryChildren),
+    :global(.vtex-account__page-body) {
+        @extend %text;
+
+    }
+
+    // :global(.vtex-input-prefix__group input),
+    //     @extend %input;
+    // }
+
+    :global(.vtex-my-account-1-x-dataEntryLabel),
+    :global(.vtex-my-account-1-x-newsletterContainerTitle) {
+        @extend %label;
+    }
+
+    :global(.vtex-account_menu-link),
+    :global(.vtex-my-account-1-x-menuLink) {
+        @extend %link;
+        text-decoration: none;
+        color: #4d4d4d;
+        border: 0;
+        font-weight: 400;
+        padding: 10px;
+    }
+
+    :global(.vtex-account_menu-link.b--action-primary) {
+        color: #e6964b;
+        text-decoration: underline;
+    }
+
+    :global(.vtex-my-authentication-1-x-box_content),
+    :global(.vtex-my-authentication-1-x-box_footer) {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,193 @@
+.sliderLayoutContainer {
+    &--home__main-banner {
+        margin-bottom: 60px;
+        //margin-top: 30px;
+
+        @media all and (max-width:1024px) {
+            margin-bottom: 30px;
+        }
+
+        // .slideChildrenContainer {
+        //     position: relative;
+
+        //     &::before {
+        //         content: "";
+        //         position: absolute;
+        //         width: 100%;
+        //         height: 350px;
+        //         background-image: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+        //         opacity: 0.6;
+        //         top: 0;
+        //     }
+        // }
+
+        .paginationDotsContainer {
+            bottom: 10px;
+            justify-content: center;
+
+            .paginationDot {
+                width: 14px;
+                height: 14px;
+                border: 1px solid #fff;
+                background: transparent;
+                padding: 0;
+                margin: 0px 4px;
+                border-radius: 100%;
+                position: relative;
+
+                &--isActive::before {
+                    content: "";
+                    display: block;
+                    width: 6px;
+                    height: 6px;
+                    background-color: #fff;
+                    position: absolute;
+                    left: 1px;
+                    top: 1px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    &--home__categories {
+        @extend %maxcontainer;
+        position: relative;
+        margin-bottom: 90px;
+
+        @media all and (max-width:1024px) {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .slide {
+            @media all and (max-width:1024px) {
+                margin-right: 20px;
+                width: auto !important;
+                flex: none;
+
+                &--hidden {
+                    display: none !important;
+                }
+            }
+        }
+
+        .sliderTrack {
+            @media all and (max-width:1024px) {
+                display: flex;
+                justify-content: flex-start;
+                overflow-x: auto;
+                max-width: 100%;
+                transform: unset !important;
+                padding-left: 15px;
+                overflow-y: hidden;
+                width: 100%;
+                padding-bottom: 15px;
+            }
+        }
+
+        .sliderTrackContainer {
+            width: calc(100% - 80px);
+            margin: 0 auto;
+            display: block;
+
+            @media all and (max-width:1024px) {
+                width: 100%;
+            }
+        }
+
+        .sliderRightArrow,
+        .sliderLeftArrow {
+            width: 35px;
+            height: 35px;
+            background: #e6964b !important;
+            border-radius: 100%;
+            display: block;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            z-index: 10;
+            top: 50%;
+            transform: translateY(-50%);
+
+            .caretIcon {
+                filter: invert(1);
+                width: 18px;
+                display: block;
+                margin: 0 auto;
+                position: relative;
+                left: 1px;
+            }
+        }
+
+        .paginationDotsContainer {
+            display: none;
+        }
+
+        .sliderRightArrow {
+            right: -15px;
+        }
+
+        .sliderLeftArrow {
+            left: -15px;
+
+            .caretIcon {
+                left: unset;
+                left: -1px;
+            }
+
+        }
+    }
+
+    &--home__shelf--carousel {
+        @extend %maxcontainer;
+        @extend %shelfsliderdefault;
+        position: relative;
+        margin-bottom: 100px;
+        display: block;
+
+        @media all and (max-width:767px) {
+            margin-bottom: 60px;
+        }
+    }
+
+    &--home__double-banner {
+        @extend %maxcontainer;
+        margin-bottom: 100px;
+
+        @media all and (max-width:767px) {
+            margin-bottom: 60px;
+        }
+
+        .sliderTrack {
+            display: flex;
+            transform: unset !important;
+
+            @media all and (max-width:767px) {
+                display: block;
+            }
+        }
+
+        .slide {
+            width: auto !important;
+            flex: 1;
+
+            &--hidden {
+                display: none;
+            }
+
+            &:nth-child(n+2) {
+                margin-left: 25px;
+
+                @media all and (max-width:767px) {
+                    margin: 15px auto 0;
+                }
+            }
+        }
+    }
+
+    &--home__banner-shelf--carousel {
+        display: block;
+        @extend %shelfsliderdefault;
+    }
+}

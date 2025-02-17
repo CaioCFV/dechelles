@@ -1,0 +1,27 @@
+{
+  "footer": {
+    "title": "FOOTER",
+    "blocks": [
+      //"footer-layout.desktop", "footer-layout.mobile"
+    ]
+  }
+  // "footer-layout.desktop": {
+  //   "title": "desktop",
+  //   "children": ["flex-layout.row#footer"]
+  // },
+  // "footer-layout.mobile": {
+  //   "title": "desktop",
+  //   "children": ["flex-layout.row#footer"]
+  // },
+  // "flex-layout.row#footer": {
+  //   "children": [
+  //     "cg-newsletter-form",
+  //     "flex-layout.row#footer__links",
+  //     "flex-layout.row#footer__copyright"
+  //   ],
+  //   "props": {
+  //     "blockClass": "footer",
+  //     "colSizing": "auto"
+  //   }
+  // }
+}

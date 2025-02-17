@@ -1,0 +1,26 @@
+.flexRow {
+    &--institucional-default__container {
+        @extend %maxcontainer;
+        margin-bottom: 100px;
+
+        .stretchChildrenWidth {
+            @media (max-width: 1024px) {
+                display: block;
+            }
+        }
+
+        .flexRowContent {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            @media all and (max-width: 1024px) {
+                display: block;
+            }
+
+            :nth-child(n+2) {
+                width: 100% !important;
+            }
+        }
+    }
+}

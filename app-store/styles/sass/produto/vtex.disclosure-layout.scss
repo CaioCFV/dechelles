@@ -1,0 +1,211 @@
+.trigger {
+
+    &--product__info--description,
+    &--product__info--shipping {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        height: 50px;
+        border: 0;
+        border-top: 1px solid #e5e0d2;
+        background: transparent;
+        cursor: pointer;
+
+        &::after {
+            content: "";
+            width: 13px;
+            height: 13px;
+            background: url(/assetsicons/icon-arrow-down.svg) no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+
+        &--visible {
+            &::after {
+                transform: rotateZ(180deg);
+                filter: brightness(0);
+            }
+
+            :global(.vtex-rich-text-0-x-paragraph) {
+                color: #1a1a1a !important;
+                font-weight: 600 !important;
+            }
+        }
+    }
+
+    &--product__info--shipping {
+        border-top: 0;
+    }
+}
+
+.content {
+
+    &--product__info--description,
+    &--product__info--shipping {
+        border-bottom: 1px solid #e5e0d2;
+        display: block !important;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.3s;
+        padding: 0;
+
+        &--visible {
+            max-height: 100%;
+            height: auto;
+            padding-bottom: 15px;
+        }
+    }
+
+    &--product__info--shipping {
+        :global(.vtex-input__label) {
+            display: none;
+        }
+
+        :global(.vtex-address-form__postalCod) {
+            padding: 0;
+        }
+
+        :global(.vtex-address-form-4-x-input) {
+            width: 150px;
+            height: 30px;
+            border: 0;
+            border-bottom: 1px solid #e5e0d2;
+            color: #999999;
+            font-size: 11px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: 0.55px;
+            padding: 0;
+            margin: 0;
+            text-decoration: none !important;
+            background: #fff;
+            outline: none;
+        }
+
+        :global(.vtex-input-prefix__group) {
+            border: 0;
+            padding: 0;
+            height: unset;
+        }
+
+        :global(.vtex-address-form__postalCode-forgottenURL) {
+            padding: 0;
+
+            :nth-child(n+1) {
+                color: #999999 !important;
+                font-size: 13px;
+                font-weight: 500;
+                font-style: normal;
+                letter-spacing: 0.65px;
+                line-height: 22px;
+                text-decoration: underline;
+                text-transform: lowercase;
+                opacity: 1 !important;
+            }
+        }
+
+        :global(.vtex__icon-external-link) {
+            display: none;
+        }
+
+        :global(.vtex-address-form__postalCode) {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            padding: 0;
+        }
+
+        :global(.vtex-button__label) {
+            padding: 0 !important;
+            margin: 0;
+            background: transparent;
+            border: 0;
+            min-height: unset;
+            position: absolute;
+            top: 0;
+            left: 160px;
+            width: 35px;
+            height: 30px;
+            background-color: #e5e0d2 !important;
+            text-align: center;
+            line-height: 30px;
+            font-size: 0;
+            cursor: pointer;
+
+            &::before {
+                content: "ok";
+                font-size: 11px;
+                font-weight: 400;
+                color: #4d4d4d;
+            }
+        }
+
+        :global(.vtex-store-components-3-x-shippingTable) {
+            border: 0;
+            padding: 0;
+            border-collapse: collapse;
+            border: 1px solid #e5e0d2;
+        }
+
+        :global(.vtex-store-components-3-x-shippingTableHead) {
+            height: 40px;
+            background-color: #e5e0d2;
+            display: table-header-group;
+
+            :global(.vtex-store-components-3-x-shippingTableRow) {
+                border-spacing: 0px;
+            }
+
+            :global(.vtex-store-components-3-x-shippingTableHeadDeliveryName),
+            :global(.vtex-store-components-3-x-shippingTableHeadDeliveryEstimate),
+            :global(.vtex-store-components-3-x-shippingTableHeadDeliveryPrice) {
+                color: #1a1a1a;
+                font-size: 13px;
+                font-weight: 500;
+                font-style: normal;
+                letter-spacing: 0.65px;
+                line-height: 15.6px;
+                text-transform: lowercase;
+            }
+        }
+
+        :global(.vtex-store-components-3-x-shippingTableBody) {
+
+            :global(.vtex-store-components-3-x-shippingTableCell) {
+                padding: 15px;
+            }
+
+            :global(.vtex-store-components-3-x-currencyContainer),
+            :global(.vtex-store-components-3-x-shippingTableCellDeliveryEstimate) {
+                color: #999;
+                font-size: 13px;
+                font-weight: 400;
+                font-style: normal;
+                letter-spacing: 0.65px;
+                line-height: 15.6px;
+                display: block;
+                text-align: center;
+            }
+
+            :global(.vtex-store-components-3-x-shippingTableCellDeliveryEstimate) {
+                text-transform: lowercase;
+            }
+
+            :global(.vtex-store-components-3-x-shippingTableLabel) {
+                color: #282828;
+                font-size: 13px;
+                font-weight: 500;
+                font-style: normal;
+                letter-spacing: 0.65px;
+                line-height: 15.6px;
+                text-align: left;
+                text-transform: lowercase;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}

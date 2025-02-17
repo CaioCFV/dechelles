@@ -1,0 +1,12 @@
+.container {
+    &--header__minicart--title {
+        .paragraph {
+            color: #242424;
+            font-size: 13px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: 0.65px;
+            line-height: 21px;
+        }
+    }
+}

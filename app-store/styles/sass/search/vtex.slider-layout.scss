@@ -1,0 +1,22 @@
+.sliderLayoutContainer {
+    &--search__banner {
+        //@extend %whiteheader;
+
+        background: red;
+
+        @media all and (max-width: 1024px) {
+            margin-bottom: 15px;
+        }
+
+        .sliderTrack {
+            transform: unset !important;
+            display: block;
+        }
+
+        .slide {
+            margin-bottom: 40px;
+            width: 100% !important;
+            margin-bottom: 40px;
+        }
+    }
+}

@@ -1,0 +1,91 @@
+{
+  "product-summary.shelf#shelf": {
+    "children": [
+      "flex-layout.row#shelf__image",
+      "product-summary-name",
+      "condition-layout.product#1"
+      //"flex-layout.row#shelf__flags"
+    ],
+    "props": {
+      "blockClass": "shelf"
+    }
+  },
+  "condition-layout.product#1": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "flex-layout.row#shelf__prices",
+      "Else": "rich-text#shelf__unavailable"
+    }
+  },
+  "rich-text#shelf__unavailable": {
+    "props": {
+      "text": "INDISPONÍVEL",
+      "blockClass": "shelf__unavailable"
+    }
+  },
+  "flex-layout.row#shelf__prices": {
+    "children": [
+      "product-list-price#shelf__price",
+      "product-selling-price#shelf__selling-price",
+      "product-installments#shelf__installments"
+    ],
+    "props": {
+      "blockClass": "shelf__prices",
+      "colSizing": "auto"
+    }
+  },
+  "flex-layout.row#shelf__image": {
+    "children": ["product-summary-image#shelf__image", "cg-shelf-variations"],
+    "props": {
+      "blockClass": "shelf__image",
+      "colSizing": "auto"
+    }
+  },
+  "product-summary-image#shelf__image": {
+    "props": {
+      "showBadge": true,
+      "showCollections": false,
+      "width": "600",
+      "height": "900"
+    }
+  },
+  "product-list-price#shelf__price": {
+    "props": {
+      "blockClass": "shelf__price",
+      "message": "{listPriceValue}"
+    }
+  },
+  "product-selling-price#shelf__selling-price": {
+    "props": {
+      "markers": ["highlight"],
+      "blockClass": "shelf__price",
+      "message": "{sellingPriceValue}",
+      "alwaysShow": true
+    }
+  },
+  "product-installments#shelf__installments": {
+    "props": {
+      "blockClass": "shelf__installments"
+    }
+  },
+  "flex-layout.row#shelf__flags": {
+    "children": ["vtex.product-highlights@2.x:product-highlights"],
+    "props": {
+      "blockClass": "shelf__flags--wrapper",
+      "colSizing": "auto"
+    }
+  },
+  "vtex.product-highlights@2.x:product-highlights": {
+    "children": ["product-highlight-text"]
+  },
+  "product-highlight-text": {
+    "props": {
+      "message": "{highlightName}",
+      "blockClass": "shelf__highlight"
+    }
+  }
+}

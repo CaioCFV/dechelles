@@ -1,0 +1,117 @@
+.newsletterform {
+    background-color: #faf8f2;
+    padding: 50px 0;
+
+    @media all and (max-width:991px) {
+        padding: 40px 15px;
+    }
+
+    &--success {
+        .newsletterform__form {
+            display: none;
+        }
+
+        .newsletterform__success {
+            display: block;
+        }
+    }
+
+    &__form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media all and (max-width:991px) {
+            display: block;
+        }
+    }
+
+    &__formTitle {
+        color: #242424;
+        font-size: 18px;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: 0.9px;
+        display: block;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    &__formSubtitle {
+        color: #4d4d4d;
+        font-size: 13px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.65px;
+        line-height: 19px;
+        display: block;
+        text-align: center;
+        margin: 0 auto 30px;
+    }
+
+    &__formInputName,
+    &__formInputEmail {
+        border-radius: 0;
+        background: transparent;
+        color: #4d4d4d;
+        font-size: 13px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.65px;
+        padding: 0;
+        width: 280px;
+        height: 40px;
+        border: 0;
+        border-bottom: 1px solid #999999;
+        margin-right: 23px;
+        display: block;
+        outline: none;
+
+        @media all and (max-width:991px) {
+            margin: 0 auto 15px;
+            max-width: 450px;
+            width: 100%;
+        }
+    }
+
+    &__formSubmit {
+        padding: 0;
+        text-transform: lowercase;
+        color: #4d4d4d;
+        font-size: 13px;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: 0.65px;
+        width: 128px;
+        height: 40px;
+        background-color: #e5e0d2;
+        border: 0;
+        border-radius: 0;
+        text-transform: lowercase;
+        cursor: pointer;
+
+        @media all and (max-width:991px) {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 250px;
+            display: block;
+        }
+
+        &:hover {
+            background: #e6964b;
+            color: #fff;
+        }
+    }
+
+    &__success {
+        display: none;
+        margin: 0 auto;
+        color: #242424;
+        font-size: 15px;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: 0.9px;
+        text-align: center;
+        margin-top: 15px;
+    }
+}

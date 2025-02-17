@@ -1,0 +1,53 @@
+{
+  "cg-main-menu": {
+    "component": "MainMenu",
+    "content": {
+      "$ref": "app:dechelles.commercegrowth-custom#/definitions/MainMenu"
+    }
+  },
+  "cg-custom-header": {
+    "component": "Header",
+    "render": "server",
+    "content": {
+      "$ref": "app:dechelles.commercegrowth-custom#/definitions/Header"
+    }
+  },
+  "cg-minicart-totalizers": {
+    "component": "MinicartTotalizers",
+    "render": "server"
+  },
+  "cg-slider-product": {
+    "component": "SliderProduct",
+    "render": "server"
+  },
+  "cg-shelf-variations": {
+    "component": "ShelfVariations"
+  },
+  "cg-conditional-kit": {
+    "component": "ConditionalKit"
+  },
+  "cg-size-guide-pdp": {
+    "component": "SizeGuidePDP"
+  },
+  "cg-product-page-kit": {
+    "component": "ProductPageKit"
+  },
+  "cg-lgpd": {
+    "component": "LGPD"
+  },
+  "cg-newsletter-popup": {
+    "component": "NewsletterPopup",
+    "composition": "children"
+  },
+  "cg-newsletter-form": {
+    "component": "NewsletterForm",
+    "composition": "children"
+  },
+  "cg-tipbar-color": {
+    "component": "TipbarColor",
+    "render": "server",
+    "content": {
+      "$ref": "app:dechelles.commercegrowth-custom#/definitions/TipbarColor"
+    }
+  }
+}

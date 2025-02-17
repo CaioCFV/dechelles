@@ -1,0 +1,44 @@
+.minicartContainer {
+    .cartIcon {
+        display: none;
+    }
+
+    &--header__minicart {
+        .openIconContainer {
+            padding: 0;
+        }
+
+        .minicartQuantityBadge {
+            display: none;
+        }
+
+        :global(.vtex-button) {
+            border: 0;
+            min-height: unset !important;
+
+            &:hover {
+                background: transparent;
+            }
+        }
+
+        :global(.vtex-button__label) {
+            padding: 0 !important;
+        }
+
+        :global(.vtex-store-icons-0-x-cartIcon) {
+            display: none;
+        }
+
+        .minicartIconContainer {
+            &::before {
+                content: "";
+                background: url(/assetsicons/icon-cart.png) no-repeat;
+                background-size: contain;
+                background-position: center;
+                width: 22px;
+                height: 20px;
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+  "rich-text#product__shelf--title": {
+    "title": "PRODUTO - Titulo vitrine de produtos",
+    "props": {
+      "text": "quem viu, viu também",
+      "blockClass": "product__shelf--title"
+    }
+  },
+  "list-context.product-list#product__shelf--1": {
+    "title": "PRODUTO - Carousel de produtos",
+    "blocks": ["product-summary.shelf#shelf"],
+    "children": ["slider-layout#shelf__slider-produto"],
+    "props": {
+      "skusFilter": "ALL"
+    }
+  },
+  "slider-layout#shelf__slider-produto": {
+    "title": "produtos",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "always",
+      "blockClass": "product__shelf--carousel"
+    }
+  }
+}

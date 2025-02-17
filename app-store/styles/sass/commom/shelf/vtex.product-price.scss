@@ -1,0 +1,77 @@
+.listPriceValue {
+    &--shelf__price {
+        color: #999999;
+        font-size: 15px;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: 0.65px;
+        line-height: 16px;
+        display: block;
+        text-transform: initial;
+    }
+}
+
+.sellingPrice {
+    &--shelf__price--hasListPrice {
+        display: block;
+
+        .sellingPriceValue {
+            color: #f26c4f;
+            font-weight: 800;
+        }
+    }
+}
+
+.sellingPriceValue {
+    &--shelf__price--hasListPrice {
+        display: block;
+    }
+
+    &--shelf__price {
+        color: #4d4d4d;
+        font-size: 15px;
+        font-weight: 800;
+        font-style: normal;
+        letter-spacing: 0.65px;
+        line-height: 16px;
+        display: block;
+        text-transform: initial;
+    }
+
+    &--shelf-search__price {
+        color: #4d4d4d;
+        font-size: 13px;
+        font-weight: 600;
+        font-style: normal;
+        letter-spacing: 0.65px;
+        line-height: 16px;
+        display: block;
+        text-align: left;
+        text-transform: initial;
+    }
+}
+
+.installments {
+    &--shelf__installments {
+        display: block;
+        color: #999999;
+        font-size: 13px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.65px;
+        margin-top: 10px;
+        text-transform: lowercase;
+
+        .currencyInteger,
+        .currencyDecimal,
+        .currencyCode,
+        .currencyFraction,
+        .installmentsNumber {
+            color: #4d4d4d;
+        }
+
+        .currencyCode {
+            text-transform: uppercase;
+        }
+    }
+}

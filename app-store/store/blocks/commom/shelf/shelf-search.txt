@@ -1,0 +1,32 @@
+{
+  "product-summary.shelf#shelf-search": {
+    "children": [
+      "product-summary-image#shelf-search__image",
+      "flex-layout.col#shelf-search__info"
+    ],
+    "props": {
+      "blockClass": "shelf-search"
+    }
+  },
+  "product-summary-image#shelf-search__image": {
+    "props": {
+      "showBadge": false,
+      "showCollections": false,
+      "width": "90",
+      "height": "135"
+    }
+  },
+  "flex-layout.col#shelf-search__info": {
+    "children": [
+      "product-summary-name",
+      "product-selling-price#shelf-search__price"
+    ]
+  },
+  "product-selling-price#shelf-search__price": {
+    "props": {
+      "markers": ["highlight"],
+      "blockClass": "shelf-search__price",
+      "message": "{sellingPriceValue}"
+    }
+  }
+}

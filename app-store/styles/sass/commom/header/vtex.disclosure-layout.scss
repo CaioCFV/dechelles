@@ -1,0 +1,49 @@
+.trigger {
+    &--header__search--mobile {
+        padding: 0;
+        margin: 0;
+        background: transparent;
+        border: 0;
+        outline: none;
+        height: 18px;
+        width: 18px !important;
+        position: relative;
+        top: 1px;
+
+        @media (max-width: 1024px) {
+            &--visible {
+                width: 18px;
+                height: 18px;
+                background: url(/assetsicons/icon-close-black.svg) no-repeat;
+                background-size: 90%;
+                background-position: center;
+                position: relative;
+                top: 2px;
+
+                :global(.vtex-store-components-3-x-imageElement--lupa) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.content {
+    &--header__search--mobile {
+        display: block !important;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background: #fff;
+        padding: 15px;
+        max-height: calc(100vh - 88px);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+
+        &--visible {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}

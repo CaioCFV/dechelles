@@ -1,0 +1,71 @@
+{
+  "disclosure-layout#footer__institucional": {
+    "children": [
+      "disclosure-trigger#footer__trigger--institucional-title",
+      "disclosure-content#footer__trigger--intitucional-content"
+    ],
+    "props": {
+      "animated": true,
+      "initialVisibility": "hidden"
+    }
+  },
+  "disclosure-trigger#footer__trigger--institucional-title": {
+    "children": ["rich-text#footer__institucional--title"],
+    "props": {
+      "blockClass": "footer__trigger"
+    }
+  },
+  "disclosure-content#footer__trigger--intitucional-content": {
+    "children": ["menu#footer__institucional--menuinstitucional"],
+    "props": {
+      "blockClass": "footer__content"
+    }
+  },
+  "rich-text#footer__institucional--title": {
+    "props": {
+      "text": "institucional",
+      "blockClass": "footer__column--title"
+    }
+  },
+  "menu#footer__institucional--menuinstitucional": {
+    "title": "MENU",
+    "props": {
+      "blockClass": "footer__institucional--link",
+      "items": [
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/trocas-e-devolucoes",
+            "noFollow": false,
+            "tagTitle": "trocas e devoluções",
+            "text": "trocas e devoluções"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/entrega-e-frete",
+            "noFollow": false,
+            "tagTitle": "entrega e frete",
+            "text": "entrega e frete"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/seguranca-e-privacidade",
+            "noFollow": false,
+            "tagTitle": "segurança e privacidade",
+            "text": "segurança e privacidade"
+          }
+        }
+      ]
+    }
+  }
+}
