@@ -40,7 +40,7 @@ export const MainMenu = ({ customLinks }: MainMenuProps) => {
           className={handles.mainMenu_mobileHamburguer}
           onClick={() => setOpenMenu(true)}
         >
-          <img src={require('.//assetsicon-menu.png')} alt="Menu Hamburger" />
+          {/* <img src={require('.///assets/icon-menu.png')} alt="Menu Hamburger" /> */}
         </button>
         <span
           className={applyModifiers(handles.blur, openMenu ? 'active' : '')}
@@ -54,13 +54,13 @@ export const MainMenu = ({ customLinks }: MainMenuProps) => {
               className={handles.mainMenu_mobileItem}
               onClick={() => setOpenMenu(false)}
             >
-              <img
-                src={require('.//assetsicon-close.png')}
+              {/* <img
+                src={require('.///assets/icon-close.png')}
                 alt="Fechar Menu Hamburger"
-              />
+              /> */}
             </button>
             <a className={handles.mainMenu_mobileItem} href="/account">
-              <img src={require('.//assetsicon-user.png')} alt="Login" />
+              {/* <img src={require('.///assets/icon-user.png')} alt="Login" /> */}
             </a>
           </div>
           <ul className={handles.mainMenuContainer}>

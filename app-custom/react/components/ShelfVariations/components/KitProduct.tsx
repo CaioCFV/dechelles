@@ -133,7 +133,7 @@ export const KitProduct: React.FC<Props> = function ({
       <div>
         <ul className={handles.shelf__skus}>
           <li className={handles['shelf__skus--itemImage']}>
-            <img src={require('..//assetsicon-top.svg')} alt="top" />
+            {/* <img src={require('..///assets/icon-top.svg')} alt="top" /> */}
           </li>
           {kitData.top.map(function (item) {
             return (
@@ -149,7 +149,7 @@ export const KitProduct: React.FC<Props> = function ({
         </ul>
         <ul className={handles.shelf__skus}>
           <li className={handles['shelf__skus--itemImage']}>
-            <img src={require('..//assetsicon-bottom.svg')} alt="bottom" />
+            {/* <img src={require('..///assets/icon-bottom.svg')} alt="bottom" /> */}
           </li>
           {kitData.bottom.map(function (item) {
             return (

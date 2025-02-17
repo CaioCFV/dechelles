@@ -33,7 +33,7 @@
   },
   "image#header__minicart--logo": {
     "props": {
-      "src": "/assetsicons/icon-cart.svg",
+      "src": "//assets/icons/icon-cart.svg",
       "blockClass": "header__minicart--logo"
     }
   },

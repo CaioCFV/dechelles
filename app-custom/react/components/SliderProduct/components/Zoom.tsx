@@ -15,7 +15,7 @@ type ZoomProps = {
 }
 export function Zoom({ image, isActive, disableZoom }: ZoomProps) {
   const { handles } = useCssHandles(HANDLES_SLIDER)
-
+  image
   return (
     <>
       <div
@@ -29,14 +29,14 @@ export function Zoom({ image, isActive, disableZoom }: ZoomProps) {
           className={handles['slider__zoom--close']}
           onClick={disableZoom}
         >
-          <img src={require('../images/icon-close.png')} alt="icon-close" />
+          {/* <img src={require('../images/icon-close.png')} alt="icon-close" /> */}
         </button>
         <div className={handles['slider__zoom--wrapper']}>
-          <img
+          {/* <img
             src={image}
             alt="Imagem zoom"
             className={handles['slider__zoom--image']}
-          />
+          /> */}
         </div>
       </div>
     </>

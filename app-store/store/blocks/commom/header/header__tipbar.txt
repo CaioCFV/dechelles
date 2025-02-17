@@ -23,14 +23,14 @@
   "rich-text#header__tipbar--item1": {
     "title": "ITEM 1",
     "props": {
-      "text": "![icone](/assetsicons/icon-truck.svg) frete grátis a partir de R$ 450",
+      "text": "![icone](//assets/icons/icon-truck.svg) frete grátis a partir de R$ 450",
       "blockClass": "header__tipbar--text"
     }
   },
   "rich-text#header__tipbar--item2": {
     "title": "ITEM 2",
     "props": {
-      "text": "![icone](/assetsicons/icon-card.svg) toda loja em até 10x sem juros",
+      "text": "![icone](//assets/icons/icon-card.svg) toda loja em até 10x sem juros",
       "blockClass": "header__tipbar--text"
     }
   }

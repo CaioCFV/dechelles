@@ -67,7 +67,7 @@
     "title": "HEADER - logo",
     "props": {
       "blockClass": "logo",
-      "src": "/assetsicons/icon-logo.svg",
+      "src": "//assets/icons/icon-logo.svg",
       "link": {
         "url": "/"
       }
@@ -76,7 +76,7 @@
   "image#icon-wishlist": {
     "title": "icone - wishlist",
     "props": {
-      "src": "/assetsicons/icon-hearth.svg",
+      "src": "//assets/icons/icon-hearth.svg",
       "blockClass": "header__icon",
       "maxWidth": 22,
       "link": {
@@ -110,7 +110,7 @@
     "title": "icone - busca",
     "props": {
       "blockClass": "lupa",
-      "src": "/assetsicons/icon-lupa.svg"
+      "src": "//assets/icons/icon-lupa.svg"
     }
   }
 }

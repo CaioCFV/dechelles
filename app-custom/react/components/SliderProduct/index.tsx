@@ -127,16 +127,16 @@ export function SliderProduct() {
           {video && <Video link={video.values[0]}></Video>}
         </div>
         <button className={handles.slider__prev + ' swiper-prev'}>
-          <img
+          {/* <img
             src={require('./images/icon-arrow-left.png')}
             alt="próximo slide"
-          />
+          /> */}
         </button>
         <button className={handles.slider__next + ' swiper-next'}>
-          <img
+          {/* <img
             src={require('./images/icon-arrow-right.png')}
             alt="slide anterior"
-          />
+          /> */}
         </button>
         <div className={handles.slider__dots + ' swiper-dots'}></div>
       </div>

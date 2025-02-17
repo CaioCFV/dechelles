@@ -92,7 +92,7 @@
   },
   "image#icon-filter": {
     "props": {
-      "src": "/assetsicons/icon-filtro.svg",
+      "src": "//assets/icons/icon-filtro.svg",
       "blockClass": "search__filter--header-icon",
       "maxWidth": 22
     }

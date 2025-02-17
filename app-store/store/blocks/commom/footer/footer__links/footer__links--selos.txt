@@ -51,43 +51,43 @@
   },
   "image#selo-visa": {
     "props": {
-      "src": "/assetsicons/icon-visa.svg",
+      "src": "//assets/icons/icon-visa.svg",
       "blockClass": "selo"
     }
   },
   "image#selo-diners": {
     "props": {
-      "src": "/assetsicons/icon-diners.svg",
+      "src": "//assets/icons/icon-diners.svg",
       "blockClass": "selo"
     }
   },
   "image#selo-amex": {
     "props": {
-      "src": "/assetsicons/icon-amex.svg",
+      "src": "//assets/icons/icon-amex.svg",
       "blockClass": "selo"
     }
   },
   "image#selo-mastercard": {
     "props": {
-      "src": "/assetsicons/icon-mastercard.svg",
+      "src": "//assets/icons/icon-mastercard.svg",
       "blockClass": "selo"
     }
   },
   "image#selo-pix": {
     "props": {
-      "src": "/assetsicons/icon-pix.svg",
+      "src": "//assets/icons/icon-pix.svg",
       "blockClass": "selo"
     }
   },
   "image#selo-lets": {
     "props": {
-      "src": "/assetsicons/selo-lets-encrypt.png",
+      "src": "//assets/icons/selo-lets-encrypt.png",
       "blockClass": "selo"
     }
   },
   "image#instagram": {
     "props": {
-      "src": "/assetsicons/icon-instagram.svg",
+      "src": "//assets/icons/icon-instagram.svg",
       "blockClass": "selo",
       "link": {
         "url": "https://www.instagram.com/borana/?hl=en",
@@ -97,7 +97,7 @@
   },
   "image#letsencrypt": {
     "props": {
-      "src": "/assetsicons/selo-lets-encrypt.png",
+      "src": "//assets/icons/selo-lets-encrypt.png",
       "blockClass": "selo"
     }
   }

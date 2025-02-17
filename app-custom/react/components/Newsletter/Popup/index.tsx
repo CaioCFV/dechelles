@@ -68,15 +68,15 @@ export const NewsletterPopup = function () {
             data.success ? 'success' : ''
           )}
         >
-          <img
+          {/* <img
             src={require('..//assetspopupnewsletter.png')}
             className={handles.newsletterpopup__image}
-          />
+          /> */}
           <button
             className={handles.newsletterpopup__close}
             onClick={() => setData({ ...data, active: false })}
           >
-            <img src={require('..//assetsclose-x-button.svg')} alt="Limpar" />
+            {/* <img src={require('..//assetsclose-x-button.svg')} alt="Limpar" /> */}
           </button>
           <form
             className={handles.newsletterpopup__form}

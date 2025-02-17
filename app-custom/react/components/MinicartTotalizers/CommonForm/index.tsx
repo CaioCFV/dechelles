@@ -47,7 +47,7 @@ export const CommonForm = ({
             type="button"
             onClick={onRemove}
           >
-            <img src={require('..//assetsclose-x-button.svg')} alt="Limpar" />
+            {/* <img src={require('..//assetsclose-x-button.svg')} alt="Limpar" /> */}
           </button>
         </div>
       ) : (
