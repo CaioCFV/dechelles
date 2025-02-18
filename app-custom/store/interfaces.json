@@ -1,1 +1,9 @@
-{}
+{
+  "cg-image": {
+    "component": "Image",
+    "render": "server",
+    "content": {
+      "$ref": "app:dechelles.commercegrowth-custom#/definitions/Image"
+    }
+  }
+}

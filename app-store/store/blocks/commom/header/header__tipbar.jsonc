@@ -1,0 +1,37 @@
+{
+  // "slider-layout#header__tipbar": {
+  //   "title": "HEADER - Tipbar",
+  //   "props": {
+  //     "itemsPerPage": {
+  //       "desktop": 2,
+  //       "tablet": 1,
+  //       "phone": 1
+  //     },
+  //     "autoplay": {
+  //       "timeout": 2000
+  //     },
+  //     "infinite": true,
+  //     "showPaginationDots": "never",
+  //     "showNavigationArrows": "never",
+  //     "blockClass": "header__tipbar"
+  //   },
+  //   "children": [
+  //     "rich-text#header__tipbar--item1",
+  //     "rich-text#header__tipbar--item2"
+  //   ]
+  // },
+  // "rich-text#header__tipbar--item1": {
+  //   "title": "ITEM 1",
+  //   "props": {
+  //     "text": "![icone](//assets/icons/icon-truck.svg) frete grátis a partir de R$ 450",
+  //     "blockClass": "header__tipbar--text"
+  //   }
+  // },
+  // "rich-text#header__tipbar--item2": {
+  //   "title": "ITEM 2",
+  //   "props": {
+  //     "text": "![icone](//assets/icons/icon-card.svg) toda loja em até 10x sem juros",
+  //     "blockClass": "header__tipbar--text"
+  //   }
+  // }
+}

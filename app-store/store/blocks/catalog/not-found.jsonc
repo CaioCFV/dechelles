@@ -1,0 +1,24 @@
+{
+  // "store.not-found#product": {
+  //   "blocks": ["flex-layout.row#search__not-found"]
+  // },
+  // "search-not-found-layout": {
+  //   "children": ["flex-layout.row#search__not-found"]
+  // },
+  // "flex-layout.row#search__not-found": {
+  //   "children": [
+  //     "breadcrumb.search#search__breadcrumb",
+  //     "rich-text#search__not-found__text"
+  //   ],
+  //   "props": {
+  //     "blockClass": "search__not-found__text",
+  //     "colSizing": "auto"
+  //   }
+  // },
+  // "rich-text#search__not-found__text": {
+  //   "props": {
+  //     "text": "## não encontramos nenhuma peça que vc procurou :(\n\ndá uma olhadinha nas outras categorias :)",
+  //     "blockClass": "search__not-found__text"
+  //   }
+  // }
+}

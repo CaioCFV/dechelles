@@ -1,0 +1,9 @@
+{
+  "rich-text#home__banner-text": {
+    "title": "HOME - Banner Text",
+    "props": {
+      "text": "APAIXONADOS POR MODA PRAIA E **FITNESS CONFIRA NOSSOS LANÇAMENTOS!**",
+      "blockClass": "home__banner-text"
+    }
+  }
+}

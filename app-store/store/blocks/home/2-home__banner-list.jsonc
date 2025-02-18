@@ -1,0 +1,44 @@
+{
+  "list-context.image-list#home__banner-list": {
+    "title": "HOME - Banner duplo",
+    "children": ["slider-layout#home__banner-list"],
+    "props": {
+      "preload": true,
+      "height": "",
+      "images": [
+        {
+          "loading": "lazy",
+          "image": "https://dechelles.vtexassets.com/assets/vtex.file-manager-graphql/images/a14ab37a-de05-4c2d-b845-33ebaadc41fc___040c2b98f19c06c71d8b6e9077c9f222.png",
+          "description": "something something"
+        },
+        {
+          "loading": "lazy",
+          "image": "https://dechelles.vtexassets.com/assets/vtex.file-manager-graphql/images/924afa19-8447-4524-82d2-9becf937387d___558388240b9866e350308bc566c91d2e.png",
+          "description": "something something"
+        },
+        {
+          "loading": "lazy",
+          "image": "https://dechelles.vtexassets.com/assets/vtex.file-manager-graphql/images/bd9cee19-f324-483e-ab88-a6f7dc152bd5___862075f29cf14cbbc0f2da71ce8a1514.png",
+          "description": "something something"
+        },
+        {
+          "loading": "lazy",
+          "image": "https://dechelles.vtexassets.com/assets/vtex.file-manager-graphql/images/a14ab37a-de05-4c2d-b845-33ebaadc41fc___040c2b98f19c06c71d8b6e9077c9f222.png",
+          "description": "something something"
+        }
+      ]
+    }
+  },
+  "slider-layout#home__banner-list": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 10,
+        "phone": 1
+      },
+      "showPaginationDots": "never",
+      "showNavigationArrows": "never",
+      "infinite": false,
+      "blockClass": "home__banner-list"
+    }
+  }
+}

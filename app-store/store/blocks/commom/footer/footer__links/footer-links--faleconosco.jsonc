@@ -1,0 +1,86 @@
+{
+  // "disclosure-layout#footer__faleconosco": {
+  //   "children": [
+  //     "disclosure-trigger#footer__trigger--faleconosco-title",
+  //     "disclosure-content#footer__trigger--faleconosco-content"
+  //   ],
+  //   "props": {
+  //     "animated": true,
+  //     "initialVisibility": "hidden"
+  //   }
+  // },
+  // "disclosure-trigger#footer__trigger--faleconosco-title": {
+  //   "children": ["rich-text#footer__faleconosco--title"],
+  //   "props": {
+  //     "blockClass": ["footer__trigger", "footer__trigger-1"]
+  //   }
+  // },
+  // "disclosure-content#footer__trigger--faleconosco-content": {
+  //   "children": ["menu#footer__institucional--menufaleconosco"],
+  //   "props": {
+  //     "blockClass": ["footer__content", "footer__content-1"]
+  //   }
+  // },
+  // "rich-text#footer__faleconosco--title": {
+  //   "props": {
+  //     "text": "fale conosco",
+  //     "blockClass": "footer__column--title"
+  //   }
+  // },
+  // "menu#footer__institucional--menufaleconosco": {
+  //   "title": "MENU",
+  //   "props": {
+  //     "blockClass": "footer__institucional--link",
+  //     "items": [
+  //       {
+  //         "id": "menu-item-1",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "/institucional/duvidas-frequentes",
+  //           "noFollow": false,
+  //           "tagTitle": "dúvidas frequentes",
+  //           "text": "dúvidas frequentes"
+  //         }
+  //       },
+  //       {
+  //         "id": "menu-item-2",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "/institucional/vem-trabalhar-com-a-gente",
+  //           "noFollow": false,
+  //           "tagTitle": "vem trabalhar com a gente",
+  //           "text": "vem trabalhar com a gente"
+  //         }
+  //       },
+  //       {
+  //         "id": "menu-item-3",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "/institucional/compra-em-atacado",
+  //           "noFollow": false,
+  //           "tagTitle": "compras no atacado",
+  //           "text": "compras no atacado"
+  //         }
+  //       },
+  //       {
+  //         "id": "menu-item-4",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "/institucional/lojas",
+  //           "noFollow": false,
+  //           "tagTitle": "lojas",
+  //           "text": "lojas"
+  //         }
+  //       }
+  //     ]
+  //   }
+  // }
+}

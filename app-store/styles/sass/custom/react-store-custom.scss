@@ -1,4 +1,41 @@
-@import "./vtex.toast-container";
+:global(.vtex-toast-container) {
+    background-color: #e5e0d2;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    margin: 0;
+    max-width: 358px;
+    width: calc(100% - 30px);
+    bottom: unset;
+
+    :global(.vtex-toast) {
+        border-radius: 0;
+        box-shadow: none;
+        background-color: unset;
+    }
+
+    :global(.lh-copy) {
+        color: #4d4d4d;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    :global(.vtex-button__label) {
+        white-space: nowrap;
+        background: #e6964b;
+        font-weight: 400;
+        font-family: 'Inter';
+        padding: 10px !important;
+        text-transform: lowercase;
+    }
+
+    :global(.vtex__icon-close) {
+        width: 18px;
+        height: 18px;
+        filter: brightness(0.3);
+    }
+}
 
 // :global(.vtex-store-header-2-x-headerStickyRow--transparent) {
 //     :global(.dechelles-commercegrowth-custom-0-x-mainMenu_mobileHamburguer) {

@@ -1,0 +1,35 @@
+{
+  "flex-layout.row#home__double-banner": {
+    "title": "HOME - Banner duplo",
+    "children": [
+      "cg-image#home__double-banner--1",
+      "cg-image#home__double-banner--2"
+    ],
+    "props": {
+      "blockClass": "home__double-banner",
+      "colSizing": "auto"
+    }
+  },
+  "cg-image#home__double-banner--1": {
+    "title": "HOME - BANNER",
+    "props": {
+      "desktop": "https://dechelles.vtexassets.com/assets/vtex.file-manager-graphql/images/c34627f0-7ebc-4d06-84ab-9a76f04c76e1___67841c97f4dd320ef4df65bded5f4299.png",
+      "mobile": "https://dechelles.vtexassets.com/assets/vtex.file-manager-graphql/images/c34627f0-7ebc-4d06-84ab-9a76f04c76e1___67841c97f4dd320ef4df65bded5f4299.png",
+      "alt": "SALE 50%",
+      "link": "/",
+      "blockClass": "home__banner--2",
+      "loading": "lazy"
+    }
+  },
+  "cg-image#home__double-banner--2": {
+    "title": "HOME - BANNER",
+    "props": {
+      "desktop": "https://dechelles.vtexassets.com/assets/vtex.file-manager-graphql/images/c34627f0-7ebc-4d06-84ab-9a76f04c76e1___67841c97f4dd320ef4df65bded5f4299.png",
+      "mobile": "https://dechelles.vtexassets.com/assets/vtex.file-manager-graphql/images/c34627f0-7ebc-4d06-84ab-9a76f04c76e1___67841c97f4dd320ef4df65bded5f4299.png",
+      "alt": "SALE 50%",
+      "link": "/",
+      "blockClass": "home__banner--2",
+      "loading": "lazy"
+    }
+  }
+}

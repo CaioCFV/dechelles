@@ -1,108 +1,36 @@
 {
   "definitions": {
-    "MainMenu": {
+    "Image": {
       "properties": {
-        "customLinks": {
-          "type": "array",
-          "title": "Links customizadods",
-          "items": {
-            "$ref": "app:dechelles.commercegrowth-custom#/definitions/CustomLinks"
-          }
-        }
-      }
-    },
-    "CustomLinks": {
-      "properties": {
-        "__editorItemTitle": {
+        "desktop": {
           "type": "string",
-          "title": "Titulo"
-        },
-        "href": {
-          "type": "string",
-          "title": "Link"
-        },
-        "highlight": {
-          "type": "boolean",
-          "title": "Destaque"
-        },
-        "banners": {
-          "type": "array",
-          "title": "Banner",
-          "items": {
-            "$ref": "app:dechelles.commercegrowth-custom#/definitions/MenuBanners"
-          }
-        },
-        "hasChildren": {
-          "type": "boolean",
-          "title": "Possui Filhos?"
-        },
-        "children": {
-          "type": "array",
-          "title": "Submenu",
-          "items": {
-            "$ref": "app:dechelles.commercegrowth-custom#/definitions/CustomLinksItem"
-          }
-        }
-      }
-    },
-    "MenuBanners": {
-      "properties": {
-        "link": {
-          "type": "string",
-          "title": "Link do Banner"
-        },
-        "name": {
-          "type": "string",
-          "title": "Descrição do Banner"
-        },
-        "image": {
-          "title": "Imagem",
-          "type": "string",
+          "title": "Imagem desktop",
           "widget": {
             "ui:widget": "image-uploader"
           }
-        }
-      }
-    },
-    "CustomLinksItem": {
-      "properties": {
-        "__editorItemTitle": {
-          "type": "string",
-          "title": "Titulo"
         },
-        "href": {
+        "mobile": {
           "type": "string",
-          "title": "Link do Submenu",
-          "default": null
-        }
-      }
-    },
-    "TipbarColor": {
-      "properties": {
-        "background": {
-          "type": "string",
-          "title": "Cor de fundo",
+          "title": "Imgem mobile",
           "widget": {
-            "ui:widget": "color"
+            "ui:widget": "image-uploader"
           }
         },
-        "textcolor": {
+        "alt": {
           "type": "string",
-          "title": "Cor do texto",
-          "widget": {
-            "ui:widget": "color"
-          }
-        }
-      }
-    },
-    "Header": {
-      "properties": {
-        "color": {
+          "title": "Descrição SEO"
+        },
+        "link": {
           "type": "string",
-          "title": "Cor de fundo",
-          "widget": {
-            "ui:widget": "color"
-          }
+          "title": "link"
+        },
+        "videoMobile": {
+          "type": "string",
+          "title": "id video mobile"
+        },
+        "videoDesktop": {
+          "type": "string",
+          "title": "id video desktop"
         }
       }
     }

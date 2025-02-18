@@ -1,0 +1,38 @@
+{
+  // "disclosure-layout#product__description": {
+  //   "props": {
+  //     "blockClass": "product__info--description",
+  //     "animated": true,
+  //     "initialVisibility": "visible"
+  //   },
+  //   "children": [
+  //     "disclosure-trigger#product__description--trigger",
+  //     "disclosure-content#product__description--content"
+  //   ]
+  // },
+  // "disclosure-trigger#product__description--trigger": {
+  //   "props": {
+  //     "blockClass": "product__info--description"
+  //   },
+  //   "children": ["rich-text#product__description--triggertext"]
+  // },
+  // "disclosure-content#product__description--content": {
+  //   "props": {
+  //     "blockClass": "product__info--description"
+  //   },
+  //   "children": ["product-description#description"]
+  // },
+  // "rich-text#product__description--triggertext": {
+  //   "props": {
+  //     "blockClass": "product__info--description",
+  //     "text": "descrição"
+  //   }
+  // },
+  // "product-description#description": {
+  //   "props": {
+  //     "showTitle": false,
+  //     "collapseContent": false,
+  //     "blockClass": "product__description"
+  //   }
+  // }
+}

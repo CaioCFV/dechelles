@@ -1,0 +1,26 @@
+{
+  // "slider-layout#search__banner-slider": {
+  //   "title": "CATEGORIA - Banner Principal - slider",
+  //   "props": {
+  //     "itemsPerPage": {
+  //       "desktop": 1,
+  //       "tablet": 1,
+  //       "phone": 1
+  //     },
+  //     "infinite": false,
+  //     "showPaginationDots": "mobileOnly",
+  //     "showNavigationArrows": "never",
+  //     "blockClass": "search__banner"
+  //   }
+  // },
+  // "list-context.image-list#search__banner": {
+  //   "title": "CATEGORIA - Banner Principal",
+  //   "children": ["slider-layout#search__banner-slider"],
+  //   "props": {
+  //     "preload": true,
+  //     "height": "",
+  //     "images": [],
+  //     "blockClass": "search__banner"
+  //   }
+  // }
+}

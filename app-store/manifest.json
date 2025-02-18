@@ -48,8 +48,7 @@
     "vtex.product-highlights": "2.x"
   },
   "peerDependencies": {
-    "vtex.availability-notify": "1.x",
-    "vtex.wish-list": "1.x"
+    "vtex.availability-notify": "1.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

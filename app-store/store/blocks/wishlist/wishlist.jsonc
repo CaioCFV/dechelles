@@ -1,0 +1,55 @@
+{
+  // "store.wishlist": {
+  //   "blocks": [
+  //     "menu#wishlist__breadcrumb",
+  //     "rich-text#title",
+  //     "list-context.wishlist#page"
+  //   ]
+  // },
+  // "flex-layout.col#title": {
+  //   "children": ["rich-text#title"],
+  //   "props": {
+  //     "blockClass": "titleWishlist",
+  //     "preventVerticalStretch": true
+  //   }
+  // },
+  // "rich-text#title": {
+  //   "props": {
+  //     "text": "### Wishlist"
+  //   }
+  // },
+  // "list-context.wishlist#page": {
+  //   "blocks": ["product-summary.shelf#shelf"],
+  //   "children": ["list-context-renderer#wishlist__page"]
+  // },
+  // "list-context-renderer#wishlist__page": {
+  //   "props": {
+  //     "listElement": "ul",
+  //     "itemElement": "li",
+  //     "blockClass": "wishlist__products"
+  //   }
+  // },
+  // //ACCOUNT PAGE
+  // "my-account-link.wishlist-link": {
+  //   "props": {
+  //     "label": "wishlist"
+  //   }
+  // },
+  // "my-account-page.wishlist-page": {
+  //   "props": {
+  //     "title": "wishlist"
+  //   },
+  //   "children": ["list-context.wishlist#account"]
+  // },
+  // "list-context.wishlist#account": {
+  //   "blocks": ["product-summary.shelf#shelf"],
+  //   "children": ["list-context-renderer#wishlist__account"]
+  // },
+  // "list-context-renderer#wishlist__account": {
+  //   "props": {
+  //     "listElement": "ul",
+  //     "itemElement": "li",
+  //     "blockClass": "wishlist__products--account"
+  //   }
+  // }
+}

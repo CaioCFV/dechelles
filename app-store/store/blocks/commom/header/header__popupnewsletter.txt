@@ -1,8 +1,0 @@
-{
-  "cg-newsletter-popup": {
-    "children": [],
-    "props": {
-      "titulo": "vapo"
-    }
-  }
-}
