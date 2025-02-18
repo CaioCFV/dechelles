@@ -21,8 +21,11 @@
     .sliderTrackContainer {
         margin: 0 auto;
         display: block;
-        width: calc(100% + 30px);
-        margin-left: -15px;
+        padding: 0px 10px;
+
+        @media (min-width:1025px) {
+            padding: 0;
+        }
 
         @media all and (max-width:767px) {
             width: 100%;
@@ -31,31 +34,7 @@
     }
 
     .paginationDotsContainer {
-        position: relative;
-        margin-top: 30px;
-
-        .paginationDot {
-            width: 14px;
-            height: 14px;
-            border: 1px solid #e6964b;
-            background: #fff;
-            padding: 0;
-            margin: 0px 4px;
-            border-radius: 100%;
-            position: relative;
-
-            &--isActive::before {
-                content: "";
-                display: block;
-                width: 6px;
-                height: 6px;
-                background-color: #e6964b;
-                position: absolute;
-                left: 1px;
-                top: 1px;
-                border-radius: 50%;
-            }
-        }
+        display: none;
     }
 
     .slildeTrack {
@@ -64,10 +43,9 @@
 
     .sliderRightArrow,
     .sliderLeftArrow {
-        width: 35px;
-        height: 35px;
-        background: #e6964b !important;
-        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        background: #F5F5F5 !important;
         display: block;
         padding: 0;
         margin: 0;
@@ -77,12 +55,13 @@
         transform: translateY(-50%);
 
         .caretIcon {
-            filter: invert(1);
-            width: 18px;
+            filter: invert(0);
+            width: 12px;
             display: block;
             margin: 0 auto;
             position: relative;
             left: 1px;
+            opacity: .8;
         }
     }
 
@@ -93,10 +72,18 @@
     }
 
     .sliderRightArrow {
-        right: 20px;
+        right: -20px;
+
+        @media (min-width:1025px) {
+            right: -40px;
+        }
     }
 
     .sliderLeftArrow {
-        left: 20px;
+        left: -20px;
+
+        @media (min-width:1025px) {
+            left: -40px;
+        }
     }
 }

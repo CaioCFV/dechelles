@@ -3,8 +3,8 @@
     "children": [
       "flex-layout.row#shelf__image",
       "product-summary-name",
-      "condition-layout.product#1",
-      "flex-layout.row#shelf__flags"
+      "condition-layout.product#1"
+      //"flex-layout.row#shelf__flags"
     ],
     "props": {
       "blockClass": "shelf"
@@ -30,8 +30,7 @@
   "flex-layout.row#shelf__prices": {
     "children": [
       "product-list-price#shelf__price",
-      "product-selling-price#shelf__selling-price",
-      "product-installments#shelf__installments"
+      "product-selling-price#shelf__selling-price"
     ],
     "props": {
       "blockClass": "shelf__prices",
@@ -53,7 +52,7 @@
       "showBadge": true,
       "showCollections": false,
       "width": "600",
-      "height": "900"
+      "height": "600"
     }
   },
   "product-list-price#shelf__price": {

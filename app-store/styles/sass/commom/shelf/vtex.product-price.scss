@@ -1,11 +1,11 @@
 .listPriceValue {
     &--shelf__price {
-        color: #999999;
-        font-size: 15px;
-        font-weight: 500;
+        color: #000;
+        font-size: 16px;
+        font-weight: 400;
         font-style: normal;
-        letter-spacing: 0.65px;
-        line-height: 16px;
+        letter-spacing: 0.8px;
+        line-height: 22px;
         display: block;
         text-transform: initial;
     }
@@ -16,8 +16,10 @@
         display: block;
 
         .sellingPriceValue {
-            color: #f26c4f;
-            font-weight: 800;
+            border-left: 1px solid #000;
+            padding-left: 6px;
+            margin-left: 6px;
+            color: #000;
         }
     }
 }
@@ -28,12 +30,12 @@
     }
 
     &--shelf__price {
-        color: #4d4d4d;
-        font-size: 15px;
-        font-weight: 800;
+        color: #000;
+        font-size: 16px;
+        font-weight: 600;
         font-style: normal;
-        letter-spacing: 0.65px;
-        line-height: 16px;
+        letter-spacing: 0.8px;
+        line-height: 22px;
         display: block;
         text-transform: initial;
     }

@@ -1,12 +1,3 @@
-.sellingPrice {
-    &--hasListPrice {
-        .currencyContainer {
-            color: #f26c4f;
-            font-weight: 800;
-        }
-    }
-}
-
 .currencyContainer {
     &--product__info--selling-price {
         padding: 0;

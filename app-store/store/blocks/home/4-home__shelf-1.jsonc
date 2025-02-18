@@ -17,14 +17,14 @@
       "itemsPerPage": {
         "desktop": 4,
         "tablet": 3,
-        "phone": 2
+        "phone": 1
       },
       "slideTransition": {
         "speed": 400
       },
       "infinite": false,
-      "showNavigationArrows": "desktopOnly",
-      "showPaginationDots": "always",
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
       "blockClass": "home__shelf--carousel"
     }
   }

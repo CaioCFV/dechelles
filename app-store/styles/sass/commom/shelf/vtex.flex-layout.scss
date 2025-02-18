@@ -20,18 +20,24 @@
 
     &--shelf__prices {
         .flexRowContent {
-            display: block;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .stretchChildrenWidth:nth-child(n+3) {
+            width: 100% !important;
         }
     }
 
-    &--shelf__flags--wrapper {
-        position: absolute;
-        top: 0;
-        left: 12px;
+    // &--shelf__flags--wrapper {
+    //     position: absolute;
+    //     top: 0;
+    //     left: 12px;
 
-        .stretchChildrenWidth {
-            min-width: 100% !important;
-            display: block;
-        }
-    }
+    //     .stretchChildrenWidth {
+    //         min-width: 100% !important;
+    //         display: block;
+    //     }
+    // }
 }

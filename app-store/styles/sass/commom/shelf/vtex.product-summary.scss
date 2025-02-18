@@ -2,7 +2,7 @@
     &--shelf {
         display: block;
         border-radius: 0;
-        padding: 0px 12px;
+        padding: 0px 5px;
         box-sizing: border-box;
         max-width: unset !important;
 
@@ -18,10 +18,11 @@
             color: #fff;
             left: 0;
             right: unset;
+            display: none;
         }
 
         @media all and (max-width:1024px) {
-            padding: 0px 6px;
+            padding: 0px 10px;
         }
 
         .clearLink {
@@ -40,15 +41,16 @@
             display: block;
         }
 
-
-        .image,
-        .imageContainer {
-            display: block;
+        .image {
             width: 100% !important;
-            height: auto !important;
-            object-fit: contain;
-            max-height: unset;
+            height: 100% !important;
             aspect-ratio: 2/3;
+            display: block;
+            object-fit: cover !important;
+        }
+
+        .imageContainer {
+            max-height: unset;
         }
 
         .nameContainer {
@@ -58,12 +60,14 @@
         }
 
         .brandName {
-            color: #4d4d4d;
-            font-size: 15px;
-            font-weight: 700;
+            color: #000;
+            font-size: 16px;
+            font-weight: 400;
             font-style: normal;
-            letter-spacing: 0.65px;
-            line-height: 16px;
+            letter-spacing: 0.8px;
+            line-height: 22px;
+            height: 45px;
+            display: block;
         }
     }
 
