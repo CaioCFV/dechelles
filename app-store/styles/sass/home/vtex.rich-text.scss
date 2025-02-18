@@ -16,76 +16,81 @@
             font-weight: 400;
             line-height: normal;
             text-transform: uppercase;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 70px;
+                height: 3px;
+                background: #000;
+                margin: 12px auto 0;
+            }
         }
 
         .strong {
             color: #5A5A5A;
             font-weight: 500;
+            display: block;
         }
     }
 
-    // &--home__shelf--title-1 {
-    //     justify-content: center;
+    &--home__shelf--title-1 {
+        display: block;
+        text-align: center;
+        margin-bottom: 50px;
 
-    //     .headingLevel1 {
-    //         color: #282828;
-    //         font-size: 28px;
-    //         font-weight: 500;
-    //         font-style: normal;
-    //         display: block;
-    //         text-align: center;
+        .wrapper {
+            display: block;
+        }
 
-    //         @media all and (max-width:767px) {
-    //             font-size: 24px;
-    //         }
-    //     }
+        .paragraph {
+            color: #888;
+            text-align: center;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
 
-    //     .link {
-    //         display: block;
-    //         color: #e6964b;
-    //         font-size: 13px;
-    //         font-weight: 500;
-    //         font-style: normal;
-    //         letter-spacing: 0.65px;
-    //         margin-top: 15px;
-    //         margin-bottom: 40px;
-    //         display: block;
+            &::after {
+                content: "";
+                display: block;
+                width: 70px;
+                height: 3px;
+                background: #000;
+                margin: 12px auto 0;
+            }
+        }
+    }
 
-    //         @media all and (max-width:767px) {
-    //             margin-bottom: 30px;
-    //             font-size: 13px;
-    //         }
-    //     }
-    // }
+    &--home__benefits--item {
+        text-align: center;
+        display: block;
 
-    // &--home__benefits--item {
-    //     position: relative;
-    //     color: #999999;
-    //     font-size: 13px;
-    //     font-weight: 400;
-    //     font-style: normal;
-    //     letter-spacing: 0.65px;
-    //     padding-left: 50px;
+        .wrapper {
+            display: block;
+        }
 
-    //     @media all and (max-width:1200px) {
-    //         min-width: unset
-    //     }
+        .paragraph {
+            font-size: 12px;
+            font-weight: 200;
+            color: #000;
+            text-transform: uppercase;
+            line-height: normal;
+        }
 
-    //     .strong {
-    //         color: #282828;
-    //         font-size: 18px;
-    //         font-weight: 500;
-    //         font-style: normal;
-    //         letter-spacing: 0.9px;
-    //         display: block;
-    //         margin-bottom: 10px;
-    //     }
+        .strong {
+            color: #000;
+            font-size: 14px;
+            font-weight: 400;
+            display: block;
+            margin-bottom: 10px;
+        }
 
-    //     .image {
-    //         position: absolute;
-    //         top: 50%;
-    //         left: 0;
-    //         transform: translateY(-50%);
-    //     }
-    // }
+        .image {
+            display: block;
+            width: 25px;
+            margin: 0 auto 10px;
+        }
+    }
 }

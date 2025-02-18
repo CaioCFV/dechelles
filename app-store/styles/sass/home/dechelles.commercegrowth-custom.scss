@@ -1,0 +1,33 @@
+.imageWrapper {
+    &--home__banner--1 {
+        display: block;
+        margin-bottom: 55px;
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &--home__banner--2 {
+        display: block;
+        margin-bottom: 40px;
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &--home__double-banner {
+        display: block;
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+}

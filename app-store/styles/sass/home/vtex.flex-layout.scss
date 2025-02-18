@@ -1,0 +1,25 @@
+.flexRow {
+    &--home__double-banner {
+        @extend %maxcontainer;
+        position: relative;
+        margin-bottom: 60px;
+
+        .flexRowContent {
+            display: block;
+        }
+    }
+
+    &--home__benefits {
+        display: block;
+        padding: 40px 0;
+        border-top: 1px solid #EBEBEB;
+
+        .stretchChildrenWidth:nth-child(n+2) {
+            margin-top: 20px;
+        }
+
+        .flexRowContent {
+            display: block;
+        }
+    }
+}

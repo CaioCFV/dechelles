@@ -4,7 +4,8 @@
     "children": [
       "rich-text#home__benefits--item-1",
       "rich-text#home__benefits--item-2",
-      "rich-text#home__benefits--item-3"
+      "rich-text#home__benefits--item-3",
+      "rich-text#home__benefits--item-4"
     ],
     "props": {
       "blockClass": "home__benefits",
@@ -13,19 +14,25 @@
   },
   "rich-text#home__benefits--item-1": {
     "props": {
-      "text": "![troca fácil](//assets/icons/icon-troca.svg) **troca fácil** é rápido e totalmente descomplicado :)",
+      "text": "![troca fácil](assets/icons/icon-change.svg) **1ª troca grátis** Rápido. Fácil e ágil",
       "blockClass": "home__benefits--item"
     }
   },
   "rich-text#home__benefits--item-2": {
     "props": {
-      "text": "![novidades](//assets/icons/icon-biquini.svg) **monte seu biquíni** compre as peças separadamente",
+      "text": "![Devolução](assets/icons/icon-change.svg) **Devolução** 7 dias grátis",
       "blockClass": "home__benefits--item"
     }
   },
   "rich-text#home__benefits--item-3": {
     "props": {
-      "text": "![em até 10x](//assets/icons/icon-card-black.svg) **em até 10x** sem juros :)",
+      "text": "![em até 10x](assets/icons/icon-truck.svg) **Frete grátis** sul e sudeste acima de R$299.\n demais regiões R$399",
+      "blockClass": "home__benefits--item"
+    }
+  },
+  "rich-text#home__benefits--item-4": {
+    "props": {
+      "text": "![em até 10x](assets/icons/icon-card.svg) **até 6x sem juros** sul e sudeste acima de R$299.\ndemais regiões R$399",
       "blockClass": "home__benefits--item"
     }
   }

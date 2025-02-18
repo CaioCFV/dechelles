@@ -38,6 +38,9 @@
       "showPaginationDots": "never",
       "showNavigationArrows": "never",
       "infinite": false,
+      "navigationStep": 1,
+      "centerMode": "to-the-left",
+      "centerModeSlidesGap": "0",
       "blockClass": "home__banner-list"
     }
   }

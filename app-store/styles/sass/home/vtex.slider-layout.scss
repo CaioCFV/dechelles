@@ -35,40 +35,48 @@
         }
     }
 
-    // &--home__banner-list {
-    //     @extend %maxcontainer;
-    //     margin-bottom: 100px;
+    &--home__banner-list {
+        //@extend %maxcontainer;
+        margin-bottom: 70px;
+        padding-left: 20px;
 
-    //     @media all and (max-width:767px) {
-    //         margin-bottom: 60px;
-    //     }
+        // .sliderTrack {
+        //     display: flex;
+        //     transform: unset !important;
 
-    //     .sliderTrack {
-    //         display: flex;
-    //         transform: unset !important;
+        //     @media all and (max-width:767px) {
+        //         display: block;
+        //     }
+        // }
+        .slide {
+            //min-width: 300px;
+        }
 
-    //         @media all and (max-width:767px) {
-    //             display: block;
-    //         }
-    //     }
+        // .slide {
+        //     width: auto !important;
+        //     flex: 1;
 
-    //     .slide {
-    //         width: auto !important;
-    //         flex: 1;
+        //     &--hidden {
+        //         display: none;
+        //     }
 
-    //         &--hidden {
-    //             display: none;
-    //         }
+        //     &:nth-child(n+2) {
+        //         margin-left: 25px;
 
-    //         &:nth-child(n+2) {
-    //             margin-left: 25px;
+        //         @media all and (max-width:767px) {
+        //             margin: 15px auto 0;
+        //         }
+        //     }
+        // }
+    }
 
-    //             @media all and (max-width:767px) {
-    //                 margin: 15px auto 0;
-    //             }
-    //         }
-    //     }
-    // }
+    &--home__shelf--carousel {
+        @extend %maxcontainer;
+        @extend %shelfsliderdefault;
+        position: relative;
+        margin-bottom: 50px;
+        display: block;
+    }
 
     // &--home__categories {
     //     @extend %maxcontainer;
@@ -159,17 +167,7 @@
     //     }
     // }
 
-    // &--home__shelf--carousel {
-    //     @extend %maxcontainer;
-    //     @extend %shelfsliderdefault;
-    //     position: relative;
-    //     margin-bottom: 100px;
-    //     display: block;
 
-    //     @media all and (max-width:767px) {
-    //         margin-bottom: 60px;
-    //     }
-    // }
 
     // &--home__banner-shelf--carousel {
     //     display: block;

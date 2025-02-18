@@ -2,7 +2,7 @@
   "rich-text#home__shelf--title-2": {
     "title": "HOME - Titulo vitrine de produtos",
     "props": {
-      "text": "## NOSSAS LANÇAMENTOS",
+      "text": "NOSSAS LANÇAMENTOS",
       "blockClass": "home__shelf--title-1"
     }
   },
