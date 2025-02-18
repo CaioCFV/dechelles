@@ -2,72 +2,85 @@
     &--home__main-banner {
         margin-bottom: 30px;
 
+        @media (min-width: 1025px) {
+            margin-bottom: 55px;
+        }
+
         .sliderArrows {
             display: none;
+
+            .caretIcon {
+                display: none;
+            }
+
+            @media (min-width: 1025px) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                padding: 0;
+                background: rgba(255, 255, 255, 0.10) !important;
+                width: 45px;
+                height: 45px;
+                z-index: 10;
+                border-radius: 0;
+
+                &::before {
+                    content: "";
+                    background: url(assets/icons/icon-arrow.svg) no-repeat;
+                    width: 10px;
+                    height: 20px;
+                    display: block;
+                    background-size: contain;
+                }
+            }
+        }
+
+        .sliderRightArrow {
+            transform: rotateZ(180deg);
         }
 
         .paginationDotsContainer {
             display: none;
-            // bottom: 10px;
-            // justify-content: center;
-            // .paginationDot {
-            //     width: 14px;
-            //     height: 14px;
-            //     border: 1px solid #fff;
-            //     background: transparent;
-            //     padding: 0;
-            //     margin: 0px 4px;
-            //     border-radius: 100%;
-            //     position: relative;
 
-            //     &--isActive::before {
-            //         content: "";
-            //         display: block;
-            //         width: 6px;
-            //         height: 6px;
-            //         background-color: #fff;
-            //         position: absolute;
-            //         left: 1px;
-            //         top: 1px;
-            //         border-radius: 50%;
-            //     }
-            // }
+            @media (min-width: 1025px) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                bottom: 20px;
+
+                .paginationDot {
+                    background: transparent;
+                    border: 1px solid #fff;
+                    width: 12px;
+                    height: 12px;
+
+                    &--isActive {
+                        background: #fff;
+                    }
+                }
+            }
         }
     }
 
     &--home__banner-list {
-        //@extend %maxcontainer;
-        margin-bottom: 70px;
+        margin: 0 auto 70px;
         padding-left: 20px;
+        max-width: 1366px;
 
-        // .sliderTrack {
-        //     display: flex;
-        //     transform: unset !important;
-
-        //     @media all and (max-width:767px) {
-        //         display: block;
-        //     }
-        // }
-        .slide {
-            //min-width: 300px;
+        @media (min-width: 1025px) {
+            padding: 0px 20px;
+            margin: 0 auto 90px;
         }
 
-        // .slide {
-        //     width: auto !important;
-        //     flex: 1;
-
-        //     &--hidden {
-        //         display: none;
-        //     }
-
-        //     &:nth-child(n+2) {
-        //         margin-left: 25px;
-
-        //         @media all and (max-width:767px) {
-        //             margin: 15px auto 0;
-        //         }
-        //     }
-        // }
+        .sliderTrack {
+            @media (min-width: 1025px) {
+                transform: unset !important;
+                width: unset !important;
+                display: flex;
+                justify-content: center;
+            }
+        }
     }
 
     &--home__shelf--carousel {
@@ -76,6 +89,10 @@
         position: relative;
         margin-bottom: 50px;
         display: block;
+
+        @media (min-width: 1025px) {
+            margin-bottom: 100px;
+        }
     }
 
     // &--home__categories {
@@ -166,8 +183,6 @@
 
     //     }
     // }
-
-
 
     // &--home__banner-shelf--carousel {
     //     display: block;

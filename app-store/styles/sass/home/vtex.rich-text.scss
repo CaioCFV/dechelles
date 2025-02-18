@@ -16,6 +16,11 @@
             font-weight: 400;
             line-height: normal;
             text-transform: uppercase;
+            line-height: normal;
+
+            @media (min-width: 1025px) {
+                font-size: 22px;
+            }
 
             &::after {
                 content: "";
@@ -51,6 +56,10 @@
             font-weight: 400;
             line-height: normal;
             text-transform: uppercase;
+
+            @media (min-width: 1025px) {
+                font-size: 22px;
+            }
 
             &::after {
                 content: "";

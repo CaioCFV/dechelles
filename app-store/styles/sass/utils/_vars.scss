@@ -1,11 +1,12 @@
 %maxcontainer {
     width: calc(100% - 40px);
-    //max-width: 1800px;
+    max-width: 1366px;
     margin: 0 auto;
 
-    // @media all and (max-width: 1024px) {
-    //     width: calc(100% - 30px);
-    // }
+    @media all and (min-width: 1025px) {
+        width: calc(100% - 160px);
+    }
+
 }
 
 // %whiteheader {

@@ -3,6 +3,10 @@
         display: block;
         margin-bottom: 55px;
 
+        @media (min-width: 1025px) {
+            margin-bottom: 80px;
+        }
+
         .image {
             display: block;
             width: 100%;
@@ -11,8 +15,13 @@
     }
 
     &--home__banner--2 {
+        @extend %maxcontainer;
         display: block;
         margin-bottom: 40px;
+
+        @media (min-width: 1025px) {
+            margin-bottom: 60px;
+        }
 
         .image {
             display: block;
