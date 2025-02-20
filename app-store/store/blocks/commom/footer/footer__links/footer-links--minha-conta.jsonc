@@ -1,0 +1,68 @@
+{
+  "disclosure-layout#footer__minha-conta": {
+    "children": [
+      "disclosure-trigger#footer__trigger--minha-conta-title",
+      "disclosure-content#footer__trigger--minha-conta-content"
+    ],
+    "props": {
+      "animated": true,
+      "initialVisibility": "hidden"
+    }
+  },
+  "disclosure-trigger#footer__trigger--minha-conta-title": {
+    "children": ["rich-text#footer__minha-conta--title"],
+    "props": {
+      "blockClass": ["footer__trigger", "footer__trigger-1"]
+    }
+  },
+  "disclosure-content#footer__trigger--minha-conta-content": {
+    "children": ["menu#footer__institucional--menu__minha-conta"],
+    "props": {
+      "blockClass": ["footer__content", "footer__content-1"]
+    }
+  },
+  "rich-text#footer__minha-conta--title": {
+    "props": {
+      "text": "MINHA CONTA",
+      "blockClass": "footer__column--title"
+    }
+  },
+  "rich-text#footer__minha-conta--text": {
+    "props": {
+      "text": "Minha Conta",
+      "blockClass": "footer__column--title"
+    }
+  },
+  "menu#footer__institucional--menu__minha-conta": {
+    "title": "MENU",
+    "props": {
+      "blockClass": "footer__institucional--link",
+      "items": [
+        {
+          "id": "menu-item-1",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/duvidas-frequentes",
+            "noFollow": false,
+            "tagTitle": "Meu perfil",
+            "text": "Meu perfil"
+          }
+        },
+        {
+          "id": "menu-item-2",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/compra-em-atacado",
+            "noFollow": false,
+            "tagTitle": "Meus Pedidos",
+            "text": "Meus Pedidos"
+          }
+        }
+      ]
+    }
+  }
+}

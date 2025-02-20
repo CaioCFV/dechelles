@@ -6,17 +6,17 @@
 
         .styledLinkContainer {
             padding: 0;
-            margin: 0 0 10px;
+            margin: 0 0 15px;
         }
 
         .styledLink {
-            color: #999999;
-            font-size: 13px;
-            font-weight: 400;
-            font-style: normal;
-            letter-spacing: 0.65px;
             display: block;
-            text-decoration: none;
+            color: #1E1E1E;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 250;
+            line-height: 15px;
+            letter-spacing: 2px;
         }
     }
 }

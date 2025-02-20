@@ -1,43 +1,43 @@
 {
-  // "flex-layout.row#footer__newsletter": {
-  //   "title": "FOOTER - newsletter",
-  //   "children": [
-  //     "rich-text#footer__newsletter--title",
-  //     "newsletter-form#footer__newsletter--form"
-  //   ],
-  //   "props": {
-  //     "blockClass": "footer__newsletter"
-  //   }
-  // },
-  // "rich-text#footer__newsletter--title": {
-  //   "props": {
-  //     "text": "**fique por dentro** receba as novidades e descontos exclusivos ♥",
-  //     "blockClass": "footer__newsletter--title"
-  //   }
-  // },
-  // "newsletter-form#footer__newsletter--form": {
-  //   "children": [
-  //     "newsletter-input-name#input-name",
-  //     "newsletter-input-email#input-email",
-  //     "newsletter-submit#submit"
-  //   ],
-  //   "props": {
-  //     "blockClass": "footer__newsletter--form"
-  //   }
-  // },
-  // "newsletter-input-email#input-email": {
-  //   "props": {
-  //     "placeholderText": "seu e-mail"
-  //   }
-  // },
-  // "newsletter-input-name#input-name": {
-  //   "props": {
-  //     "placeholderText": "seu nome"
-  //   }
-  // },
-  // "newsletter-submit#submit": {
-  //   "props": {
-  //     "submitButtonLabel": "cadastrar"
-  //   }
-  // }
+  "flex-layout.row#footer__newsletter": {
+    "title": "FOOTER - newsletter",
+    "children": [
+      "rich-text#footer__newsletter--title",
+      "newsletter-form#footer__newsletter--form"
+    ],
+    "props": {
+      "blockClass": "footer__newsletter",
+      "colSizing": "auto"
+    }
+  },
+  "rich-text#footer__newsletter--title": {
+    "props": {
+      "text": "Quer receber novidades e promoções?",
+      "blockClass": "footer__newsletter--title"
+    }
+  },
+  "newsletter-form#footer__newsletter--form": {
+    "children": [
+      "newsletter-input-email#input-email",
+      "newsletter-submit#submit"
+    ],
+    "props": {
+      "blockClass": "footer__newsletter--form"
+    }
+  },
+  "newsletter-input-email#input-email": {
+    "props": {
+      "placeholderText": "seuemail@email.com"
+    }
+  },
+  "newsletter-input-name#input-name": {
+    "props": {
+      "placeholderText": "seu nome"
+    }
+  },
+  "newsletter-submit#submit": {
+    "props": {
+      "submitButtonLabel": "ENVIAR"
+    }
+  }
 }

@@ -1,0 +1,95 @@
+{
+  "disclosure-layout#footer__central-de-atendimento": {
+    "children": [
+      "disclosure-trigger#footer__trigger--central-de-atendimento-title",
+      "disclosure-content#footer__trigger--central-de-atendimento-content"
+    ],
+    "props": {
+      "animated": true,
+      "initialVisibility": "hidden"
+    }
+  },
+  "disclosure-trigger#footer__trigger--central-de-atendimento-title": {
+    "children": ["rich-text#footer__central-de-atendimento--title"],
+    "props": {
+      "blockClass": ["footer__trigger", "footer__trigger-1"]
+    }
+  },
+  "disclosure-content#footer__trigger--central-de-atendimento-content": {
+    "children": [
+      "menu#footer__institucional--menu__central-de-atendimento",
+      "rich-text#footer__central-de-atendimento--text"
+    ],
+    "props": {
+      "blockClass": ["footer__content", "footer__content-1"]
+    }
+  },
+  "rich-text#footer__central-de-atendimento--text": {
+    "props": {
+      "text": "Atendimento Online\nDas 9h às 17h | De segunda a sexta\n(22) 2525-0800\nfaleconosco@dechelles.com.br",
+      "blockClass": "footer__column--text"
+    }
+  },
+  "rich-text#footer__central-de-atendimento--title": {
+    "props": {
+      "text": "CENTRAL DE ATENDIMENTO",
+      "blockClass": "footer__column--title"
+    }
+  },
+  "menu#footer__institucional--menu__central-de-atendimento": {
+    "title": "MENU",
+    "props": {
+      "blockClass": "footer__institucional--link",
+      "items": [
+        {
+          "id": "menu-item-1",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/duvidas-frequentes",
+            "noFollow": false,
+            "tagTitle": "Dúvidas frequentes",
+            "text": "Dúvidas frequentes"
+          }
+        },
+        {
+          "id": "menu-item-2",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/compra-em-atacado",
+            "noFollow": false,
+            "tagTitle": "Trocas e devoluções",
+            "text": "Trocas e devoluções"
+          }
+        },
+        {
+          "id": "menu-item-3",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/lojas",
+            "noFollow": false,
+            "tagTitle": "Compra Segura",
+            "text": "Compra Segura"
+          }
+        },
+        {
+          "id": "menu-item-3",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/lojas",
+            "noFollow": false,
+            "tagTitle": "Política de privacidade",
+            "text": "Política de privacidade"
+          }
+        }
+      ]
+    }
+  }
+}

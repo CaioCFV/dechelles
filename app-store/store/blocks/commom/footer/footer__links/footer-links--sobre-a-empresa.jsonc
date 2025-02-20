@@ -1,0 +1,74 @@
+{
+  "disclosure-layout#footer__sobre-a-empresa": {
+    "children": [
+      "disclosure-trigger#footer__trigger--sobre-a-empresa-title",
+      "disclosure-content#footer__trigger--sobre-a-empresa-content"
+    ],
+    "props": {
+      "animated": true,
+      "initialVisibility": "hidden"
+    }
+  },
+  "disclosure-trigger#footer__trigger--sobre-a-empresa-title": {
+    "children": ["rich-text#footer__sobre-a-empresa--title"],
+    "props": {
+      "blockClass": ["footer__trigger", "footer__trigger-1"]
+    }
+  },
+  "disclosure-content#footer__trigger--sobre-a-empresa-content": {
+    "children": ["menu#footer__institucional--menu__sobre-a-empresa"],
+    "props": {
+      "blockClass": ["footer__content", "footer__content-1"]
+    }
+  },
+  "rich-text#footer__sobre-a-empresa--title": {
+    "props": {
+      "text": "SOBRE A EMPRESA",
+      "blockClass": "footer__column--title"
+    }
+  },
+  "menu#footer__institucional--menu__sobre-a-empresa": {
+    "title": "MENU",
+    "props": {
+      "blockClass": "footer__institucional--link",
+      "items": [
+        {
+          "id": "menu-item-1",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/duvidas-frequentes",
+            "noFollow": false,
+            "tagTitle": "Seja um parceiro",
+            "text": "Seja um parceiro"
+          }
+        },
+        {
+          "id": "menu-item-2",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/compra-em-atacado",
+            "noFollow": false,
+            "tagTitle": "Encontre uma loja",
+            "text": "Encontre uma loja"
+          }
+        },
+        {
+          "id": "menu-item-3",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/lojas",
+            "noFollow": false,
+            "tagTitle": "Trabalhe conosco",
+            "text": "Trabalhe conosco"
+          }
+        }
+      ]
+    }
+  }
+}

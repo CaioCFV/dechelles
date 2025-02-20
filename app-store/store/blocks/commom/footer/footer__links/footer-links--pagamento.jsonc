@@ -1,0 +1,148 @@
+{
+  "disclosure-layout#footer__pagamento": {
+    "children": [
+      "disclosure-trigger#footer__trigger--pagamento-title",
+      "disclosure-content#footer__trigger--pagamento-content",
+      "rich-text#footer__siteseguro--title",
+      "flex-layout.row#footer__siteseguro--selos"
+    ],
+    "props": {
+      "animated": true,
+      "initialVisibility": "hidden"
+    }
+  },
+  "disclosure-trigger#footer__trigger--pagamento-title": {
+    "children": ["rich-text#footer__pagamento--title"],
+    "props": {
+      "blockClass": ["footer__trigger", "footer__trigger-1"]
+    }
+  },
+  "disclosure-content#footer__trigger--pagamento-content": {
+    "children": [
+      "image#selo-1",
+      "image#selo-2",
+      "image#selo-3",
+      "image#selo-4",
+      "image#selo-5",
+      "image#selo-6",
+      "image#selo-7",
+      "image#selo-8",
+      "image#selo-9",
+      "image#selo-10",
+      "image#selo-11",
+      "image#selo-12"
+    ],
+    "props": {
+      "blockClass": ["footer__content", "footer__content-pagamento"]
+    }
+  },
+  "rich-text#footer__pagamento--title": {
+    "props": {
+      "text": "PAGAMENTO",
+      "blockClass": "footer__column--title"
+    }
+  },
+  "rich-text#footer__siteseguro--title": {
+    "props": {
+      "text": "Site Seguro",
+      "blockClass": "footer__column--title"
+    }
+  },
+  "flex-layout.row#footer__siteseguro--selos": {
+    "children": ["image#selo-13", "image#selo-14"],
+    "props": {
+      "blockClass": "footer__siteseguro",
+      "colSizing": "auto"
+    }
+  },
+  "rich-text#footer__pagamento--text": {
+    "props": {
+      "text": "Formas de Pagamento",
+      "blockClass": "footer__column--title"
+    }
+  },
+  "image#selo-1": {
+    "props": {
+      "src": "assets/icons/icon-americanexpress.png",
+      "blockClass": "selo"
+    }
+  },
+  "image#selo-2": {
+    "props": {
+      "src": "assets/icons/icon-visa.png",
+      "blockClass": "selo"
+    }
+  },
+  "image#selo-3": {
+    "props": {
+      "src": "assets/icons/icon-diners.png",
+      "blockClass": "selo"
+    }
+  },
+  "image#selo-4": {
+    "props": {
+      "src": "assets/icons/icon-mastercard.png",
+      "blockClass": "selo"
+    }
+  },
+  "image#selo-5": {
+    "props": {
+      "src": "assets/icons/icon-p1.png",
+      "blockClass": "selo"
+    }
+  },
+  "image#selo-6": {
+    "props": {
+      "src": "assets/icons/icon-hipercard.png",
+      "blockClass": "selo"
+    }
+  },
+  "image#selo-7": {
+    "props": {
+      "src": "assets/icons/icon-itau.png",
+      "blockClass": "selo"
+    }
+  },
+  "image#selo-8": {
+    "props": {
+      "src": "assets/icons/icon-bradesco.png",
+      "blockClass": "selo"
+    }
+  },
+  "image#selo-9": {
+    "props": {
+      "src": "assets/icons/icon-banco-do-brasil.png",
+      "blockClass": "selo"
+    }
+  },
+  "image#selo-10": {
+    "props": {
+      "src": "assets/icons/icon-hsbc.png",
+      "blockClass": "selo"
+    }
+  },
+  "image#selo-11": {
+    "props": {
+      "src": "assets/icons/icon-paypal.png",
+      "blockClass": "selo"
+    }
+  },
+  "image#selo-12": {
+    "props": {
+      "src": "assets/icons/icon-pix.png",
+      "blockClass": "selo"
+    }
+  },
+  "image#selo-13": {
+    "props": {
+      "src": "assets/icons/icon-softvar.png",
+      "blockClass": "selo"
+    }
+  },
+  "image#selo-14": {
+    "props": {
+      "src": "assets/icons/icon-vtex.png",
+      "blockClass": "selo"
+    }
+  }
+}

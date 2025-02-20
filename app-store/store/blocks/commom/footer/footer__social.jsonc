@@ -1,0 +1,45 @@
+{
+  "flex-layout.row#footer__social": {
+    "children": [
+      "image#social-1",
+      "image#social-2",
+      "image#social-3",
+      "image#social-4",
+      "image#social-5"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "footer__social"
+    }
+  },
+  "image#social-1": {
+    "props": {
+      "src": "assets/icons/icon-face.png",
+      "blockClass": "selo"
+    }
+  },
+  "image#social-2": {
+    "props": {
+      "src": "assets/icons/icon-insta.png",
+      "blockClass": "selo"
+    }
+  },
+  "image#social-3": {
+    "props": {
+      "src": "assets/icons/icon-linkedin.png",
+      "blockClass": "selo"
+    }
+  },
+  "image#social-4": {
+    "props": {
+      "src": "assets/icons/icon-youtube.png",
+      "blockClass": "selo"
+    }
+  },
+  "image#social-5": {
+    "props": {
+      "src": "assets/icons/icon-blog.png",
+      "blockClass": "selo"
+    }
+  }
+}

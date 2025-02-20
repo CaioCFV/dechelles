@@ -1,15 +1,15 @@
 {
-  // "flex-layout.row#footer__links": {
-  //   "title": "FOOTER - Links",
-  //   "children": [
-  //     "flex-layout.col#footer__links-1",
-  //     "disclosure-layout#footer__faleconosco",
-  //     "disclosure-layout#footer__institucional",
-  //     "flex-layout.col#footer__links-4"
-  //   ],
-  //   "props": {
-  //     "blockClass": "footer__links",
-  //     "colSizing": "auto"
-  //   }
-  // }
+  "flex-layout.row#footer__links": {
+    "title": "FOOTER - Links",
+    "children": [
+      "disclosure-layout#footer__sobre-a-empresa",
+      "disclosure-layout#footer__central-de-atendimento",
+      "disclosure-layout#footer__minha-conta",
+      "disclosure-layout#footer__pagamento"
+    ],
+    "props": {
+      "blockClass": "footer__links",
+      "colSizing": "auto"
+    }
+  }
 }

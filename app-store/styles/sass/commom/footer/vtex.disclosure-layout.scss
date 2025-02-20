@@ -7,17 +7,16 @@
 
 
         @media all and (max-width:991px) {
-            border-top: 1px solid #e5e0d2;
-            padding-top: 20px;
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
+            padding: 20px 0;
 
             &::after {
                 content: "";
                 width: 13px;
                 height: 13px;
-                background: url(//assets/icons/icon-arrow-down.svg) no-repeat;
+                background: url(assets/icons/icon-arrow-down.png) no-repeat;
                 background-size: contain;
                 background-position: center;
             }
@@ -42,8 +41,22 @@
     &--footer__content {
         display: block !important;
 
+        &-pagamento {
+            border-bottom: none;
+            display: grid !important;
+            gap: 20px;
+            grid-template-columns: repeat(8, auto);
+            border-bottom: 1px solid #ABABAB;
+            padding-bottom: 40px;
+            margin-bottom: 30px;
+
+            @media (min-width:1025px) {
+                margin-bottom: 40px;
+            }
+        }
+
         @media all and (max-width:991px) {
-            border-bottom: 1px solid #e5e0d2;
+            border-bottom: 1px solid #E5E5E5;
             display: block;
             padding-bottom: 0px;
             max-height: 0;
@@ -53,10 +66,6 @@
             &--visible {
                 max-height: 100%;
                 padding-bottom: 20px;
-            }
-
-            &-1 {
-                border-bottom: none;
             }
         }
     }
