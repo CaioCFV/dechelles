@@ -32,12 +32,13 @@
         .minicartIconContainer {
             &::before {
                 content: "";
-                background: url(//assets/icons/icon-cart.png) no-repeat;
+                background: url(assets/icons/icon-cart.svg) no-repeat;
                 background-size: contain;
                 background-position: center;
                 width: 22px;
-                height: 20px;
+                height: 22px;
                 display: block;
+                margin-left: 20px;
             }
         }
     }

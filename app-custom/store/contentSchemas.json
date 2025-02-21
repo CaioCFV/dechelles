@@ -33,6 +33,83 @@
           "title": "id video desktop"
         }
       }
+    },
+    "MainMenu": {
+      "properties": {
+        "customLinks": {
+          "type": "array",
+          "title": "Links customizadods",
+          "items": {
+            "properties": {
+              "__editorItemTitle": {
+                "type": "string",
+                "title": "Titulo"
+              },
+              "href": {
+                "type": "string",
+                "title": "Link"
+              },
+              "highlight": {
+                "type": "boolean",
+                "title": "Destaque"
+              },
+              "banners": {
+                "type": "array",
+                "title": "Banner",
+                "items": {
+                  "properties": {
+                    "link": {
+                      "type": "string",
+                      "title": "Link do Banner"
+                    },
+                    "name": {
+                      "type": "string",
+                      "title": "Descrição do Banner"
+                    },
+                    "image": {
+                      "title": "Imagem",
+                      "type": "string",
+                      "widget": {
+                        "ui:widget": "image-uploader"
+                      }
+                    }
+                  }
+                }
+              },
+              "columns": {
+                "type": "array",
+                "title": "Coluna",
+                "items": {
+                  "properties": {
+                    "children": {
+                      "type": "array",
+                      "title": "Submenu",
+                      "items": {
+                        "properties": {
+                          "__editorItemTitle": {
+                            "type": "string",
+                            "title": "Titulo"
+                          },
+                          "href": {
+                            "type": "string",
+                            "title": "Link do Submenu",
+                            "default": null
+                          },
+                          "isTitle": {
+                            "type": "boolean",
+                            "title": "É titulo ?",
+                            "default": false
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

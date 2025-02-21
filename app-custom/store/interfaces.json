@@ -5,5 +5,15 @@
     "content": {
       "$ref": "app:dechelles.commercegrowth-custom#/definitions/Image"
     }
+  },
+  "cg-custom-header": {
+    "component": "Header",
+    "render": "server"
+  },
+  "cg-main-menu": {
+    "component": "MainMenu",
+    "content": {
+      "$ref": "app:dechelles.commercegrowth-custom#/definitions/MainMenu"
+    }
   }
 }

@@ -1,58 +1,32 @@
 {
   "header.full": {
     "title": "HEADER",
-    "blocks": [
-      //"header-layout.desktop", "header-layout.mobile"
-    ]
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header": {
     "title": "HEADER",
-    "blocks": [
-      //"header-layout.desktop", "header-layout.mobile"
-    ]
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "title": "desktop",
+    "children": ["header-row#header__desktop"]
+  },
+  "header-layout.mobile": {
+    "title": "mobile",
+    "children": ["header-row#header__mobile"]
+  },
+  "header-row#header__desktop": {
+    "children": ["cg-custom-header", "flex-layout.row#header__content"],
+    "props": {
+      "blockClass": ["main-header"],
+      "sticky": false
+    }
+  },
+  "header-row#header__mobile": {
+    "children": ["cg-custom-header", "flex-layout.row#header__content--mobile"],
+    "props": {
+      "blockClass": ["main-header"],
+      "sticky": false
+    }
   }
-  // "header-layout.desktop": {
-  //   "title": "desktop",
-  //   "children": ["header-row#header__desktop"]
-  // },
-  // "header-layout.mobile": {
-  //   "title": "mobile",
-  //   "children": ["header-row#header__mobile"]
-  // },
-  // "header-row#header__desktop": {
-  //   "children": [
-  //     "cg-tipbar-color",
-  //     "cg-lgpd",
-  //     "cg-newsletter-popup",
-  //     "cg-custom-header",
-  //     "slider-layout#header__tipbar",
-  //     "flex-layout.row#header__content",
-  //     "cg-main-menu"
-  //   ],
-  //   "props": {
-  //     "blockClass": ["main-header"],
-  //     "sticky": false
-  //   }
-  // },
-  // "header-row#header__mobile": {
-  //   "children": [
-  //     "cg-tipbar-color",
-  //     "cg-lgpd",
-  //     "cg-newsletter-popup",
-  //     "cg-custom-header",
-  //     "slider-layout#header__tipbar",
-  //     "flex-layout.row#header__content--mobile"
-  //   ],
-  //   "props": {
-  //     "blockClass": ["main-header"],
-  //     "sticky": false
-  //   }
-  // },
-  // "cg-tipbar-color": {
-  //   "title": "HEADER - Cor tipbar",
-  //   "props": {
-  //     "textcolor": "#242424",
-  //     "background": "#e5e0d2"
-  //   }
-  // }
 }

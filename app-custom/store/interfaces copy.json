@@ -1,17 +1,4 @@
 {
-  "cg-main-menu": {
-    "component": "MainMenu",
-    "content": {
-      "$ref": "app:dechelles.commercegrowth-custom#/definitions/MainMenu"
-    }
-  },
-  "cg-custom-header": {
-    "component": "Header",
-    "render": "server",
-    "content": {
-      "$ref": "app:dechelles.commercegrowth-custom#/definitions/Header"
-    }
-  },
   "cg-minicart-totalizers": {
     "component": "MinicartTotalizers",
     "render": "server"

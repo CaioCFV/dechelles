@@ -1,35 +1,17 @@
 .trigger {
-    &--header__search--mobile {
+    &--header__search {
         padding: 0;
         margin: 0;
         background: transparent;
         border: 0;
         outline: none;
-        height: 18px;
-        width: 18px !important;
-        position: relative;
-        top: 1px;
-
-        @media (max-width: 1024px) {
-            &--visible {
-                width: 18px;
-                height: 18px;
-                background: url(//assets/icons/icon-close-black.svg) no-repeat;
-                background-size: 90%;
-                background-position: center;
-                position: relative;
-                top: 2px;
-
-                :global(.vtex-store-components-3-x-imageElement--lupa) {
-                    display: none;
-                }
-            }
-        }
+        height: 22px;
+        width: 22px !important;
     }
 }
 
 .content {
-    &--header__search--mobile {
+    &--header__search {
         display: block !important;
         position: absolute;
         left: 0;
@@ -40,6 +22,7 @@
         opacity: 0;
         visibility: hidden;
         transition: 0.3s;
+        width: 100%;
 
         &--visible {
             opacity: 1;

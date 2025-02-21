@@ -1,33 +1,33 @@
 .sliderLayoutContainer {
-    &--header__tipbar {
-        background-color: #e5e0d2;
-        padding: 9px 0;
+    // &--header__tipbar {
+    //     background-color: #e5e0d2;
+    //     padding: 9px 0;
 
-        .sliderTrack {
-            @media all and (min-width:1025px) {
-                transform: unset !important;
-                justify-content: center;
-                width: 100% !important;
-            }
-        }
+    //     .sliderTrack {
+    //         @media all and (min-width:1025px) {
+    //             transform: unset !important;
+    //             justify-content: center;
+    //             width: 100% !important;
+    //         }
+    //     }
 
-        .slide {
-            @media all and (min-width:1025px) {
-                width: auto !important;
+    //     .slide {
+    //         @media all and (min-width:1025px) {
+    //             width: auto !important;
 
-                &:nth-child(n+3) {
-                    display: none;
-                }
-            }
+    //             &:nth-child(n+3) {
+    //                 display: none;
+    //             }
+    //         }
 
 
-            &:nth-child(n+2) {
-                margin-left: 110px;
+    //         &:nth-child(n+2) {
+    //             margin-left: 110px;
 
-                @media all and (max-width:1024px) {
-                    margin-left: auto;
-                }
-            }
-        }
-    }
+    //             @media all and (max-width:1024px) {
+    //                 margin-left: auto;
+    //             }
+    //         }
+    //     }
+    // }
 }
