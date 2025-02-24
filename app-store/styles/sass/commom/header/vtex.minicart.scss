@@ -35,10 +35,16 @@
                 background: url(assets/icons/icon-cart.svg) no-repeat;
                 background-size: contain;
                 background-position: center;
-                width: 22px;
-                height: 22px;
+                width: 18px;
+                height: 18px;
                 display: block;
-                margin-left: 20px;
+                margin-left: 15px;
+
+                @media (min-width:1025px) {
+                    width: 22px;
+                    height: 22px;
+                    margin-left: 20px;
+                }
             }
         }
     }

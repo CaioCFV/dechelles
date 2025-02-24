@@ -1,5 +1,5 @@
 .biggy-autocomplete-wrapper {
-    width: 350px;
+    width: 100%;
 
     @media all and (max-width: 1024px) {
         width: 100%;
@@ -9,23 +9,121 @@
         }
     }
 
-    .biggy-autocomplete:not(.biggy-js-container--hidden) {
-        top: calc(100% + 3px);
-        left: 0;
-        padding: 30px;
-        overflow: hidden;
+    .biggy-autocomplete {
+        box-shadow: none !important;
+        padding: 20px 0 0;
+        position: static;
         display: block;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-        max-height: 580px !important;
-        overflow-y: auto;
+        overflow: unset;
+        max-height: unset;
+    }
 
-        @media all and (max-width: 1024px) {
-            box-shadow: none;
-            padding: 20px 0 0 0;
-            position: static;
-            max-height: calc(100vh - 150px) !important;
+    .biggy-js-container--hidden {
+        left: 0;
+        //padding: 20px 0 30px;
+        overflow: hidden;
+        position: static;
+        box-shadow: none !important;
+        display: block !important;
+        opacity: 1;
+        padding: 20px 0 0 0;
+        max-height: unset !important;
+
+        @media(min-width:1025px) {}
+    }
+
+    .itemList {
+        margin-bottom: 20px;
+
+        .itemListList {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
             overflow-y: auto;
-            max-height: unset !important;
+
+            @media (min-width: 1025px) {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+
+        .itemListSubItem {
+            display: none;
+        }
+
+        .itemListLink {
+            display: block;
+            padding: 0px 10px;
+            height: 30px;
+            border-radius: 6px;
+            background: #EEE;
+            font-size: 10px;
+            text-align: center;
+            letter-spacing: 1.2px;
+            line-height: 30px;
+            text-transform: uppercase;
+            font-weight: 300;
+            color: #000;
+            text-underline-offset: 3px;
+
+            @media (min-width: 1025px) {
+                padding: 0px 20px;
+                height: 35px;
+                line-height: 35px;
+                font-size: 14px;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .tileList {
+        border: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+
+        .tileListList {
+            margin: 0;
+            display: grid;
+            overflow: auto;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px 20px;
+
+            @media all and (max-width: 1024px) {
+                display: block;
+                margin-bottom: 30px;
+            }
+        }
+
+        .tileListSeeMore {
+            height: auto;
+            font-style: normal;
+            display: block;
+            margin: 0 auto;
+            font-size: 10px;
+            letter-spacing: 2px;
+            line-height: 1;
+            text-transform: uppercase;
+            color: #000;
+            font-weight: 300;
+            margin-bottom: 30px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @media (min-width: 1025px) {
+                font-size: 14px;
+            }
+
+            &::after {
+                content: "VER TODOS +";
+            }
         }
     }
 
@@ -33,75 +131,49 @@
     .tileListTitle {
         display: none;
     }
+}
 
-    .tileList {
-        border: 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-    }
+.history-and-top-wrapper {
+    display: none;
+}
 
-    .tileListList {
-        margin: 0;
-        display: block;
-        margin-bottom: 30px;
-        overflow: auto;
+@media all and (max-width: 1025px) {
+    .element {
+        padding: 0 0 10px;
 
-        @media (min-width: 991px) {
-            max-width: 200px;
-            flex: 1;
-            max-height: 450px;
-        }
-
-        &::-webkit-scrollbar {
-            width: 3px;
-            position: relative;
-        }
-
-        &::-webkit-scrollbar-track {
-            background: #e5e0d2;
-        }
-
-        &::-webkit-scrollbar-thumb {
-            background: #999999;
-            border-radius: 10px;
+        &:hover {
+            background: unset !important;
         }
     }
 
-    .itemListItem,
-    .itemListLink,
-    .itemListSubItemLink {
-        padding: 0px;
+    .imageContainer {
+        max-height: unset;
+        height: auto;
     }
 
-    .itemListSubItemLink {
-        padding: 0px 10px;
+    .information {
+        margin-left: 10px;
     }
 
-    .itemListList {
-        margin-bottom: 15px;
+    .priceContainer {
+        display: none;
     }
 
-    .tileListItem {
-        align-items: center;
-
-        &:nth-child(n+2) {
-            margin-top: 20px;
-        }
+    .image {
+        width: 100px;
+        height: auto;
     }
 
-    .tileListSeeMore {
-        background: #e5e0d2;
-        height: 40px;
-        width: 100%;
-        color: #4d4d4d;
-        font-size: 13px;
-        font-weight: 500;
-        font-style: normal;
-        letter-spacing: 0.65px;
+    .productBrand {
+        text-transform: none;
+        color: #000;
+        margin-left: 0;
+
+        font-size: 11px;
+        font-weight: 400;
+        letter-spacing: .75px;
+        line-height: 1.5;
         text-decoration: none;
-        line-height: 40px;
-        text-transform: lowercase;
+        color: #191919;
     }
 }

@@ -41,3 +41,11 @@
   width: 100% !important;
   display: block;
 }
+
+:global(.vtex-store-components-3-x-portalWrapper--header__search) :global(.absolute),
+:global(.vtex-store-components-3-x-portalWrapper--header__search) :global(.flex.justify-end) {
+  position: unset !important;
+  left: unset !important;
+  top: unset !important;
+  display: block;
+}

@@ -16,10 +16,10 @@
   },
   "flex-layout.row#header__content--mobile": {
     "children": [
-      // ,
-      // "image#icon-wishlist",
-      // "image#icon-logo",
-      // "flex-layout.row#header__icons--mobile"
+      "cg-main-menu",
+      "image#icon-logo",
+      "disclosure-layout#header__search",
+      "minicart.v2#header__minicart"
     ],
     "props": {
       "blockClass": ["header__content"],
@@ -29,16 +29,20 @@
     }
   },
   "autocomplete-result-list.v2": {
-    "blocks": ["product-summary.shelf#shelf-search"]
+    "blocks": ["product-summary.shelf#shelf"],
+    "props": {
+      "maxSuggestedProducts": 8,
+      "historyFirst": false
+    }
   },
   "search-bar#header__search": {
     "title": "busca",
     "blocks": ["autocomplete-result-list.v2"],
     "props": {
+      "placeholder": "Digite sua busca aqui",
       "openAutocompleteOnFocus": true,
       "blockClass": "header__search",
       "hideTitles": true,
-      "placeholder": "pesquise algum produto aqui :)",
       "compactMode": false,
       "containerMode": "overlay"
     }
@@ -73,7 +77,16 @@
     "props": {
       "blockClass": "header__search"
     },
-    "children": ["search-bar#header__search"]
+    "children": [
+      "disclosure-trigger#header__search--close",
+      "search-bar#header__search"
+    ]
+  },
+  "disclosure-trigger#header__search--close": {
+    "props": {
+      "blockClass": ["header__search--close"]
+    },
+    "children": []
   },
   "image#icon-search": {
     "title": "icone - busca",

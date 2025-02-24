@@ -1,20 +1,18 @@
-// .searchBarInnerContainer {
-//     &--header__search {
-//         position: relative;
+.searchBarInnerContainer {
+    &--header__search {
+        display: block !important;
 
-//         .portalContainer {
-//             position: absolute !important;
-//             left: 0 !important;
-//             width: 350px;
-//             top: 100% !important;
+        .portalContainer {
+            position: static !important;
+            left: 0 !important;
 
-//             @media all and (max-width: 1024px) {
-//                 position: static !important;
-//                 width: 100% !important;
-//             }
-//         }
-//     }
-// }
+            @media all and (max-width: 1024px) {
+                position: static !important;
+                width: 100% !important;
+            }
+        }
+    }
+}
 
 // .imageElement {
 //     &--lupa {
@@ -24,82 +22,91 @@
 //     }
 // }
 
-// .searchBarContainer {
-//     padding: 0;
+.searchBarContainer {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
 
-//     @media all and (max-width: 1024px) {
-//         margin: 0 auto;
-//         width: 100%;
-//         max-width: unset;
-//     }
+    @media (min-width: 1025px) {
+        width: calc(100% - 160px);
+        max-width: 1366px;
+        padding: 0px 40px;
+    }
 
-//     :global(.vtex-input-prefix__group) {
-//         height: auto;
-//         padding: 0;
-//         border: 0;
-//         border-radius: 0;
-//         flex-direction: row-reverse;
-//         overflow: visible;
+    .autoCompleteOuterContainer {
+        display: flex;
+        align-items: center;
 
-//         @media all and (max-width: 1024px) {
-//             width: 100%;
-//             border-bottom: 1px solid #eae4da;
-//         }
-//     }
+        &::before {
+            content: "";
+            background: url(assets/icons/icon-lupa.png) no-repeat;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
 
-//     :global(.vtex-styleguide-9-x-input) {
-//         background: transparent;
-//         color: #282828;
-//         font-family: 'Inter', sans-serif;
-//         font-size: 13px;
-//         font-weight: 600;
-//         font-style: normal;
-//         letter-spacing: 0.65px;
-//         line-height: 24px;
-//         padding: 0 0 0 10px;
-//         width: 225px;
+            @media (min-width: 1025px) {
+                margin-right: 40px;
+            }
+        }
+    }
 
-//         @media all and (max-width: 1024px) {
-//             width: 100%;
-//             padding: 10px;
-//         }
+    // @media all and (max-width: 1024px) {
+    //     margin: 0 auto;
+    //     width: 100%;
+    // }
 
-//         &::placeholder {
-//             color: #282828;
-//         }
-//     }
+    :global(.vtex-input-prefix__group) {
+        height: auto;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        flex-direction: row-reverse;
+        overflow: visible;
+        width: 100%;
+    }
 
-//     :global(.vtex-input__suffix) {
-//         padding: 0;
-//         background: transparent;
-//     }
+    :global(.vtex-styleguide-9-x-input) {
+        background: transparent;
+        color: #000;
+        font-size: 15px;
+        font-weight: 300;
+        font-style: normal;
+        width: 100%;
+        height: 40px;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
 
-//     :global(.vtex-store-components-3-x-searchBarIcon) {
-//         padding: 0;
+        @media (min-width: 1025px) {
+            font-size: 24px;
+        }
 
-//         &::before {
-//             content: "";
-//             width: 18px;
-//             height: 18px;
-//             background: url(//assets/icons/icon-lupa.svg) no-repeat;
-//             background-position: center;
-//             background-size: contain;
-//         }
-//     }
+        &::placeholder {
+            color: #888;
+        }
+    }
 
-//     :global(.vtex-store-components-3-x-searchIcon) {
-//         display: none;
-//     }
+    :global(.vtex-input__suffix) {
+        padding: 0;
+        background: transparent;
+    }
 
-//     .closeIcon--header__search {
-//         display: none;
-//     }
-// }
+    :global(.vtex-store-components-3-x-searchBarIcon),
+    :global(.vtex-store-components-3-x-searchIcon),
+    .closeIcon--header__search {
+        display: none
+    }
+}
 
 .imageElementLink {
     &--logo {
         display: block;
         margin: 0 auto;
-        width: 175px;
+        width: 125px;
+        position: relative;
+        top: 3px;
+
+        @media (min-width: 1025px) {
+            width: 175px;
+        }
     }
 }

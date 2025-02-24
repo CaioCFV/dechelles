@@ -98,16 +98,16 @@
 //     }
 // }
 
-// :global(.vtex-store-components-3-x-portalWrapper--header__search) {
+:global(.vtex-store-components-3-x-portalWrapper--header__search) {
 
-//     :global(.absolute),
-//     :global(.flex.justify-end) {
-//         position: unset !important;
-//         left: unset !important;
-//         top: unset !important;
-//         display: block;
-//     }
-// }
+    :global(.absolute),
+    :global(.flex.justify-end) {
+        position: unset !important;
+        left: unset !important;
+        top: unset !important;
+        display: block;
+    }
+}
 
 // :global(.vtex-login-2-x-portalWrapper) {
 
