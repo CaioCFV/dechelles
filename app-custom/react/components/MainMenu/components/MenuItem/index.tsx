@@ -30,7 +30,7 @@ export const MenuItem = ({
             <Link
               to={href}
               onClick={() => setOpen(!open)}
-              style={{ textDecoration: 'none', color: '#585858' }}
+              style={{ textDecoration: 'none', color: '#000' }}
             >
               {__editorItemTitle}
             </Link>
