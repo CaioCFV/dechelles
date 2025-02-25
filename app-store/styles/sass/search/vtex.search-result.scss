@@ -121,30 +121,31 @@
 }
 
 .galleryLayoutSwitcher {
-    margin-right: 40px;
-    border: 1px solid #e5e0d2;
+    margin-left: 30px;
     display: flex;
     align-items: center;
-    height: 40px;
-    width: 100px;
-    min-width: 100px;
-    justify-content: center;
 
-    @media all and (max-width: 1024px) {
-        display: none;
+    &::before {
+        content: "VISUALIZAÇÃO: ";
+        font-size: 16px;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-right: 25px;
     }
 
     .galleryLayoutOptionButton {
         padding: 0;
-        width: 50%;
         justify-content: center;
 
         &--selected {
-            --color: #e6964b;
+            --color: #000;
+            --weight: 700
         }
 
         &:nth-child(n+2) {
-            border-left: 1px solid #e5e0d2;
+            border-left: 1px solid #000;
+            padding-left: 5px;
+            margin-left: 5px;
         }
     }
 }

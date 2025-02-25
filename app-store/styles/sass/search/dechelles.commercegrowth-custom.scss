@@ -1,0 +1,12 @@
+.imageWrapper {
+    &--search__banner {
+        display: block;
+        margin-bottom: 5px;
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+}

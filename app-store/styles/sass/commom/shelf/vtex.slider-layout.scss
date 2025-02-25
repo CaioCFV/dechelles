@@ -5,4 +5,11 @@
     &--product__shelf--carousel {
         transition: 0.5s;
     }
+
+    &--home__shelf--carousel {
+        .slide {
+            padding: 0px 10px;
+            box-sizing: border-box;
+        }
+    }
 }

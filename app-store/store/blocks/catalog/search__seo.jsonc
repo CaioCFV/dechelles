@@ -1,8 +1,8 @@
 {
-  // "rich-text#search__seo": {
-  //   "props": {
-  //     "text": "## biquínis borana\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
-  //     "blockClass": "search__seo"
-  //   }
-  // }
+  "rich-text#search__seo": {
+    "props": {
+      "text": "# PRAIA\nOs biquínis, maiôs e saídas de praia são peças indispensáveis para o armário de verão de toda mulher. Aqui na De Chelles, pensamos sempre em você e, por isso, trabalhamos com peças clássicas e atemporais, sem deixar de lado informações de moda e que ditam tendência. Elas possuem recortes diferenciados, texturas, detalhes com aviamentos e beneficiamentos tecnológicos pensados exclusivamente para cada peça, para que você possa aproveitar seus dias de sol com sofisticação usando peças únicas como você. Todas as peças e estampas são exclusivamente pensadas para também transcenderem as areias da praia. Vista-se com elegância. Vista De Chelles.",
+      "blockClass": "search__seo"
+    }
+  }
 }
