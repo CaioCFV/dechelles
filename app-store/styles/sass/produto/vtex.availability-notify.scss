@@ -1,124 +1,124 @@
-.notiferContainer {
-    margin-top: -20px;
-    margin-bottom: 40px;
-    background-color: #faf8f2;
-    padding: 20px;
+// .notiferContainer {
+//     margin-top: -20px;
+//     margin-bottom: 40px;
+//     background-color: #faf8f2;
+//     padding: 20px;
 
-    .title {
-        font-size: 0;
-        height: 18px;
+//     .title {
+//         font-size: 0;
+//         height: 18px;
 
-        &::before {
-            content: "Tamanho Indisponível";
-            color: #1a1a1a;
-            font-size: 18px;
-            font-weight: 500;
-            font-style: normal;
-            letter-spacing: 0.9px;
-            line-height: 1;
-            display: block;
-            margin-bottom: 15px;
-            text-transform: lowercase;
-        }
-    }
+//         &::before {
+//             content: "Tamanho Indisponível";
+//             color: #1a1a1a;
+//             font-size: 18px;
+//             font-weight: 500;
+//             font-style: normal;
+//             letter-spacing: 0.9px;
+//             line-height: 1;
+//             display: block;
+//             margin-bottom: 15px;
+//             text-transform: lowercase;
+//         }
+//     }
 
-    .notifyLabel {
-        font-size: 0;
-        height: 38px;
-        margin-bottom: 20px;
+//     .notifyLabel {
+//         font-size: 0;
+//         height: 38px;
+//         margin-bottom: 20px;
 
-        &::before {
-            content: "Preencha o campo abaixo para ser avisado quando esta peça voltar ao estoque.";
-            font-style: normal;
-            letter-spacing: 0.65px;
-            line-height: 1;
-            display: block;
-            color: #4d4d4d;
-            font-size: 13px;
-            font-weight: 400;
-            line-height: 19px;
-        }
-    }
+//         &::before {
+//             content: "Preencha o campo abaixo para ser avisado quando esta peça voltar ao estoque.";
+//             font-style: normal;
+//             letter-spacing: 0.65px;
+//             line-height: 1;
+//             display: block;
+//             color: #4d4d4d;
+//             font-size: 13px;
+//             font-weight: 400;
+//             line-height: 19px;
+//         }
+//     }
 
-    .form {
-        margin: 0;
-    }
+//     .form {
+//         margin: 0;
+//     }
 
-    .content {
-        display: block;
-        margin: 0;
+//     .content {
+//         display: block;
+//         margin: 0;
 
-        .inputName,
-        .inputEmail {
-            margin: 0;
-            width: 100%;
+//         .inputName,
+//         .inputEmail {
+//             margin: 0;
+//             width: 100%;
 
-            :global(.vtex-input-prefix__group) {
-                height: unset;
-                border: 0;
-                padding: 0;
-                border-radius: 0;
-            }
+//             :global(.vtex-input-prefix__group) {
+//                 height: unset;
+//                 border: 0;
+//                 padding: 0;
+//                 border-radius: 0;
+//             }
 
-            :global(.vtex-styleguide-9-x-input) {
-                background: transparent;
-                color: #4d4d4d;
-                font-family: 'Inter', sans-serif;
-                font-size: 13px;
-                font-weight: 500;
-                border-bottom: 1px solid #999;
-                padding: 0;
-                padding-bottom: 7px;
-                text-transform: lowercase;
-                border-radius: 0;
+//             :global(.vtex-styleguide-9-x-input) {
+//                 background: transparent;
+//                 color: #4d4d4d;
+//                 font-family: 'Inter', sans-serif;
+//                 font-size: 13px;
+//                 font-weight: 500;
+//                 border-bottom: 1px solid #999;
+//                 padding: 0;
+//                 padding-bottom: 7px;
+//                 text-transform: lowercase;
+//                 border-radius: 0;
 
-                &::placeholder {
-                    color: #4d4d4d;
-                }
-            }
-        }
+//                 &::placeholder {
+//                     color: #4d4d4d;
+//                 }
+//             }
+//         }
 
-        .inputName {
-            margin-bottom: 20px;
-        }
+//         .inputName {
+//             margin-bottom: 20px;
+//         }
 
-        .success {
-            text-align: center;
-            display: block;
-            margin-top: 15px;
-            color: #4d4d4d;
-            font-size: 14px;
-        }
+//         .success {
+//             text-align: center;
+//             display: block;
+//             margin-top: 15px;
+//             color: #4d4d4d;
+//             font-size: 14px;
+//         }
 
-        .submit {
-            width: 165px;
-            height: 40px;
-            background: #e5e0d2;
-            margin: 30px auto 0;
+//         .submit {
+//             width: 165px;
+//             height: 40px;
+//             background: #e5e0d2;
+//             margin: 30px auto 0;
 
-            :global(.vtex-button) {
-                justify-content: center;
-                display: block;
-                text-align: center;
-                width: 100%;
-                cursor: pointer;
-            }
+//             :global(.vtex-button) {
+//                 justify-content: center;
+//                 display: block;
+//                 text-align: center;
+//                 width: 100%;
+//                 cursor: pointer;
+//             }
 
-            :global(.vtex-button__label) {
-                font-size: 0;
+//             :global(.vtex-button__label) {
+//                 font-size: 0;
 
-                &::before {
-                    content: "avise-me";
-                    color: #4d4d4d !important;
-                    font-family: 'Inter', sans-serif;
-                    font-size: 13px;
-                    font-weight: 500;
-                    letter-spacing: 0.65px;
-                    display: block;
-                    text-align: center;
-                    text-transform: lowercase;
-                }
-            }
-        }
-    }
-}
+//                 &::before {
+//                     content: "avise-me";
+//                     color: #4d4d4d !important;
+//                     font-family: 'Inter', sans-serif;
+//                     font-size: 13px;
+//                     font-weight: 500;
+//                     letter-spacing: 0.65px;
+//                     display: block;
+//                     text-align: center;
+//                     text-transform: lowercase;
+//                 }
+//             }
+//         }
+//     }
+// }

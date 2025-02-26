@@ -1,13 +1,13 @@
-.sliderLayoutContainer {
-    &--product__shelf--carousel {
-        @extend %maxcontainer;
-        @extend %shelfsliderdefault;
-        position: relative;
-        margin-bottom: 100px;
-        display: block;
+// .sliderLayoutContainer {
+//     &--product__shelf--carousel {
+//         @extend %maxcontainer;
+//         @extend %shelfsliderdefault;
+//         position: relative;
+//         margin-bottom: 100px;
+//         display: block;
 
-        @media all and (max-width:767px) {
-            margin-bottom: 60px;
-        }
-    }
-}
+//         @media all and (max-width:767px) {
+//             margin-bottom: 60px;
+//         }
+//     }
+// }

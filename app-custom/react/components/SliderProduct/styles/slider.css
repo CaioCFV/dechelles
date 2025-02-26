@@ -1,0 +1,24 @@
+:global(.michaelkorsbr-commercegrowth-custom-0-x-slider__main) {
+  :global(.slick-dots) {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 40px auto 30px;
+    padding: 0;
+  }
+  :global(.slick-dots button) {
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border: unset;
+    font-size: 0;
+    height: 2px;
+    background: #ddd;
+    width: 40px;
+    margin: 0 2px;
+  }
+  :global(.slick-active button) {
+    background: #000;
+  }
+}

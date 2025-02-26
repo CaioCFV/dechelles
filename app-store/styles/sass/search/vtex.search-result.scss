@@ -121,16 +121,24 @@
 }
 
 .galleryLayoutSwitcher {
-    margin-left: 30px;
     display: flex;
     align-items: center;
 
+    @media (min-width: 1025px) {
+        margin-left: 30px;
+    }
+
     &::before {
         content: "VISUALIZAÇÃO: ";
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 300;
         text-transform: uppercase;
-        margin-right: 25px;
+        margin-right: 10px;
+
+        @media (min-width: 1025px) {
+            font-size: 16px;
+            margin-right: 25px;
+        }
     }
 
     .galleryLayoutOptionButton {
@@ -153,11 +161,11 @@
 .gallery {
     padding: 0;
     display: grid;
-    grid-gap: 40px 24px;
+    gap: 10px;
     margin: 0;
 
-    @media all and (max-width: 1024px) {
-        grid-gap: 20px 12px;
+    @media (min-width:1025px) {
+        gap: 20px;
     }
 
     &--grid-3 {

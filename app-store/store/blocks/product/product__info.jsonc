@@ -1,9 +1,9 @@
 {
-  // "vtex.store-components:product-name#product__info--name": {
-  //   "props": {
-  //     "blockClass": "product__info--name"
-  //   }
-  // },
+  "vtex.store-components:product-name#product__info--name": {
+    "props": {
+      "blockClass": "product__info--name"
+    }
+  }
   // "product-price#product__info--price": {
   //   "props": {
   //     "showInstallments": true,

@@ -16,11 +16,9 @@
     "children": [
       "cg-image#search__banner",
       "breadcrumb.search#search__breadcrumb",
-      "flex-layout.row#search__filter-container"
-      // "search-fetch-previous",
-      // "flex-layout.row#search__products",
-      // "search-fetch-more",
-      // "rich-text#search__seo"
+      "flex-layout.row#search__filter-container",
+      "flex-layout.row#search__products",
+      "cg-pagination"
     ],
     "props": {
       "pagination": "show-more",

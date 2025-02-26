@@ -15,5 +15,13 @@
     "content": {
       "$ref": "app:dechelles.commercegrowth-custom#/definitions/MainMenu"
     }
+  },
+  "cg-pagination": {
+    "component": "Pagination",
+    "render": "server"
+  },
+  "cg-slider-product": {
+    "component": "SliderProduct",
+    "render": "server"
   }
 }

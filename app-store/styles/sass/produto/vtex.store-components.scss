@@ -11,97 +11,97 @@
     }
 }
 
-.skuSelectorSubcontainer {
-    margin: 0;
+// .skuSelectorSubcontainer {
+//     margin: 0;
 
-    .skuSelectorTextContainer,
-    .skuSelectorNameContainer,
-    .skuSelectorOptionsList {
-        margin: 0;
-    }
+//     .skuSelectorTextContainer,
+//     .skuSelectorNameContainer,
+//     .skuSelectorOptionsList {
+//         margin: 0;
+//     }
 
 
-    .skuSelectorName {
-        color: #282828;
-        font-size: 13px;
-        font-weight: 500;
-        font-style: normal;
-        line-height: 1;
-        display: block;
-        margin-bottom: 10px;
-    }
+//     .skuSelectorName {
+//         color: #282828;
+//         font-size: 13px;
+//         font-weight: 500;
+//         font-style: normal;
+//         line-height: 1;
+//         display: block;
+//         margin-bottom: 10px;
+//     }
 
-    .skuSelectorInternalBox {
-        padding: 0;
-        border: 0;
-        height: auto;
-        width: auto;
-    }
+//     .skuSelectorInternalBox {
+//         padding: 0;
+//         border: 0;
+//         height: auto;
+//         width: auto;
+//     }
 
-    .skuSelectorItem {
-        padding: 0;
-        border: 0;
-        height: auto;
-        width: auto;
-        margin: 0;
+//     .skuSelectorItem {
+//         padding: 0;
+//         border: 0;
+//         height: auto;
+//         width: auto;
+//         margin: 0;
 
-        &--selected {
-            .valueWrapper {
-                color: #fff !important;
-                background-color: #e6964b;
-            }
+//         &--selected {
+//             .valueWrapper {
+//                 color: #fff !important;
+//                 background-color: #e6964b;
+//             }
 
-            .valueWrapper--product__info--sku--unavailable {
-                border: 1px solid #999 !important;
-                line-height: 24px !important;
-            }
-        }
+//             .valueWrapper--product__info--sku--unavailable {
+//                 border: 1px solid #999 !important;
+//                 line-height: 24px !important;
+//             }
+//         }
 
-        .valueWrapper {
-            padding: 0;
-            color: #4d4d4d;
-            font-size: 13px;
-            font-weight: 400;
-            font-style: normal;
-            letter-spacing: normal;
-            line-height: 26px;
-            //
-            padding: 0;
-            margin: 0 15px 10px 0;
-            border: 0;
-            width: 26px;
-            height: 26px;
-            border-radius: 100%;
-            text-align: center;
-            line-height: 26px;
-            display: block;
+//         .valueWrapper {
+//             padding: 0;
+//             color: #4d4d4d;
+//             font-size: 13px;
+//             font-weight: 400;
+//             font-style: normal;
+//             letter-spacing: normal;
+//             line-height: 26px;
+//             //
+//             padding: 0;
+//             margin: 0 15px 10px 0;
+//             border: 0;
+//             width: 26px;
+//             height: 26px;
+//             border-radius: 100%;
+//             text-align: center;
+//             line-height: 26px;
+//             display: block;
 
-            &--unavailable {
-                background: #faf8f2;
-                color: #999 !important;
-            }
-        }
+//             &--unavailable {
+//                 background: #faf8f2;
+//                 color: #999 !important;
+//             }
+//         }
 
-        .frameAround,
-        .diagonalCross {
-            display: none;
-        }
-    }
-}
+//         .frameAround,
+//         .diagonalCross {
+//             display: none;
+//         }
+//     }
+// }
 
-.productDescriptionContainer {
-    &--product__description {
-        .productDescriptionText {
-            color: #4d4d4d;
-            font-size: 13px;
-            font-weight: 400;
-            font-style: normal;
-            letter-spacing: 0.65px;
-            line-height: 19px;
-        }
-    }
-}
+// .productDescriptionContainer {
+//     &--product__description {
+//         .productDescriptionText {
+//             color: #4d4d4d;
+//             font-size: 13px;
+//             font-weight: 400;
+//             font-style: normal;
+//             letter-spacing: 0.65px;
+//             line-height: 19px;
+//         }
+//     }
+// }
 
-.shippingContainer {
-    position: relative;
-}
+// .shippingContainer {
+//     position: relative;
+// }

@@ -1,11 +1,15 @@
 .container {
     &--search__breadcrumb {
-        width: calc(100% - 100px);
-        margin: 0 auto;
+        width: calc(100% - 40px);
+        margin: 0 auto 25px;
         padding: 0;
         display: flex;
         align-items: center;
-        margin-bottom: 15px;
+
+        @media (min-width: 1025px) {
+            width: calc(100% - 100px);
+            margin-bottom: 15px;
+        }
 
         .arrow {
             padding: 0;

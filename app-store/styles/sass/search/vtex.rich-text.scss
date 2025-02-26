@@ -1,11 +1,20 @@
 .container {
     &--search__seo {
         display: block;
-        margin-right: 50px;
+        margin-bottom: 30px;
+
+        @media (min-width: 1025px) {
+            margin-bottom: 0;
+            margin-right: 50px;
+        }
 
         .wrapper {
-            display: flex;
-            align-items: center;
+            display: block;
+
+            @media (min-width: 1025px) {
+                display: flex;
+                align-items: center;
+            }
         }
 
         .headingLevel1 {
@@ -18,18 +27,29 @@
             display: block;
             text-decoration: underline;
             text-underline-offset: 3px;
+            margin-bottom: 15px;
+
+            @media (min-width: 1025px) {
+                margin: 0;
+            }
+
         }
 
         .paragraph {
             color: #666;
-            font-size: 14px;
+            font-size: 12px;
             font-weight: 400;
             font-style: normal;
             line-height: 23px;
-            text-align: left;
-            padding-left: 35px;
-            margin-left: 35px;
-            border-left: 2px solid #D1D1D1;
+            text-align: center;
+
+            @media (min-width: 1025px) {
+                text-align: left;
+                padding-left: 35px;
+                margin-left: 35px;
+                border-left: 2px solid #D1D1D1;
+                font-size: 14px;
+            }
         }
     }
 
@@ -39,7 +59,7 @@
 
         .paragraph {
             color: #000;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 300;
             font-style: normal;
             line-height: 16px;
@@ -47,19 +67,32 @@
             display: flex;
             align-items: center;
 
+            @media (min-width: 1025px) {
+                font-size: 16px;
+            }
+
             &::after {
                 content: "";
                 display: block;
-                width: 16px;
-                height: 16px;
+                width: 12px;
+                height: 12px;
                 background: url(assets/icons/icon-arrow-down.png) no-repeat;
-                margin-left: 20px;
+                margin-left: 10px;
+                background-position: center;
+
+                @media (min-width: 1025px) {
+                    width: 16px;
+                    height: 16px;
+                    margin-left: 20px;
+                }
             }
         }
     }
 
     &--search__orderby--triggertext {
-        margin-left: 30px;
+        @media (min-width: 1025px) {
+            margin-left: 30px;
+        }
     }
 
     &--grid-text {
@@ -79,8 +112,6 @@
     //     letter-spacing: 0.65px;
     //     line-height: 21px;
     // }
-
-
 
     // &--search__not-found__text {
     //     width: 100%;
