@@ -155,7 +155,7 @@ export function SliderProduct() {
               >
                 <img
                   src={
-                    `https://michaelkorsbr.vtexassets.com/arquivos/ids/` +
+                    `https://dechelles.vtexassets.com/arquivos/ids/` +
                     item.imageId +
                     '-70-100/produto.webp'
                   }
@@ -193,9 +193,9 @@ export function SliderProduct() {
             >
               <img
                 src={
-                  `https://michaelkorsbr.vtexassets.com/arquivos/ids/` +
+                  `https://dechelles.vtexassets.com/arquivos/ids/` +
                   item.imageId +
-                  '-710-1065/produto.webp'
+                  '-710-710/produto.webp'
                 }
                 className={handles.slider__main__image}
                 onClick={() => {

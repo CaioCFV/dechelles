@@ -64,9 +64,9 @@
         }
     }
 
-    // &--product__breadcrumb-mobile {
-    //     @media (min-width: 1025px) {
-    //         display: none;
-    //     }
-    // }
+    &--product__breadcrumb-mobile {
+        @media (min-width: 1025px) {
+            display: none;
+        }
+    }
 }

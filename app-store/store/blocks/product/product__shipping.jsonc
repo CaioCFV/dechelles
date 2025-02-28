@@ -1,36 +1,36 @@
 {
-  // "disclosure-layout#product__shipping": {
-  //   "props": {
-  //     "blockClass": "product__info--shipping",
-  //     "initialVisibility": "visible",
-  //     "animated": true
-  //   },
-  //   "children": [
-  //     "disclosure-trigger#product__shipping--trigger",
-  //     "disclosure-content#product__shipping--content"
-  //   ]
-  // },
-  // "disclosure-trigger#product__shipping--trigger": {
-  //   "props": {
-  //     "blockClass": "product__info--shipping"
-  //   },
-  //   "children": ["rich-text#product__shipping--triggertext"]
-  // },
-  // "disclosure-content#product__shipping--content": {
-  //   "props": {
-  //     "blockClass": "product__info--shipping"
-  //   },
-  //   "children": ["shipping-simulator#pdp"]
-  // },
-  // "rich-text#product__shipping--triggertext": {
-  //   "props": {
-  //     "text": "frete e prazo de entrega",
-  //     "blockClass": "product__info--shipping"
-  //   }
-  // },
-  // "shipping-simulator#pdp": {
-  //   "props": {
-  //     "blockClass": "product__info--shipping"
-  //   }
-  // }
+  "disclosure-layout#product__shipping": {
+    "props": {
+      "blockClass": "product__info--shipping",
+      "initialVisibility": "visible",
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#product__shipping--trigger",
+      "disclosure-content#product__shipping--content"
+    ]
+  },
+  "disclosure-trigger#product__shipping--trigger": {
+    "props": {
+      "blockClass": "product__info--shipping"
+    },
+    "children": ["rich-text#product__shipping--triggertext"]
+  },
+  "disclosure-content#product__shipping--content": {
+    "props": {
+      "blockClass": "product__info--shipping"
+    },
+    "children": ["shipping-simulator#pdp"]
+  },
+  "rich-text#product__shipping--triggertext": {
+    "props": {
+      "text": "Calculo de frete",
+      "blockClass": "product__info--shipping"
+    }
+  },
+  "shipping-simulator#pdp": {
+    "props": {
+      "blockClass": "product__info--shipping"
+    }
+  }
 }
