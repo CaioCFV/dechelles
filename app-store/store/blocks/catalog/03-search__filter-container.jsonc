@@ -51,7 +51,7 @@
     }
   },
   "drawer#search__orderby": {
-    "children": [],
+    "children": ["flex-layout.row#search__orderby-header", "order-by.v2"],
     "blocks": ["drawer-trigger#search__orderby--trigger"],
     "props": {
       "slideDirection": "rightToLeft",
@@ -87,14 +87,21 @@
     "props": {
       "categoryFiltersMode": "href",
       "layout": "desktop",
-      "initiallyCollapsed": false,
+      "initiallyCollapsed": true,
       "appliedFiltersOverview": "hide"
       //   "maxItemsDepartment": 1,
       //   "maxItemsCategory": 1
     }
   },
   "flex-layout.row#search__filter-header": {
-    "children": ["rich-text#search__filter-headertitle", "image#icon-filter"],
+    "children": ["rich-text#search__filter-headertitle"],
+    "props": {
+      "blockClass": "search__filter--header",
+      "colSizing": "auto"
+    }
+  },
+  "flex-layout.row#search__orderby-header": {
+    "children": ["rich-text#search__orderby-headertitle"],
     "props": {
       "blockClass": "search__filter--header",
       "colSizing": "auto"
@@ -106,11 +113,10 @@
       "blockClass": "search__filter--header-title"
     }
   },
-  "image#icon-filter": {
+  "rich-text#search__orderby-headertitle": {
     "props": {
-      "src": "//assets/icons/icon-filtro.svg",
-      "blockClass": "search__filter--header-icon",
-      "maxWidth": 22
+      "text": "ordenar",
+      "blockClass": "search__filter--header-title"
     }
   }
 }

@@ -17,18 +17,24 @@
       "cg-image#search__banner",
       "breadcrumb.search#search__breadcrumb",
       "flex-layout.row#search__filter-container",
+      "search-fetch-previous",
       "flex-layout.row#search__products",
-      "cg-pagination"
+      "search-fetch-more"
     ],
     "props": {
       "pagination": "show-more",
       "preventRouteChange": true
       //"defaultGalleryLayout": "grid-4"
     }
+  },
+  "search-fetch-more": {
+    "props": {
+      "blockClass": "next"
+    }
+  },
+  "search-fetch-previous": {
+    "props": {
+      "blockClass": "prev"
+    }
   }
-  // "search-fetch-previous": {
-  //   "props": {
-  //     "blockClass": "prev"
-  //   }
-  // }
 }

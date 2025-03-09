@@ -42,6 +42,7 @@
       "add-to-cart-button#product__info--buy",
       "disclosure-layout#product__description",
       "disclosure-layout#product__shipping"
+      //"share"
       // "add-to-list-btn",
       // "cg-conditional-kit#pricerapper"
       // "cg-conditional-kit#skuwrapper",
@@ -63,7 +64,9 @@
       // "availability-notify#product__info--unavailable",
     ]
   },
-
+  // "share": {
+  //   "component": "Share"
+  // },
   // "cg-conditional-kit#skuwrapper": {
   //   "props": {
   //     "Then": "cg-product-page-kit",

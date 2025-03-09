@@ -104,14 +104,14 @@
         }
     }
 
-    // &--search__filter--header-title {
-    //     color: #1a1a1a;
-    //     font-size: 13px;
-    //     font-weight: 500;
-    //     font-style: normal;
-    //     letter-spacing: 0.65px;
-    //     line-height: 21px;
-    // }
+    &--search__filter--header-title {
+        color: #000;
+        font-size: 12px;
+        font-weight: 400;
+        font-style: normal;
+        text-transform: uppercase;
+        display: block;
+    }
 
     // &--search__not-found__text {
     //     width: 100%;

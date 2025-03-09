@@ -1,23 +1,16 @@
 .flexRow {
-    // &--search__filter--header {
-    //     border-bottom: 1px solid #e5e0d2;
+    &--search__filter--header {
+        border-bottom: 1px solid #000;
+        width: calc(100% - 40px);
+        margin: 0 auto;
 
-    //     .flexRowContent {
-    //         padding: 0px 30px;
-    //         height: 50px;
-    //         align-items: center;
-    //         display: flex;
-
-    //         @media all and (max-width: 1024px) {
-    //             padding: 0px 15px;
-    //         }
-
-    //         &::before {
-    //             content: "";
-    //             width: 19px;
-    //         }
-    //     }
-    // }
+        .flexRowContent {
+            padding: 40px 0px 20px;
+            align-items: center;
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
 
     &--search__filter-container {
         width: calc(100% - 40px);

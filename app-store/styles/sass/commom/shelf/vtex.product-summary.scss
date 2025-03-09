@@ -21,17 +21,17 @@
             display: none;
         }
 
+        :global(.vtex-store-components-3-x-discountContainer) {
+            width: 100%;
+            height: auto;
+        }
+
         @media all and (max-width:1024px) {
             padding: 0px 10px;
         }
 
         .clearLink {
             display: block;
-            height: auto;
-        }
-
-        .discountContainer {
-            width: 100%;
             height: auto;
         }
 
@@ -47,10 +47,12 @@
             aspect-ratio: 2/3;
             display: block;
             object-fit: cover !important;
+            max-width: unset !important;
         }
 
         .imageContainer {
             max-height: unset;
+            width: 100%;
         }
 
         .nameContainer {

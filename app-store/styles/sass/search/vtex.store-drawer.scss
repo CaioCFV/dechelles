@@ -5,16 +5,18 @@
 }
 
 .drawerContent {
-    &--search__filter {
+
+    &--search__filter,
+    &--search__orderby {
         display: block;
         position: relative;
+        overflow: unset;
     }
 }
 
 .overlay {
     &--search__filter {
-        background-color: #ffffff;
-        opacity: 0.7;
+        background: transparent;
     }
 }
 
@@ -40,17 +42,13 @@
     &--search__filter,
     &--search__orderby {
         position: absolute;
-        left: 20px;
+        right: 15px;
         z-index: 20;
         height: 50px;
         width: 19px;
         display: flex;
-        top: 2px;
+        top: 23px;
         align-items: center;
-
-        @media all and (max-width: 1024px) {
-            left: 15px;
-        }
 
         .closeIcon {
             width: 17px;

@@ -27,98 +27,46 @@
     position: relative;
     display: flex;
     align-items: flex-start;
+    padding: 20px 20px 0;
+    box-sizing: border-box;
 
-    &::before {
-        content: "ordernar";
-        color: #4d4d4d;
-        font-size: 13px;
-        font-weight: 400;
-        font-style: normal;
-        letter-spacing: 0.65px;
-        line-height: 16px;
-        text-transform: lowercase;
-        margin-right: 20px;
-
-        @media all and (max-width: 1024px) {
-            display: none;
-        }
+    .orderByButton {
+        display: none;
     }
 
     .orderByOptionsContainer {
-        position: absolute;
-        top: calc(100% + 5px);
-        z-index: 10;
-        border: 0;
+        display: block !important;
+        position: static;
         box-shadow: none;
-        width: 100%;
-        min-width: unset !important;
-        padding: 10px;
-        box-sizing: border-box;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, .2);
-        border-radius: 0;
+        border: 0;
+        padding: 0;
 
         .orderByOptionItem {
             padding: 0;
-            color: #4d4d4d;
+            color: #000;
             text-transform: lowercase;
             line-height: 30px;
             min-width: unset;
+            font-family: 'Encode Sans Condensed';
+            font-size: 15px;
+
 
             &:hover {
                 background: #fff;
                 text-decoration: underline;
-                color: #e6964b;
+                color: #000;
             }
 
             &--selected {
                 background: #fff;
-                color: #e6964b;
+                color: #000;
+                font-weight: 700;
             }
         }
     }
 }
 
-.orderByButton {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 0;
-    position: relative;
-    border-bottom: 1px solid #e5e0d2;
-    padding-bottom: 5px;
-    min-width: 150px;
 
-    .filterPopupTitle {
-        color: #999999;
-        font-size: 13px;
-        font-weight: 400;
-        font-style: normal;
-        letter-spacing: 0.65px;
-        text-transform: lowercase;
-    }
-
-    .filterPopupArrowIcon {
-        padding: 0;
-
-        .caretIcon {
-            display: none;
-        }
-
-        &::before {
-            content: "";
-            background: url(//assets/icons/icon-arrow-down.svg) no-repeat;
-            width: 15px;
-            height: 15px;
-            background-size: contain;
-            background-position: center;
-            display: block;
-        }
-    }
-
-    .orderByText {
-        display: none;
-    }
-}
 
 .galleryLayoutSwitcher {
     display: flex;
@@ -223,6 +171,14 @@
         display: none;
     }
 
+    &--next {
+        :global(.vtex-button) {
+            &::before {
+                content: "ver mais produtos";
+            }
+        }
+    }
+
     &--prev {
         :global(.vtex-button) {
             &::before {
@@ -233,7 +189,7 @@
 }
 
 .filter__container {
-    border-bottom: 1px solid #e5e0d2;
+    border-bottom: 1px solid #000;
 
     &--priceRange,
     &--brand,
@@ -243,14 +199,14 @@
     }
 
     :global(.vtex-checkbox__inner-container) {
-        border: 1px solid #eae4da;
-        border-radius: 100%;
+        border: 1px solid #000;
         background: transparent;
-        width: 14px;
-        height: 14px;
+        width: 16px;
+        height: 16px;
         display: flex;
         align-items: center;
         justify-content: center;
+        border-radius: 0;
     }
 
     :global(.vtex-checkbox__line-container) {
@@ -259,7 +215,7 @@
     }
 
     :global(.vtex-checkbox__label) {
-        color: #4d4d4d;
+        color: #000;
         font-size: 13px;
         font-weight: 400;
         font-style: normal;
@@ -278,28 +234,28 @@
             }
 
             :global(.vtex-checkbox__inner-container) {
-                border: 1px solid #e6964b;
+                border: 1px solid #000;
             }
 
             :global(.vtex-checkbox__inner-container)::before {
                 content: "";
-                width: 6px;
-                height: 6px;
-                background: #e6964b;
-                border-radius: 100%;
+                width: 8px;
+                height: 8px;
+                background: #000;
                 display: block;
+                position: relative;
             }
         }
     }
 
     .filterTitleSpan {
-        color: #1a1a1a;
-        font-size: 13px;
-        font-weight: 500;
+        color: #000;
+        font-size: 12px;
         font-style: normal;
-        letter-spacing: 0.65px;
-        line-height: 19px;
-        text-transform: lowercase;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
     }
 
     .filterIcon {
@@ -308,6 +264,7 @@
         min-width: 40px;
         height: 60px;
         justify-content: flex-end;
+        color: #000;
 
         .caretIcon {
             width: 10px;
@@ -317,19 +274,15 @@
 
 .filters--layout {
     width: 100%;
-    padding: 0px 30px;
+    padding: 0 20px;
     margin: 0;
-
-    @media all and (max-width: 1024px) {
-        padding: 0px 15px;
-    }
+    box-sizing: border-box;
 }
 
 .filterTemplateOverflow {
     max-height: unset !important;
 
     .filterContent {
-        padding: 0px 20px;
         box-sizing: border-box;
     }
 }
