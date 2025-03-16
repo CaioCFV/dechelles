@@ -3,8 +3,10 @@
     "children": [
       "breadcrumb#product__breadcrumb",
       "flex-layout.row#product__wrapper",
+      "tab-layout#product__description",
       "rich-text#product__shelf--title",
-      "list-context.product-list#product__shelf--1"
+      "list-context.product-list#product__shelf--1",
+      "flex-layout.row#home__benefits"
     ]
   },
   "flex-layout.row#product__wrapper": {

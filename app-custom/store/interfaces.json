@@ -23,5 +23,9 @@
   "cg-slider-product": {
     "component": "SliderProduct",
     "render": "server"
+  },
+  "cg-product-especification": {
+    "component": "ProductSpecification",
+    "render": "server"
   }
 }

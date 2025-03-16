@@ -3,7 +3,7 @@
     "props": {
       "blockClass": "product__info--description",
       "animated": true,
-      "initialVisibility": "visible"
+      "initialVisibility": "hidden"
     },
     "children": [
       "disclosure-trigger#product__description--trigger",
@@ -33,6 +33,65 @@
       "showTitle": false,
       "collapseContent": false,
       "blockClass": "product__description"
+    }
+  },
+  "tab-layout#product__description": {
+    "children": [
+      "tab-list#product__description",
+      "tab-content#product__description"
+    ],
+    "props": {
+      "blockClass": "product__description",
+      "defaultActiveTabId": "product__description--1"
+    }
+  },
+  "tab-list#product__description": {
+    "children": [
+      "tab-list.item#product__description--1",
+      "tab-list.item#product__description--2"
+    ]
+  },
+  "tab-list.item#product__description--1": {
+    "props": {
+      "tabId": "product__description--1",
+      "label": "DESCRIÇÃO",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#product__description--2": {
+    "props": {
+      "tabId": "product__description--2",
+      "label": "DICAS E CUIDADOS"
+    }
+  },
+  "tab-content#product__description": {
+    "children": [
+      "tab-content.item#product__description--1",
+      "tab-content.item#product__description--2"
+    ]
+  },
+  "tab-content.item#product__description--1": {
+    "children": ["cg-product-especification#product__description--1"],
+    "props": {
+      "blockClass": "product__description",
+      "tabId": "product__description--1"
+    }
+  },
+  "tab-content.item#product__description--2": {
+    "children": ["cg-product-especification#product__description--2"],
+    "props": {
+      "blockClass": "product__description",
+      "tabId": "product__description--2"
+    }
+  },
+  "cg-product-especification#product__description--1": {
+    "props": {
+      "name": "description"
+    }
+  },
+  "cg-product-especification#product__description--2": {
+    "props": {
+      "name": "Dicas e Cuidados"
     }
   }
 }

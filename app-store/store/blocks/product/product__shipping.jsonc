@@ -2,7 +2,7 @@
   "disclosure-layout#product__shipping": {
     "props": {
       "blockClass": "product__info--shipping",
-      "initialVisibility": "visible",
+      "initialVisibility": "hidden",
       "animated": true
     },
     "children": [

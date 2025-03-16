@@ -1,24 +1,46 @@
-:global(.michaelkorsbr-commercegrowth-custom-0-x-slider__main) {
+:global(.dechelles-commercegrowth-custom-0-x-slider__main) {
   :global(.slick-dots) {
     display: flex !important;
     align-items: center;
     justify-content: center;
     list-style: none;
-    margin: 40px auto 30px;
-    padding: 0;
+    padding: 10px 0;
+    margin: 0;
+  }
+  :global(img) {
+    width: 100% !important;
+    height: auto !important;
   }
   :global(.slick-dots button) {
     padding: 0;
     margin: 0;
-    background: transparent;
     border: unset;
-    font-size: 0;
-    height: 2px;
-    background: #ddd;
-    width: 40px;
+    background: #464646;
     margin: 0 2px;
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin: 5px;
+    border-radius: 50%;
+    border: 1px solid #464646;
+    font-size: 0;
   }
   :global(.slick-active button) {
-    background: #000;
+    background: #fff;
+  }
+}
+
+:global(.dechelles-commercegrowth-custom-0-x-slider__thumbs) {
+  :global(.slick-track) {
+    height: unset !important;
+  }
+  :global(.slick-slide) {
+    border: 0;
+  }
+  :global(.slick-slide) {
+    opacity: 0.4;
+  }
+  :global(.slick-current) {
+    opacity: 1;
   }
 }
