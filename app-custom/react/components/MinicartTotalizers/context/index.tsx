@@ -32,7 +32,6 @@ export const MincartContextProvider = ({ children }: IProps) => {
   }
 
   const updateOrderForm = async function () {
-    console.log('palword')
     clearTimeout(debouceTimeout)
     debouceTimeout = setTimeout(function () {
       dispatchUpdate()

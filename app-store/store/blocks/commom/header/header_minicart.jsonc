@@ -20,7 +20,10 @@
       "blockClass": "header__minicart--header",
       "colSizing": "auto"
     },
-    "children": ["rich-text#header__minicart--title"]
+    "children": [
+      "rich-text#header__minicart--title",
+      "cg-minicart-freeshipping"
+    ]
   },
   "rich-text#header__minicart--title": {
     "props": {

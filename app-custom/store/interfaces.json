@@ -35,5 +35,9 @@
   "cg-minicart-totalizers": {
     "component": "MinicartTotalizers",
     "render": "server"
+  },
+  "cg-minicart-freeshipping": {
+    "component": "MinicartFreeShipping",
+    "render": "server"
   }
 }

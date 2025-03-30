@@ -1,20 +1,14 @@
 .flexRow {
     &--header__minicart--header {
-        padding: 20px;
+        padding: 20px 20px 0;
         // @media all and (max-width: 1024px) {
         //     padding: 15px;
         //     margin-bottom: 15px;
         // }
 
-        // .flexRowContent {
-        //     justify-content: space-between;
-        //     align-items: center;
-
-        //     &::before {
-        //         content: "";
-        //         width: 11px;
-        //     }
-        // }
+        .flexRowContent {
+            display: block;
+        }
     }
 
     &--header__minicart--item {
