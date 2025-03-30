@@ -47,12 +47,24 @@
         }
     }
 
-    // &--search__not-found__text {
-    //     @extend %maxcontainer;
-    //     display: block;
+    &--search__not-found {
+        display: block;
 
-    //     .flexRowContent {
-    //         display: block;
-    //     }
-    // }
+        .flexRowContent--search__not-found {
+            display: block;
+        }
+    }
+
+    &--search__not-found__images {
+        .flexRowContent {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+
+            @media (min-width: 1025px) {
+                grid-template-columns: 1fr 1fr 1fr;
+
+            }
+        }
+    }
 }

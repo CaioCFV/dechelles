@@ -113,36 +113,66 @@
         display: block;
     }
 
-    // &--search__not-found__text {
-    //     width: 100%;
+    &--search__not-found__text {
+        width: 100%;
+        display: block;
+        max-width: 460px;
+        margin: 0 auto 100px;
 
-    //     .wrapper {
-    //         width: 100%;
-    //     }
+        &::before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background: url(assets/icons/icon-lupa.png) no-repeat;
+            background-size: contain;
+            margin: 0 auto;
+            display: block;
+        }
 
-    //     .headingLevel2 {
-    //         color: #282828;
-    //         font-family: 'Inter', sans-serif;
-    //         font-size: 28px;
-    //         font-weight: 500;
-    //         font-style: normal;
-    //         letter-spacing: 1.4px;
-    //         display: block;
-    //         text-align: center;
-    //         margin-top: 100px;
-    //         margin-bottom: 30px;
-    //     }
+        .list {
+            padding: 0;
+            text-align: center;
+            display: block;
+        }
 
-    //     .paragraph {
-    //         margin-bottom: 200px;
-    //         color: #4d4d4d;
-    //         font-family: 'Inter', sans-serif;
-    //         font-size: 18px;
-    //         font-weight: 400;
-    //         font-style: normal;
-    //         letter-spacing: 0.9px;
-    //         display: block;
-    //         text-align: center;
-    //     }
-    // }
+        .listItem {
+            text-align: center;
+            display: flex;
+            margin: 0 auto;
+            justify-content: center;
+            line-height: 1.5;
+            align-items: center;
+
+            &::before {
+                content: "";
+                width: 5px;
+                height: 5px;
+                background: #888;
+                border-radius: 100%;
+                margin-right: 10px;
+            }
+        }
+
+        .paragraph {
+            color: #888;
+            text-align: center;
+            font-family: "Encode Sans";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            .strong {
+                font-weight: 500 !important;
+                color: #000;
+                margin: 10px 0;
+                text-align: center;
+                display: block;
+            }
+        }
+
+        .wrapper {
+            width: 100%;
+        }
+    }
 }

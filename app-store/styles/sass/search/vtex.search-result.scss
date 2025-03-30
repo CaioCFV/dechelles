@@ -66,8 +66,6 @@
     }
 }
 
-
-
 .galleryLayoutSwitcher {
     display: flex;
     align-items: center;
@@ -284,5 +282,44 @@
 
     .filterContent {
         box-sizing: border-box;
+    }
+}
+
+.searchNotFoundInfo {
+    display: block;
+    text-align: center;
+    padding: 0;
+    font-size: 0;
+}
+
+.searchNotFound {
+    display: block;
+    height: auto;
+
+    .searchNotFoundOops,
+    .searchNotFoundWhatToDoDotsContainer,
+    .searchNotFoundWhatDoIDo {
+        display: none;
+    }
+
+    .searchNotFoundTextListLine {
+        @extend %maxcontainer;
+        font-size: 14px;
+        color: #000;
+        text-transform: uppercase;
+        display: block;
+        margin: 20px auto 100px;
+        line-height: 1;
+        box-sizing: border-box;
+        text-align: left;
+        font-family: "Encode Sans Condensed";
+        letter-spacing: 1.2px;
+        font-weight: 400;
+    }
+
+    .searchNotFoundTerm {
+        font-size: 14px;
+        font-weight: 600;
+        color: #000;
     }
 }

@@ -9,4 +9,14 @@
             height: auto;
         }
     }
+
+    &--search__not-found__images {
+        display: block;
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
 }
