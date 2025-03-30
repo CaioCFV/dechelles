@@ -38,10 +38,7 @@
     }
   },
   "flex-layout.row#shelf__image": {
-    "children": [
-      "product-summary-image#shelf__image"
-      //"cg-shelf-variations"
-    ],
+    "children": ["product-summary-image#shelf__image", "cg-shelf-variation"],
     "props": {
       "blockClass": "shelf__image",
       "colSizing": "auto"

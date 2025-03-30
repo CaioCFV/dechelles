@@ -1,6 +1,6 @@
 {
   "name": "checkout-ui-settings",
-  "vendor": "lennyniemeyer",
+  "vendor": "dechelles",
   "version": "0.0.0",
   "title": "Checkout UI Settings",
   "description": "Declare custom settings to be used by checkout ui",

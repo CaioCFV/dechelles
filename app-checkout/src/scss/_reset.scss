@@ -1,4 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@charset "utf-8";
+@import url("https://use.typekit.net/jrg6sxa.css");
+@import url("https://use.typekit.net/jrg6sxa.css");
+@import url("https://use.typekit.net/jrg6sxa.css");
+
+
+@font-face {
+    font-family: 'lennyniemeyer-ico!important';
+    src: url('https://lennyniemeyer.vteximg.com.br/arquivos/lennyniemeyer-ico.eot.css?1668454563513');
+    src: url('https://lennyniemeyer.vteximg.com.br/arquivos/lennyniemeyer-ico.eot.css?1668454563513#iefix') format('embedded-opentype'),
+        url('https://lennyniemeyer.vteximg.com.br/arquivos/lennyniemeyer-ico.ttf.css?1668454563513') format('truetype'),
+        url('https://lennyniemeyer.vteximg.com.br/arquivos/lennyniemeyer-ico.woff.css?1668454563513') format('woff'),
+        url('https://lennyniemeyer.vteximg.com.br/arquivos/lennyniemeyer-ico.svg.css?1668454563513#fontico') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 html,
 body,
@@ -84,7 +100,6 @@ video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
     vertical-align: baseline;
     font-smooth: antialiased;
     line-height: normal;
@@ -136,31 +151,35 @@ table {
 }
 
 .container {
-    width: calc(100% - 80px);
-    max-width: 1220px;
+    width: calc(100% - 60px);
+    max-width: 1920px;
+    margin: 0 auto;
 
     @media all and (max-width: 991px) {
-        width: calc(100% - 30px);
+        width: calc(100% - 40px);
     }
 }
 
 .max-container {
-    width: calc(100% - 80px);
+    width: calc(100% - 60px);
     margin: 0 auto;
-    max-width: 1220px;
+    max-width: 1920px;
 
     @media (max-width: 991px) {
-        width: calc(100% - 30px);
+        width: calc(100% - 40px);
     }
 }
 
-body,
 button {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Usual', sans-serif;
+}
+
+input {
+    box-shadow: none;
 }
 
 body {
-    padding: 0 !important;
+    font-family: 'Usual', sans-serif;
 }
 
 .btn {

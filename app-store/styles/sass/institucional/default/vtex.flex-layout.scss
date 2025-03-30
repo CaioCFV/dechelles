@@ -2,6 +2,7 @@
     &--institucional-default__container {
         @extend %maxcontainer;
         margin-bottom: 100px;
+        margin-top: 20px;
 
         .stretchChildrenWidth {
             @media (max-width: 1024px) {

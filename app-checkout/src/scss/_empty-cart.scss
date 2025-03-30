@@ -1,0 +1,73 @@
+h2.empty-cart-title {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0;
+    display: block;
+    margin-bottom: 30px;
+    color: #000;
+    font-weight: 400;
+
+    &::after {
+        content: "SUA SACOLA ESTÁ VAZIA";
+        font-size: 18px;
+        letter-spacing: 6.66px;
+    }
+}
+
+body#emptycart {
+    .container-cart .cart-template-holder {
+        width: 100%;
+    }
+
+    #cart-title {
+        width: 100%;
+    }
+
+    .cart-links-bottom {
+        display: none !important;
+    }
+
+    .container.container-main.container-cart {
+        overflow: hidden;
+        min-height: unset;
+    }
+
+    a#cart-choose-products {
+        @extend %link;
+        border-radius: 0;
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+        color: #000000;
+        font-family: Usual;
+        font-size: 11px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 4.07px;
+        text-transform: uppercase;
+        text-underline-offset: 2px;
+        margin-bottom: 100px;
+    }
+}
+
+.empty-cart-message p {
+    display: block;
+    font-size: 0;
+
+    &::before {
+        content: "Você ainda não tem produtos na sua sacola. Navegue pelo site para escolher seus looks";
+        max-width: 300px;
+        color: #595959;
+        font-family: Usual;
+        font-size: 12px;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: 0.6px;
+        line-height: 18px;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 30px;
+        text-align: center
+    }
+}

@@ -37,7 +37,6 @@
       "blockClass": "product__info"
     },
     "children": [
-      "breadcrumb#product__breadcrumb-mobile",
       "vtex.store-components:product-name#product__info--name",
       "flex-layout.row#product__info--priceWrapper",
       "flex-layout.row#product__info--skuWrapper",

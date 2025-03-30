@@ -1,29 +1,48 @@
 .currencyContainer {
-    font-family: "Encode Sans";
+    font-family: "Encode Sans Condensed";
 
     &--product__info--selling-price {
         padding: 0;
         color: #000;
-        font-size: 11px;
-        font-weight: 500;
+        font-weight: 600;
         font-style: normal;
-        letter-spacing: 1.1px;
+        letter-spacing: 0.8px;
         line-height: 16px;
         display: block;
         margin-right: 10px;
+        font-size: 16px;
+
+        @media (min-width: 1025px) {
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 1.1px;
+        }
     }
 
     &--product__info--list-price {
         padding: 0;
-        color: #888;
-        font-size: 11px;
-        font-weight: 500;
+        color: #000;
+        font-size: 16px;
+        font-weight: 400;
         font-style: normal;
-        letter-spacing: 1.1px;
+        letter-spacing: 0.8px;
         line-height: 16px;
         display: block;
         text-decoration: line-through;
         margin-right: 10px;
+        border-right: 1px solid #000;
+        padding-right: 5px;
+        margin-right: 5px;
+
+        @media (min-width: 1025px) {
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 1.1px;
+            color: #888;
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
     }
 }
 
@@ -38,6 +57,15 @@
         line-height: 16px;
         display: block;
         text-transform: uppercase;
+        width: 100%;
+        font-size: 12px;
+        margin-top: 12px;
+
+        @media (min-width: 1025px) {
+            width: auto;
+            font-size: 11px;
+            margin: 0;
+        }
 
         .installmentValue,
         .installmentsNumber {

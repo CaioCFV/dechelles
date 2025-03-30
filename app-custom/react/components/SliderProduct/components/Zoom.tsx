@@ -47,7 +47,7 @@ export function Zoom({ isActive, disableZoom, images, index }: ZoomProps) {
                   <>
                     <img
                       src={
-                        `https://michaelkorsbr.vtexassets.com/arquivos/ids/` +
+                        `https://dechelles.vtexassets.com/arquivos/ids/` +
                         imageId +
                         '/produto.webp'
                       }
@@ -64,7 +64,7 @@ export function Zoom({ isActive, disableZoom, images, index }: ZoomProps) {
                 <>
                   <img
                     src={
-                      `https://michaelkorsbr.vtexassets.com/arquivos/ids/` +
+                      `https://dechelles.vtexassets.com/arquivos/ids/` +
                       imageId +
                       '/produto.webp'
                     }

@@ -47,7 +47,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/institucional/duvidas-frequentes",
+            "href": "/institucional/#duvidas-frequentes",
             "noFollow": false,
             "tagTitle": "Dúvidas frequentes",
             "text": "Dúvidas frequentes"
@@ -59,7 +59,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/institucional/compra-em-atacado",
+            "href": "/institucional/#trocas-e-devolucoes",
             "noFollow": false,
             "tagTitle": "Trocas e devoluções",
             "text": "Trocas e devoluções"
@@ -71,7 +71,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/institucional/lojas",
+            "href": "/institucional/#compra-segura",
             "noFollow": false,
             "tagTitle": "Compra Segura",
             "text": "Compra Segura"
@@ -83,7 +83,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/institucional/lojas",
+            "href": "/institucional/#politica-privacidade",
             "noFollow": false,
             "tagTitle": "Política de privacidade",
             "text": "Política de privacidade"

@@ -98,6 +98,15 @@
 //     }
 // }
 
+:global(.vtex-flex-layout-0-x-flexRowContent--product__wrapper) {
+    @media all and (max-width:1024px) {
+        &> :global(.vtex-flex-layout-0-x-stretchChildrenWidth):nth-child(2) {
+            padding: 30px 20px 0;
+            box-sizing: border-box;
+        }
+    }
+}
+
 :global(.vtex-store-components-3-x-portalWrapper--header__search) {
 
     :global(.absolute),

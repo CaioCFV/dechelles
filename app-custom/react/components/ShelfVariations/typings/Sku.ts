@@ -10,6 +10,9 @@ export type Sku = {
   name: string
   itemId: string
   sellers: Sellers[]
+  variations: {
+    values: string[]
+  }[]
 }
 
 export type AddToCartItem = {

@@ -66,14 +66,15 @@ export const DefaultProduct: React.FC<Props> = function ({
         {skus.map(function (item: Sku) {
           const availability = !!item.sellers[0].commertialOffer
             .AvailableQuantity
+          const name = item.variations[0].values[0]
           return (
             <li
               className={getItemClass(availability, item)}
-              key={item.name}
+              key={name}
               onClick={selectSku.bind('', item.itemId)}
-              style={{ order: getSizeOrder(item.name) }}
+              style={{ order: getSizeOrder(name) }}
             >
-              {item.name}
+              {name}
             </li>
           )
         })}
@@ -96,7 +97,13 @@ export const DefaultProduct: React.FC<Props> = function ({
       onClick={preventLink}
     >
       {availability ? renderSkus() : 'indisponível'}
-      <button className={handles.shelf__buybutton} onClick={addToCart}>
+      <button
+        className={applyModifiers(
+          handles.shelf__buybutton,
+          skuSelected ? 'active' : ''
+        )}
+        onClick={addToCart}
+      >
         adicionar à sacola
       </button>
     </div>

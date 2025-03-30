@@ -1,0 +1,203 @@
+.e-steps {
+    display: block;
+
+    @media (max-width: 991px) {
+        width: 100%;
+        position: relative;
+        max-width: 300px;
+        order: 5;
+        margin: 20px auto 15px;
+        left: -7px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        margin-bottom: 15px;
+
+        &--item {
+            display: block;
+            width: 8px;
+            height: 8px;
+            z-index: 999;
+            border-radius: 100%;
+            background-color: #d9d9d9;
+            position: relative;
+
+            &__texto {
+                position: absolute;
+                top: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                color: #b3b3b3;
+                font-family: Usual;
+                font-size: 10px;
+                font-weight: 300;
+                font-style: normal;
+                text-transform: uppercase;
+                letter-spacing: 3.7px;
+
+                @media (max-width: 991px) {
+                    font-size: 8px;
+                    letter-spacing: 2.96px;
+                }
+            }
+        }
+
+        .line {
+            display: block;
+            background: #e5e0d2;
+            width: 115px;
+            height: 1px;
+        }
+    }
+}
+
+body.step-cart {
+    .e-cart {
+        background-color: #000;
+
+        .e-steps__list--item__texto {
+            color: #000;
+        }
+    }
+}
+
+body.step-email,
+body.step-profile {
+    .e-cart {
+        background-color: transparent !important;
+
+        .e-steps__list--item__texto {
+            color: #595959;
+        }
+
+        &::before {
+            content: "\f00c";
+            font-size: 12px;
+            color: #000;
+            background: transparent;
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: inherit;
+            position: relative;
+            top: -4px;
+            left: -5px;
+        }
+
+        &+.line {
+            background-color: #000;
+        }
+    }
+
+    .e-identification,
+    .e-cart {
+        background-color: #000;
+
+        .e-steps__list--item__texto {
+            color: #000;
+        }
+    }
+}
+
+body.step-shipping {
+
+    .e-cart,
+    .e-identification {
+        background-color: transparent !important;
+
+        .e-steps__list--item__texto {
+            color: #595959;
+        }
+
+        &::before {
+            content: "\f00c";
+            font-size: 12px;
+            color: #000;
+            background: transparent;
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: inherit;
+            position: relative;
+            top: -4px;
+            left: -5px;
+        }
+
+        &+.line {
+            background-color: #000;
+        }
+    }
+
+    .e-cart,
+    .e-identification,
+    .e-shipping {
+        background-color: #000;
+
+        .e-steps__list--item__texto {
+            color: #000;
+        }
+    }
+}
+
+body.step-payment {
+
+    .e-cart,
+    .e-identification,
+    .e-shipping {
+        background-color: transparent !important;
+
+        .e-steps__list--item__texto {
+            color: #595959;
+        }
+
+        &::before {
+            content: "\f00c";
+            font-size: 12px;
+            color: #000;
+            background: transparent;
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: inherit;
+            position: relative;
+            top: -4px;
+            left: -5px;
+        }
+
+        &+.line {
+            background-color: #000;
+        }
+    }
+
+    .e-confirmation {
+        background-color: #000;
+
+        .e-steps__list--item__texto {
+            color: #000;
+        }
+    }
+}
+
+body.body-checkout-confirmation {
+
+    .e-cart,
+    .e-identification,
+    .e-shipping,
+    .e-confirmation {
+        background: #000;
+        background-size: contain;
+        border: 1px solid #000;
+
+        &+.line {
+            background-color: #000;
+        }
+
+        .e-steps__list--item__texto {
+            color: #595959;
+        }
+    }
+}

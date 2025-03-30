@@ -37,8 +37,8 @@
           "type": "custom",
           "highlight": false,
           "itemProps": {
-            "type": "internal",
-            "href": "/institucional/duvidas-frequentes",
+            "type": "external",
+            "href": "https://universo.dechelles.com.br/contato/revenda/",
             "noFollow": false,
             "tagTitle": "Seja um parceiro",
             "text": "Seja um parceiro"
@@ -50,7 +50,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/institucional/compra-em-atacado",
+            "href": "/institucional/nossas-lojas",
             "noFollow": false,
             "tagTitle": "Encontre uma loja",
             "text": "Encontre uma loja"
@@ -62,7 +62,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/institucional/lojas",
+            "href": "mailto:faleconosco@dechelles.com.br",
             "noFollow": false,
             "tagTitle": "Trabalhe conosco",
             "text": "Trabalhe conosco"

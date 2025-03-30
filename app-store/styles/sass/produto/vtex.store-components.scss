@@ -1,16 +1,27 @@
 .productNameContainer {
     &--product__info--name {
         color: #000;
-        font-family: "Encode Sans";
-        font-size: 16px;
+        font-family: "Encode Sans Condensed";
+        font-size: 24px;
         font-style: normal;
-        font-weight: 700;
         line-height: 120%;
         letter-spacing: 1.6px;
         text-transform: uppercase;
-        padding-right: 70px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         display: block;
+        font-weight: 250;
+
+        .productBrand {
+            display: block;
+        }
+
+        @media (min-width:1025px) {
+            font-family: "Encode Sans";
+            padding-right: 70px;
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
     }
 }
 

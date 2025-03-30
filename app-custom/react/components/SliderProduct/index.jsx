@@ -53,7 +53,6 @@ export function SliderProduct() {
       slidesToScroll: 1,
       infinite: true,
       arrows: false,
-      dots: true,
     }
     return (
       <>
@@ -106,7 +105,6 @@ export function SliderProduct() {
     verticalSwiping: true,
     infinite: false,
     arrows: false,
-    dots: false,
     asNavFor: nav2,
     swipeToSlide: true,
     focusOnSelect: true,
@@ -171,6 +169,7 @@ export function SliderProduct() {
                       '/produto.webp'
                     }
                     zoomPosition="original"
+                    className={handles.slider__main__image}
                   ></ReactImageZoom>
                 </div>
               )

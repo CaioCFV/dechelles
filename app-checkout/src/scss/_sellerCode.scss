@@ -1,118 +1,51 @@
-.seller-code {
-    margin-bottom: 30px;
-
-    &-error {
-        font-size: 11px;
-        display: block;
-        margin-top: 8px;
-        color: red;
-    }
-
-    &-form {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    &-label {
-        color: #4d4d4d;
-        font-size: 13px;
-        font-weight: 400;
-        font-style: normal;
-        letter-spacing: .65px;
-        line-height: 16px;
-        display: block;
-        margin-bottom: 10px;
-        text-transform: lowercase;
+.seller-code-label {
+    label {
+        @extend %label;
         text-align: left;
     }
+}
 
-    &-input {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+.seller-code-form {
+    margin-bottom: 30px;
+}
 
-        input {
-            width: calc(100% - 50px);
-            margin: 0;
-            height: 30px;
-            border-radius: 0;
-            padding: 0px;
-            box-sizing: border-box;
-            border: 0;
-            box-shadow: none !important;
-            background: rgba(0, 0, 0, 0);
-            color: #999;
-            font-size: 13px;
-            font-weight: 400;
-            font-style: normal;
-            letter-spacing: .65px;
-            text-transform: lowercase;
-            border-bottom: 1px solid #e5e0d2;
-        }
+.seller-code-result-fechar {
+    @extend %btnlight;
+    text-transform: capitalize;
+    border-left: 0;
+    outline: none;
+}
 
-        button {
-            min-width: 35px;
-            height: 30px;
-            border: 0;
-            background: #e5e0d2;
-            border-radius: 0;
-            text-shadow: none;
-            text-transform: lowercase;
-            font-style: normal;
-            padding: 0;
-            color: #4d4d4d;
-            font-size: 11px;
-            font-weight: 400;
-            font-style: normal;
-            letter-spacing: .55px;
-            line-height: 30px;
+.seller-code-result {
+    width: 100%;
+    display: none
+}
 
-            &:hover {
-                background: #e5e0d2;
-            }
-        }
+.seller-code-result-name {
+    @extend %input;
+    width: 100%;
+    line-height: 30px;
+    width: 100%;
+}
+
+.seller-code-input {
+    display: flex;
+    align-items: center;
+
+    input {
+        @extend %input;
+        border-right: 0;
+        height: 30px;
+        box-shadow: none;
+        border: 1px solid #000;
     }
 
-    &-result {
-        display: none;
-
-        &-name {
-            width: 100px;
-            margin: 0;
-            height: 30px;
-            border-radius: 0;
-            padding: 0 10px;
-            box-sizing: border-box;
-            border: none !important;
-            box-shadow: none !important;
-            color: #727272;
-            font-size: 12px;
-            font-weight: 400;
-            text-align: left;
-            background: #f2f2f2;
-            line-height: 30px;
-        }
-
-        &-fechar {
-            width: 30px;
-            height: 30px;
-            border: 1px solid #000;
-            background: #fff;
-            border-radius: 0;
-            text-shadow: none;
-            text-transform: uppercase;
-            font-style: normal;
-            letter-spacing: .28px;
-            text-align: center;
-            color: #000;
-            font-family: "Bebas Neue";
-            padding: 0;
-            font-weight: 800;
-            display: block;
-            font-size: 11px;
-        }
+    button {
+        @extend %btnlight;
+        border-left: 0;
     }
 }
+
+// .seller-code-result-fechar {
+//     display: none;
+// }

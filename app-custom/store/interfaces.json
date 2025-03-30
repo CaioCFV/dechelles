@@ -27,5 +27,9 @@
   "cg-product-especification": {
     "component": "ProductSpecification",
     "render": "server"
+  },
+  "cg-shelf-variation": {
+    "component": "ShelfVariations",
+    "render": "server"
   }
 }

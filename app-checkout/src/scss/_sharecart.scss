@@ -1,0 +1,23 @@
+.wrapper-copy {
+    margin-bottom: 30px;
+
+    p {
+        @extend %label;
+    }
+}
+
+.wrapper-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    input {
+        @extend %input;
+        border-right: 0;
+        height: 30px;
+    }
+
+    button {
+        @extend %btnlight;
+    }
+}

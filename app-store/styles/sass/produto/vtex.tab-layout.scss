@@ -28,14 +28,19 @@
                 }
 
                 :global(.vtex-button__label) {
-                    padding: 0 20px 20px !important;
+                    padding: 0 10px 20px !important;
                     color: #676565;
                     font-weight: 400;
                     font-family: "Encode Sans Condensed";
-                    font-size: 18px;
+                    font-size: 15px;
                     letter-spacing: 0.6px;
                     display: flex;
                     align-items: center;
+
+                    @media (min-width: 1025px) {
+                        font-size: 18px;
+                        padding: 0 20px 20px !important;
+                    }
 
                     &::before {
                         content: "";

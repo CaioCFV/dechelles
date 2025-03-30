@@ -10,20 +10,9 @@
   :global(img) {
     width: 100% !important;
     height: auto !important;
-  }
-  :global(.slick-dots button) {
-    padding: 0;
-    margin: 0;
-    border: unset;
-    background: #464646;
-    margin: 0 2px;
     display: block;
-    width: 8px;
-    height: 8px;
-    margin: 5px;
-    border-radius: 50%;
-    border: 1px solid #464646;
-    font-size: 0;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
   }
   :global(.slick-active button) {
     background: #fff;

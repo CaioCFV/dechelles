@@ -2,26 +2,26 @@
     position: absolute;
     bottom: 0;
     z-index: 10;
-    background: rgba(255, 255, 255, .8);
+    background: rgba(255, 255, 255, 0.80);
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     z-index: 999;
     visibility: hidden;
     opacity: 0;
     transition: 0.3s;
+    padding: 10px 0 15px;
 
     &__skus {
         list-style: none;
         display: flex;
         align-items: center;
         padding: 0;
-        margin: 0;
+        margin: 0 auto;
+        justify-content: center;
+        gap: 10px;
 
-        &:first-child {
+        &:last-child {
             margin-bottom: 10px;
         }
 
@@ -30,18 +30,19 @@
         }
 
         &--item {
-            min-width: 26px;
-            height: 26px;
+            min-width: 24px;
+            height: 24px;
             display: block;
-            color: #4d4d4d;
-            font-family: 'Inter', sans-serif;
-            font-size: 13px;
+            color: #000;
+            font-size: 11px;
             font-weight: 400;
             font-style: normal;
             letter-spacing: normal;
-            line-height: 26px;
-            text-transform: initial;
-            margin-right: 10px;
+            line-height: 21px;
+            letter-spacing: 0.55px;
+            text-transform: uppercase;
+            border: 1px solid transparent;
+            transition: .3s;
 
             &--unavailable {
                 opacity: 0.4;
@@ -49,25 +50,34 @@
             }
 
             &--selected {
-                background-color: #e6964b;
-                color: #ffffff;
-                padding: 0px 5px;
+                border: 1px solid #000;
             }
         }
     }
 
     &__buybutton {
-        color: #e6964b;
-        font-size: 13px;
-        font-weight: 600;
+        color: #000;
+        font-size: 11px;
+        font-weight: 400;
         font-style: normal;
         letter-spacing: 0.65px;
         line-height: 22px;
         text-decoration: underline;
-        font-family: 'Inter', sans-serif;
         padding: 0;
         border: 0;
+        border: 1px solid #000;
+        text-decoration: none;
+        width: 200px;
+        height: 30px;
+        line-height: 30px;
+        text-transform: uppercase;
         background: transparent;
         cursor: pointer;
+        display: none;
+        margin: 10px auto 0;
+
+        &--active {
+            display: block;
+        }
     }
 }
