@@ -5,6 +5,7 @@ import { canUseDOM } from 'vtex.render-runtime'
 import { Cupom } from './Cupom'
 import { Shipping } from './Shipping'
 import { MincartContextProvider, useMinicartContext } from './context'
+import { SellerCode } from './SellerCode'
 
 const HANDLES_MINICART_FOOTER = [
   'minicartFooter',
@@ -82,13 +83,15 @@ export const Minicart = () => {
 
   return (
     <div className={handles.minicartFooter}>
+      <SellerCode />
+      <Cupom />
+      <Shipping />
+
       <Totalizers
         label="Subtotal"
         price={subtotalItemPrice?.value}
         className={handles.minicartFooter_totalizer_subtotalwrapper}
       />
-      <Shipping />
-      <Cupom />
 
       {subtotalDiscounts?.value !== 0 && (
         <Totalizers
@@ -103,9 +106,11 @@ export const Minicart = () => {
         price={orderForm?.value}
         className={handles.minicartFooter_totalizer_totalwrapper}
       />
+
       <a href="/checkout" className={handles.minicartFooter_finish}>
-        Finalizar Compra
+        ADICIONAR AO CARRINHO
       </a>
+
       <button
         onClick={handleCloseMinicart}
         className={handles.minicartFooter_keepBuying}

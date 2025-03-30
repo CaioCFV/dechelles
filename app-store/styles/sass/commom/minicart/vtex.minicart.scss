@@ -31,26 +31,18 @@
         .closeIconContainer {
             position: absolute;
             z-index: 1;
+            right: 20px;
+            top: 14px;
         }
 
         .closeIconButton {
             padding: 0;
             position: relative;
             z-index: 10;
-            left: 25px;
-            top: 16px;
-
-            @media all and (max-width: 1024px) {
-                left: 10px;
-            }
         }
 
         .minicartProductListContainer {
-            padding: 0px 30px !important;
-
-            @media all and (max-width: 1024px) {
-                padding: 0px 15px !important;
-            }
+            padding: 20px !important;
         }
     }
 }

@@ -1,23 +1,20 @@
 .flexRow {
     &--header__minicart--header {
-        padding: 16px 30px;
-        border-bottom: 1px solid #e5e0d2;
-        margin-bottom: 30px;
+        padding: 20px;
+        // @media all and (max-width: 1024px) {
+        //     padding: 15px;
+        //     margin-bottom: 15px;
+        // }
 
-        @media all and (max-width: 1024px) {
-            padding: 15px;
-            margin-bottom: 15px;
-        }
+        // .flexRowContent {
+        //     justify-content: space-between;
+        //     align-items: center;
 
-        .flexRowContent {
-            justify-content: space-between;
-            align-items: center;
-
-            &::before {
-                content: "";
-                width: 11px;
-            }
-        }
+        //     &::before {
+        //         content: "";
+        //         width: 11px;
+        //     }
+        // }
     }
 
     &--header__minicart--item {
@@ -40,22 +37,17 @@
     }
 
     &--header__minicart--footer {
-        border-top: 1px solid #e5e0d2;
-        padding-top: 15px;
+        border-top: 1px solid #E1E1E1;
+        padding: 20px;
 
         .flexRowContent {
             display: block;
-            padding: 0 30px 30px;
-
-            @media all and (max-width: 1024px) {
-                padding: 0 15px 15px;
-            }
         }
     }
 }
 
 .flexCol {
     &--header__minicart--item__info {
-        padding: 20px 0;
+        //padding: 20px 0;
     }
 }

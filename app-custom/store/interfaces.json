@@ -31,5 +31,9 @@
   "cg-shelf-variation": {
     "component": "ShelfVariations",
     "render": "server"
+  },
+  "cg-minicart-totalizers": {
+    "component": "MinicartTotalizers",
+    "render": "server"
   }
 }

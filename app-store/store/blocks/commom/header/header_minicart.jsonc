@@ -20,21 +20,12 @@
       "blockClass": "header__minicart--header",
       "colSizing": "auto"
     },
-    "children": [
-      "rich-text#header__minicart--title",
-      "image#header__minicart--logo"
-    ]
+    "children": ["rich-text#header__minicart--title"]
   },
   "rich-text#header__minicart--title": {
     "props": {
-      "text": "sacola",
+      "text": "Sua sacola",
       "blockClass": "header__minicart--title"
-    }
-  },
-  "image#header__minicart--logo": {
-    "props": {
-      "src": "//assets/icons/icon-cart.svg",
-      "blockClass": "header__minicart--logo"
     }
   },
   //MINICART BODY
@@ -78,6 +69,7 @@
     "children": [
       "vtex.product-list:product-name#minicart-name",
       "price#minicart-price",
+      "product-variations",
       "quantity-selector#minicart-quantity"
     ],
     "props": {
@@ -106,9 +98,7 @@
       "blockClass": "header__minicart--footer",
       "colSizing": "auto"
     },
-    "children": [
-      //"cg-minicart-totalizers"
-    ]
+    "children": ["cg-minicart-totalizers"]
   },
   "minicart-summary#minicart-sumary": {
     "blocks": ["checkout-summary.compact#minicart"],

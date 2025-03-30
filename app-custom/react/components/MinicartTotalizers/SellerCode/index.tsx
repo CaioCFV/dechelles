@@ -102,7 +102,7 @@ export const SellerCode = () => {
   return (
     <CommonForm
       onSubmit={onSubmit}
-      label="Código da Vendedora"
+      label="Código de vendedora"
       id="seller-code"
       placeholder="código"
       onChange={onChange}
