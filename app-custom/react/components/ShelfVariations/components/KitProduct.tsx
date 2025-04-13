@@ -131,7 +131,7 @@ export const KitProduct: React.FC<Props> = function ({
     const skus = skuSelected.filter(function (item) {
       return item.id != '0'
     })
-    handleAddToCart(skus)
+    handleAddToCart(skus.map(item => ({ ...item, id: parseInt(item.id) })))
   }
 
   return (
@@ -174,7 +174,13 @@ export const KitProduct: React.FC<Props> = function ({
           })}
         </ul>
       </div>
-      <button className={handles.shelf__buybutton} onClick={addToCart}>
+      <button
+        className={applyModifiers(
+          handles.shelf__buybutton,
+          skuSelected[0].id != '0' || skuSelected[1].id != '0' ? 'active' : ''
+        )}
+        onClick={addToCart}
+      >
         adicionar à sacola
       </button>
     </div>

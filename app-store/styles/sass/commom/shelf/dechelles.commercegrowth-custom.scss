@@ -21,8 +21,8 @@
         justify-content: center;
         gap: 10px;
 
-        &:last-child {
-            margin-bottom: 10px;
+        &:nth-child(n+2) {
+            margin-top: 10px;
         }
 
         &--itemImage {
