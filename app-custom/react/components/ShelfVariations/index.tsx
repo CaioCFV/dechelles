@@ -26,7 +26,7 @@ export function ShelfVariations() {
   const { product }: any = useProduct()
   const isAvailable = !!product.priceRange.sellingPrice.lowPrice
   const kitInfo = product.specificationGroups.find(
-    (item: any) => item.name == 'Kit Produtos'
+    (item: any) => item.name == 'Combo'
   )
 
   const [addToCart] = useMutation(ADD_ITEM, {

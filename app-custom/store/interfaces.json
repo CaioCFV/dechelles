@@ -39,5 +39,16 @@
   "cg-minicart-freeshipping": {
     "component": "MinicartFreeShipping",
     "render": "server"
+  },
+  "cg-conditional-kit": {
+    "component": "ConditionalKit",
+    "render": "server"
+  },
+  "cg-product-page-kit": {
+    "component": "ProductPageKit",
+    "render": "server"
+  },
+  "cg-shelf-kitprices": {
+    "component": "ShelfKitPrices"
   }
 }

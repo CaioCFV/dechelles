@@ -16,7 +16,6 @@ const Single: React.FC<Props> = function ({ product }) {
   const { handles } = useCssHandles(HANDLES_PRODUCT_KIT)
   const skuAvailable = product.skus.find(item => item.available)
   const { dispatch, state } = useKitDataContext()
-
   const currentSku = product.skus.find(
     item => item.sku == state.selecteds[product.productId]?.id
   )
@@ -42,10 +41,11 @@ const Single: React.FC<Props> = function ({ product }) {
         </div>
       </li>
       {currentSku && !isAvailable && (
-        <AvailabilityNotifier
-          skuId={currentSku.sku}
-          available={false}
-        ></AvailabilityNotifier>
+        <></>
+        // <AvailabilityNotifier
+        //   skuId={currentSku.sku as number}
+        //   available={false}
+        // ></AvailabilityNotifier>
       )}
     </>
   )

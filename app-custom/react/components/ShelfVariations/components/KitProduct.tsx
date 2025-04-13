@@ -13,16 +13,19 @@ interface Sku {
   dimensions: { tamanho: string }
   available: boolean
 }
-interface Product {
-  skus: Sku[]
-}
+
 interface KitDataState {
   top: Sku[]
   bottom: Sku[]
 }
+interface SkuResponseType {
+  itemId: string
+  Tamanhos: string[]
+  sellers: { commertialOffer: { IsAvailable: boolean } }[]
+}
 interface ResponseKit {
   name: KitValue
-  product: Product
+  product: { items: SkuResponseType[] }
 }
 
 export const KitProduct: React.FC<Props> = function ({
@@ -70,23 +73,30 @@ export const KitProduct: React.FC<Props> = function ({
     }
   }, [])
 
+  const formatInfo = (data: SkuResponseType): Sku => ({
+    sku: data.itemId,
+    available: data.sellers[0].commertialOffer.IsAvailable,
+    dimensions: { tamanho: data.Tamanhos[0] },
+  })
+
   const renderKit = async function () {
     const requests = kitInfo.specifications.map(item => {
       return fetch(
-        `/api/catalog_system/pub/products/variations/${item.values[0]}`
+        `/api/catalog_system/pub/products/search?fq=alternateIds_RefId:${item.values[0]}`
       )
         .then(r => r.json())
-        .then(r => ({ name: item, product: r }))
+        .then(r => ({ name: item, product: r[0] }))
     })
     await Promise.all(requests).then(function (data) {
       let kitskus: KitDataState = { top: [], bottom: [] }
       data.forEach(function (item) {
         const { name, product }: ResponseKit = item
-        if (slugify(name.originalName).includes('sutia')) {
-          kitskus.top = product.skus
+        if (slugify(name.originalName).includes('parte-de-cima')) {
+          console.log(product, 'uio')
+          kitskus.top = product.items.map(formatInfo)
         }
-        if (slugify(name.originalName).includes('calcinha')) {
-          kitskus.bottom = product.skus
+        if (slugify(name.originalName).includes('parte-de-baixo')) {
+          kitskus.bottom = product.items.map(formatInfo)
         }
       })
       setKitData(kitskus)
@@ -133,7 +143,7 @@ export const KitProduct: React.FC<Props> = function ({
       <div>
         <ul className={handles.shelf__skus}>
           <li className={handles['shelf__skus--itemImage']}>
-            {/* <img src={require('..///assets/icon-top.svg')} alt="top" /> */}
+            <img src={require('../assets/top-icon.png')} alt="top" />
           </li>
           {kitData.top.map(function (item) {
             return (
@@ -149,7 +159,7 @@ export const KitProduct: React.FC<Props> = function ({
         </ul>
         <ul className={handles.shelf__skus}>
           <li className={handles['shelf__skus--itemImage']}>
-            {/* <img src={require('..///assets/icon-bottom.svg')} alt="bottom" /> */}
+            <img src={require('../assets/bottom-icon.png')} alt="bottom" />
           </li>
           {kitData.bottom.map(function (item) {
             return (

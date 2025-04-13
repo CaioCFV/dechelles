@@ -68,7 +68,7 @@ export function SliderProduct() {
               >
                 <img
                   src={
-                    `https://agilita.vtexassets.com/arquivos/ids/` +
+                    `https://dechelles.vtexassets.com/arquivos/ids/` +
                     item.imageId +
                     '-710-1065/produto.webp'
                   }

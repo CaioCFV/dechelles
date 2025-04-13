@@ -13,6 +13,10 @@ const SkuList: React.FC<Props> = function ({ skus, productId }) {
   const { handles } = useCssHandles(HANDLES_PRODUCT_KIT)
   const { state, dispatch } = useKitDataContext()
 
+  const skuselected = skus.find(
+    item => item.sku == state.selecteds[productId]?.id
+  )
+
   const selectSku = function (id: number) {
     dispatch({
       type: 'SET_SKU_SELECTED',
@@ -38,7 +42,7 @@ const SkuList: React.FC<Props> = function ({ skus, productId }) {
   return (
     <div className={handles['productkit__info--skuWrapper']}>
       <span className={handles['productkit__info--skuWrapper__title']}>
-        tamanho
+        Tamanho: {skuselected ? skuselected.skuname : ''}
       </span>
       <ul className={handles['productkit__info--skuWrapper__skuList']}>
         {skus.map(sku => {

@@ -18,13 +18,19 @@
         }
       ],
       "Then": "flex-layout.row#shelf__prices",
-      "Else": "rich-text#shelf__unavailable"
+      "Else": "cg-conditional-kit#shelf__kit"
     }
   },
   "rich-text#shelf__unavailable": {
     "props": {
       "text": "INDISPONÍVEL",
       "blockClass": "shelf__unavailable"
+    }
+  },
+  "cg-conditional-kit#shelf__kit": {
+    "props": {
+      "Then": "cg-shelf-kitprices",
+      "Else": "rich-text#shelf__unavailable"
     }
   },
   "flex-layout.row#shelf__prices": {

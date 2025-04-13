@@ -20,7 +20,7 @@ const handleMinicart = function () {
 const BuyButton: React.FC = function () {
   const { handles } = useCssHandles(HANDLES_PRODUCT_KIT)
   const { state } = useKitDataContext()
-  const [text, setText] = useState('adicionar à sacola')
+  const [text, setText] = useState('adicionar ao carrinho')
   const { setOrderForm } = useOrderForm()
 
   const [addToCart] = useMutation(ADD_ITEM, {

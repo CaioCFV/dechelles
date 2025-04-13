@@ -27,7 +27,7 @@
         }
       ],
       "Then": "flex-layout.col#product__info",
-      "Else": "flex-layout.col#product__info"
+      "Else": "flex-layout.col#product__info--unavailable"
     }
   },
   "flex-layout.col#product__info": {
@@ -44,12 +44,6 @@
       "disclosure-layout#product__description",
       "disclosure-layout#product__shipping"
       //"share"
-      // "add-to-list-btn",
-      // "cg-conditional-kit#pricerapper"
-      // "cg-conditional-kit#skuwrapper",
-      // "cg-conditional-kit#buybuttonwrapper",
-      // "disclosure-layout#product__description",
-      // "disclosure-layout#product__shipping"
     ]
   },
   "flex-layout.col#product__info--unavailable": {
@@ -59,21 +53,25 @@
       "blockClass": "product__info"
     },
     "children": [
-      "vtex.store-components:product-name#product__info--name"
+      "vtex.store-components:product-name#product__info--name",
+      "cg-conditional-kit#pricewrapper",
+      "cg-conditional-kit#skuwrapper",
+      "cg-conditional-kit#buybuttonwrapper",
+      "disclosure-layout#product__description",
+      "disclosure-layout#product__shipping"
       // "cg-conditional-kit#pricerapper",
-      // "cg-conditional-kit#skuwrapper",
       // "availability-notify#product__info--unavailable",
     ]
   },
   // "share": {
   //   "component": "Share"
   // },
-  // "cg-conditional-kit#skuwrapper": {
-  //   "props": {
-  //     "Then": "cg-product-page-kit",
-  //     "Else": "flex-layout.row#product__info--skuWrapper"
-  //   }
-  // },
+  "cg-conditional-kit#skuwrapper": {
+    "props": {
+      "Then": "cg-product-page-kit",
+      "Else": "flex-layout.row#product__info--skuWrapper"
+    }
+  },
   "flex-layout.row#product__info--priceWrapper": {
     "children": [
       "product-list-price#product__info--list-price",
@@ -84,19 +82,19 @@
       "blockClass": "product__info--priceWrapper",
       "colSizing": "auto"
     }
+  },
+  "cg-conditional-kit#pricewrapper": {
+    "props": {
+      "Then": [],
+      "Else": "flex-layout.row#product__info--priceWrapper"
+    }
+  },
+  "cg-conditional-kit#buybuttonwrapper": {
+    "props": {
+      "Then": [],
+      "Else": "add-to-cart-button#product__info--buy"
+    }
   }
-  // "cg-conditional-kit#pricerapper": {
-  //   "props": {
-  //     "Then": [],
-  //     "Else": "flex-layout.row#product__info--priceWrapper"
-  //   }
-  // },
-  // "cg-conditional-kit#buybuttonwrapper": {
-  //   "props": {
-  //     "Then": [],
-  //     "Else": "flex-layout.row#add-to-cart-wrapper"
-  //   }
-  // },
   // "flex-layout.row#add-to-cart-wrapper": {
   //   "children": ["cg-size-guide-pdp", "add-to-cart-button#product__info--buy"],
   //   "props": {

@@ -9,6 +9,7 @@ import {
 } from './types'
 
 import { slugify } from '../../utils/slugify'
+import { SingleProduct } from '../types'
 
 const INITIAL_STATE: KitDataProps = {
   products: [],
@@ -65,10 +66,10 @@ const KitDataProvider: React.FC<KitDataProviderType> = ({ children }) => {
   const getKitSpecification = () => {
     const data = []
     const top = product?.properties.find(item => {
-      return slugify(item?.name).includes('sutia')
+      return slugify(item?.name).includes('parte-de-cima')
     })
     const bottom = product?.properties.find(item => {
-      return slugify(item?.name).includes('calcinha')
+      return slugify(item?.name).includes('parte-de-baixo')
     })
     top && data.push(top.values[0])
     bottom && data.push(bottom.values[0])
@@ -76,21 +77,40 @@ const KitDataProvider: React.FC<KitDataProviderType> = ({ children }) => {
     return data
   }
 
+  const formatInfo = (data: any): SingleProduct => ({
+    productId: data.productId,
+    available: true,
+    name: data.productName,
+    skus: data.items.map((item: any) => ({
+      sku: parseInt(item.itemId),
+      skuname: item.Tamanhos[0],
+      available: item.sellers[0].commertialOffer.IsAvailable,
+      bestPrice: (
+        item.sellers[0].commertialOffer.FullSellingPrice * 100
+      ).toFixed(2),
+      listPrice: (item.sellers[0].commertialOffer.ListPrice * 100).toFixed(2),
+      image: item.images[0].imageUrl,
+    })),
+  })
+
   useEffect(() => {
     clearTimeout(debouce)
     debouce = setTimeout(function () {
       const requests = getKitSpecification().map(item => {
         return fetch(
-          `/api/catalog_system/pub/products/variations/${item}`
+          `/api/catalog_system/pub/products/search?fq=alternateIds_RefId:${item}`
         ).then(r => r.json())
       })
       Promise.all(requests).then(response => {
         const data = []
         if (response[0]) {
-          data.push(response[0])
+          const product = response[0][0]
+          data.push(formatInfo(product))
         }
         if (response[1]) {
-          data.push(response[1])
+          const product = response[1][0]
+          console.log(product, 'la ele')
+          data.push(formatInfo(product))
         }
         dispatch({ type: 'SET_DATA', data })
       })

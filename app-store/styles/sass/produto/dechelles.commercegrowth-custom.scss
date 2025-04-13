@@ -1,197 +1,202 @@
-// .productkit {
-//     padding: 0;
-//     list-style: none;
-//     margin: 30px 0 0;
+.productkit {
+    padding: 0;
+    list-style: none;
 
-//     &__image {
-//         display: block;
-//         max-width: 125px;
-//         margin-right: 25px;
-//     }
+    &__image {
+        display: block;
+        max-width: 100px;
+        margin-right: 20px;
+    }
 
-//     &__item {
-//         display: flex;
-//         align-items: center;
-//         margin-bottom: 25px;
-//     }
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
 
-//     &__info {
-//         width: 100%;
+    &__info {
+        width: 100%;
 
-//         &--name {
-//             color: #1a1a1a;
-//             font-size: 13px;
-//             font-weight: 400;
-//             font-style: normal;
-//             letter-spacing: 0.65px;
-//             line-height: 1;
-//             margin: 0 0 20px;
-//         }
+        &--name {
+            margin: 0 0 30px;
+            color: #000;
+            font-family: "Encode Sans Condensed";
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 120%;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+        }
 
-//         &--listPrice {
-//             color: #999;
-//             font-size: 13px;
-//             font-weight: 500;
-//             font-style: normal;
-//             letter-spacing: 0.65px;
-//             line-height: 1;
-//             display: block;
-//             text-decoration: line-through;
-//             margin: 0 0 3px;
-//         }
+        &--listPrice {
+            font-family: "Encode Sans";
+            color: #000;
+            font-size: 11px;
+            font-weight: 500;
+            font-style: normal;
+            line-height: 16px;
+            letter-spacing: 1.1px;
+            display: block;
+            margin: 0 0 22px
+        }
 
-//         &--bestPrice {
-//             color: #282828;
-//             font-size: 15px;
-//             font-weight: 500;
-//             font-style: normal;
-//             letter-spacing: 0.65px;
-//             line-height: 1;
-//             display: block;
-//             margin: 0 0 20px;
-//         }
+        &--bestPrice {
+            font-family: "Encode Sans";
+            color: #000;
+            font-size: 11px;
+            font-weight: 500;
+            font-style: normal;
+            line-height: 16px;
+            letter-spacing: 1.1px;
+            display: block;
+            margin: 0 0 22px;
+        }
 
-//         &--skuWrapper {
-//             margin-bottom: 30px;
-//             width: 100%;
-//             position: relative;
+        &--skuWrapper {
+            width: 100%;
+            position: relative;
 
-//             &__title {
-//                 color: #282828;
-//                 font-size: 13px;
-//                 font-weight: 600;
-//                 font-style: normal;
-//                 letter-spacing: 0.65px;
-//                 line-height: 1;
-//                 display: block;
-//                 margin-bottom: 10px;
-//             }
+            &__title {
+                color: #000;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 12px;
+                letter-spacing: 0.6px;
+                margin-bottom: 10px;
+                display: block;
+            }
 
-//             &__skuList {
-//                 display: flex;
-//                 align-items: center;
-//                 padding: 0;
-//                 list-style: none;
-//             }
+            &__skuList {
+                display: flex;
+                align-items: center;
+                padding: 0;
+                list-style: none;
+            }
 
-//             &__item {
-//                 width: 26px;
-//                 height: 26px;
-//                 border-radius: 100%;
-//                 text-align: center;
-//                 line-height: 26px;
-//                 margin-right: 5px;
-//                 color: #4d4d4d;
-//                 font-size: 13px;
-//                 font-weight: 500;
-//                 font-style: normal;
-//                 letter-spacing: normal;
-//                 cursor: pointer;
+            &__item {
+                width: 24px;
+                height: 24px;
+                text-align: center;
+                line-height: 24px;
+                margin-right: 5px;
+                color: #000;
+                font-size: 13px;
+                font-weight: 400;
+                font-style: normal;
+                letter-spacing: normal;
+                cursor: pointer;
 
-//                 &--active {
-//                     background-color: #e6964b;
-//                     color: #fff;
-//                 }
+                &--active {
+                    background-color: #000;
+                    color: #fff;
+                }
 
-//                 &--unavailable {
-//                     //pointer-events: none;
-//                     opacity: 0.4;
-//                 }
-//             }
+                &--unavailable {
+                    //pointer-events: none;
+                    opacity: 0.4;
+                }
+            }
 
-//             &__remove {
-//                 color: #e64b4b;
-//                 border: 0;
-//                 background: transparent;
-//                 text-transform: lowercase;
-//                 font-size: 13px;
-//                 font-family: "Encode Sans Condensed";
-//                 padding: 0;
-//                 position: absolute;
-//                 right: 0;
-//                 top: 50%;
-//                 font-weight: 600;
-//                 cursor: pointer;
-//             }
-//         }
-//     }
+            &__remove {
+                color: #e64b4b;
+                border: 0;
+                background: transparent;
+                text-transform: lowercase;
+                font-size: 13px;
+                font-family: "Encode Sans Condensed";
+                padding: 0;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                font-weight: 600;
+                cursor: pointer;
+                display: none;
+            }
+        }
+    }
 
-//     &__sizeguidebutton {
-//         color: #e6964b;
-//         font-size: 13px;
-//         font-weight: 500;
-//         font-style: normal;
-//         letter-spacing: 0.65px;
-//         line-height: 1;
-//         text-decoration: underline;
-//         display: block;
-//         background: none;
-//         border: unset;
-//         padding: 0;
-//         margin: 0;
-//         cursor: pointer;
-//     }
+    &__sizeguidebutton {
+        color: #e6964b;
+        font-size: 13px;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: 0.65px;
+        line-height: 1;
+        text-decoration: underline;
+        display: block;
+        background: none;
+        border: unset;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+        display: none;
+    }
 
-//     &__resume {
-//         margin-bottom: 30px;
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: flex-start;
-//         padding-top: 10px;
+    &__resume {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 10px;
+        display: none;
 
-//         &--selected {
-//             font-size: 13px;
-//             font-weight: 400;
-//             font-style: normal;
-//             letter-spacing: 0.65px;
-//             line-height: 1;
-//             color: #999999;
-//         }
+        &--selected {
+            font-size: 13px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: 0.65px;
+            line-height: 1;
+            color: #999999;
+        }
 
-//         &--strong {
-//             color: #1a1a1a;
-//             font-weight: 600;
-//             margin-left: 3px;
-//         }
+        &--strong {
+            color: #1a1a1a;
+            font-weight: 600;
+            margin-left: 3px;
+        }
 
-//         &--price {
-//             color: #1a1a1a;
-//             font-size: 16px;
-//             font-weight: 500;
-//             font-style: normal;
-//             letter-spacing: 0.8px;
-//             line-height: 1;
-//             text-align: right;
-//         }
+        &--price {
+            color: #1a1a1a;
+            font-size: 16px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: 0.8px;
+            line-height: 1;
+            text-align: right;
+        }
 
-//         &--installments {
-//             display: block;
-//             color: #999999;
-//             font-size: 13px;
-//             font-weight: 400;
-//             font-style: normal;
-//             letter-spacing: 0.65px;
-//             margin-top: 10px;
-//         }
-//     }
+        &--installments {
+            display: block;
+            color: #999999;
+            font-size: 13px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: 0.65px;
+            margin-top: 10px;
+        }
+    }
 
-//     &__buybutton {
-//         display: block;
-//         text-align: center;
-//         height: 35px;
-//         background: #e6964b;
-//         width: 100%;
-//         border: 0;
-//         margin-bottom: 40px;
-//         color: #ffffff;
-//         font-size: 13px;
-//         font-weight: 400;
-//         font-style: normal;
-//         letter-spacing: 0.65px;
-//         line-height: 1;
-//         cursor: pointer;
-//     }
-// }
+    &__buybutton {
+        display: block;
+        text-align: center;
+        height: 35px;
+        background: #000;
+        width: 100%;
+        border: 0;
+        margin-bottom: 20px;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-family: "Encode Sans Condensed";
+        letter-spacing: 1.4px;
+    }
+}
 
 // .sizeguide {
 //     &__wrapper {

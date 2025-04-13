@@ -55,6 +55,17 @@
         }
     }
 
+    &__prices {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        &__image {
+            margin-right: 10px;
+        }
+    }
+
     &__buybutton {
         color: #000;
         font-size: 11px;

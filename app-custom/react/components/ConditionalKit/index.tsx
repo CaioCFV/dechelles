@@ -5,8 +5,7 @@ import { canUseDOM } from 'vtex.render-runtime'
 export const ConditionalKit = function (props: any) {
   const { product }: any = useProduct()
   const kitInfo = product.properties.find(
-    (item: any) =>
-      item.name == 'Sutiã Biquíni' || item.name == 'Calcinha Biquíni'
+    (item: any) => item.name == 'Parte de cima' || item.name == 'Parte de baixo'
   )
   if (kitInfo) {
     return <>{props.Then && props.Then()}</>
