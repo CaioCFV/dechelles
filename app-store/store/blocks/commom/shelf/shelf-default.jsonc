@@ -54,8 +54,8 @@
     "props": {
       "showBadge": true,
       "showCollections": false,
-      "width": "345",
-      "height": "345"
+      "width": "645",
+      "height": "645"
     }
   },
   "product-list-price#shelf__price": {

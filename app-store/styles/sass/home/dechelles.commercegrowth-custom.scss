@@ -40,3 +40,14 @@
         }
     }
 }
+
+.videoWrapper {
+    &--home__banner--2 {
+        .video {
+            aspect-ratio: 80 / 40;
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+}

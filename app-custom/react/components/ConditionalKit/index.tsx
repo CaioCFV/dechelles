@@ -7,6 +7,7 @@ export const ConditionalKit = function (props: any) {
   const kitInfo = product.properties.find(
     (item: any) => item.name == 'Parte de cima' || item.name == 'Parte de baixo'
   )
+  console.log('kitinfo', kitInfo)
   if (kitInfo) {
     return <>{props.Then && props.Then()}</>
   } else {
