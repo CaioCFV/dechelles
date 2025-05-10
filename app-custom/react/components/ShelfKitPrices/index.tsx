@@ -3,7 +3,7 @@ import { useProduct } from 'vtex.product-context'
 import { KitValue } from '../ShelfVariations/typings/Sku'
 import { slugify } from '../utils/slugify'
 import { toMoney } from '../utils/toMoney'
-import { useCssHandles } from 'vtex.css-handles'
+import { applyModifiers, useCssHandles } from 'vtex.css-handles'
 
 interface Sku {
   sellingPrice: string
@@ -13,6 +13,8 @@ interface Sku {
 interface KitDataState {
   top: Sku
   bottom: Sku
+  topCategory: string
+  bottomCategory: string
 }
 interface SkuResponseType {
   sellers: {
@@ -21,12 +23,13 @@ interface SkuResponseType {
 }
 interface ResponseKit {
   name: KitValue
-  product: { items: SkuResponseType[] }
+  product: { items: SkuResponseType[]; categories: string[] }
 }
 
 export const HANDLES_SKU_PRICES = [
   'shelf__prices',
-  'shelf__prices__item',
+  'shelf__prices__itemTop',
+  'shelf__prices__itemBottom',
   'shelf__prices__image',
 ]
 
@@ -38,6 +41,8 @@ export function ShelfKitPrices() {
   const [kitData, setKitData] = useState({
     top: { listPrice: '', sellingPrice: '' },
     bottom: { listPrice: '', sellingPrice: '' },
+    topCategory: '',
+    bottomCategory: '',
   })
   const { product }: any = useProduct()
   const kitInfo = product.specificationGroups.find(
@@ -65,14 +70,24 @@ export function ShelfKitPrices() {
       let kitskus: KitDataState = {
         top: { listPrice: '', sellingPrice: '' },
         bottom: { listPrice: '', sellingPrice: '' },
+        topCategory: '',
+        bottomCategory: '',
       }
       data.forEach(function (item) {
         const { name, product }: ResponseKit = item
-        if (slugify(name.originalName).includes('parte-de-cima')) {
+        if (
+          slugify(name.originalName).includes('parte-de-cima') &&
+          product.items.length
+        ) {
           kitskus.top = product.items.map(formatInfo)[0]
+          kitskus.topCategory = slugify(product.categories[0].split('/')[1])
         }
-        if (slugify(name.originalName).includes('parte-de-baixo')) {
+        if (
+          slugify(name.originalName).includes('parte-de-baixo') &&
+          product.items.length
+        ) {
           kitskus.bottom = product.items.map(formatInfo)[0]
+          kitskus.bottomCategory = slugify(product.categories[0].split('/')[1])
         }
       })
       setKitData(kitskus)
@@ -83,22 +98,36 @@ export function ShelfKitPrices() {
     renderKit()
   }, [])
 
+  const unavailable =
+    kitData.top.sellingPrice.length < 2 &&
+    kitData.bottom.sellingPrice.length < 2
   return (
     <div className={handles.shelf__prices}>
-      <div className={handles.shelf__prices__item}>
-        <img
-          src={require('../ShelfVariations/assets/top-icon.png')}
-          className={handles.shelf__prices__image}
-        />
-        {kitData.top.sellingPrice}
-      </div>
-      <div className={handles.shelf__prices__item}>
-        <img
-          src={require('../ShelfVariations/assets/bottom-icon.png')}
-          className={handles.shelf__prices__image}
-        />
-        {kitData.bottom.sellingPrice}
-      </div>
+      {kitData.top.sellingPrice.length > 1 ? (
+        <div
+          className={applyModifiers(
+            handles.shelf__prices__itemTop,
+            kitData.topCategory
+          )}
+        >
+          {kitData.top.sellingPrice}
+        </div>
+      ) : (
+        ''
+      )}
+      {kitData.bottom.sellingPrice.length > 1 ? (
+        <div
+          className={applyModifiers(
+            handles.shelf__prices__itemBottom,
+            kitData.bottomCategory
+          )}
+        >
+          {kitData.bottom.sellingPrice}
+        </div>
+      ) : (
+        ''
+      )}
+      {unavailable ? <>indisponível</> : ''}
     </div>
   )
 }

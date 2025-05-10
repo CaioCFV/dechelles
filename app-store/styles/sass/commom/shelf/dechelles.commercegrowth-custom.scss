@@ -25,8 +25,41 @@
             margin-top: 10px;
         }
 
-        &--itemImage {
+        &--itemImageTop {
             margin-right: 15px;
+
+            &::before {
+                content: "";
+                background: url(assets/icons/top-icon.png) no-repeat;
+                background-size: contain !important;
+                background-position: center center !important;
+                width: 20px;
+                height: 20px;
+                display: block;
+            }
+
+            &--fitness::before {
+                background: url(assets/icons/fitness_cima.png) no-repeat;
+            }
+        }
+
+        &--itemImageBottom {
+            margin-right: 15px;
+
+            &::before {
+                content: "";
+                background: url(assets/icons/bottom-icon.png) no-repeat;
+                background-size: contain !important;
+                background-position: center center !important;
+                width: 20px;
+                height: 20px;
+                display: block;
+            }
+
+            &--fitness::before {
+                background: url(assets/icons/fitness_baixo.png) no-repeat;
+                height: 25px;
+            }
         }
 
         &--item {
@@ -61,8 +94,46 @@
         justify-content: center;
         gap: 15px;
 
-        &__image {
-            margin-right: 10px;
+        &__itemTop {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            &::before {
+                content: "";
+                background: url(assets/icons/top-icon.png) no-repeat;
+                background-size: contain !important;
+                background-position: center center !important;
+                width: 15px;
+                height: 15px;
+                display: block;
+            }
+
+            &--fitness::before {
+                background: url(assets/icons/fitness_cima.png) no-repeat;
+            }
+        }
+
+        &__itemBottom {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            &::before {
+                content: "";
+                background: url(assets/icons/bottom-icon.png) no-repeat;
+                background-size: contain !important;
+                background-position: center center !important;
+                width: 15px;
+                height: 15px;
+                display: block;
+
+            }
+
+            &--fitness::before {
+                background: url(assets/icons/fitness_baixo.png) no-repeat;
+                height: 20px;
+            }
         }
     }
 

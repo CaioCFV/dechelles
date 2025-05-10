@@ -17,6 +17,8 @@ interface Sku {
 interface KitDataState {
   top: Sku[]
   bottom: Sku[]
+  topCategory: string
+  bottomCategory: string
 }
 interface SkuResponseType {
   itemId: string
@@ -25,7 +27,7 @@ interface SkuResponseType {
 }
 interface ResponseKit {
   name: KitValue
-  product: { items: SkuResponseType[] }
+  product: { items: SkuResponseType[]; categories: string[] }
 }
 
 export const KitProduct: React.FC<Props> = function ({
@@ -43,6 +45,8 @@ export const KitProduct: React.FC<Props> = function ({
   const [kitData, setKitData] = useState<KitDataState>({
     top: [],
     bottom: [],
+    topCategory: '',
+    bottomCategory: '',
   })
 
   const preventLink = function (e: any) {
@@ -88,15 +92,27 @@ export const KitProduct: React.FC<Props> = function ({
         .then(r => ({ name: item, product: r[0] }))
     })
     await Promise.all(requests).then(function (data) {
-      let kitskus: KitDataState = { top: [], bottom: [] }
+      let kitskus: KitDataState = {
+        top: [],
+        bottom: [],
+        topCategory: '',
+        bottomCategory: '',
+      }
       data.forEach(function (item) {
         const { name, product }: ResponseKit = item
-        if (slugify(name.originalName).includes('parte-de-cima')) {
-          console.log(product, 'uio')
+        if (
+          slugify(name.originalName).includes('parte-de-cima') &&
+          product.items.length
+        ) {
           kitskus.top = product.items.map(formatInfo)
+          kitskus.topCategory = slugify(product.categories[0].split('/')[1])
         }
-        if (slugify(name.originalName).includes('parte-de-baixo')) {
+        if (
+          slugify(name.originalName).includes('parte-de-baixo') &&
+          product.items.length
+        ) {
           kitskus.bottom = product.items.map(formatInfo)
+          kitskus.bottomCategory = slugify(product.categories[0].split('/')[1])
         }
       })
       setKitData(kitskus)
@@ -134,6 +150,7 @@ export const KitProduct: React.FC<Props> = function ({
     handleAddToCart(skus.map(item => ({ ...item, id: parseInt(item.id) })))
   }
 
+  console.log(kitData.top, 'la ele', kitData.bottomCategory)
   return (
     <div
       className={handles.shelf + ' vtex-shelf-variations'}
@@ -141,39 +158,54 @@ export const KitProduct: React.FC<Props> = function ({
       ref={wrapperElement}
     >
       <div>
-        <ul className={handles.shelf__skus}>
-          <li className={handles['shelf__skus--itemImage']}>
-            <img src={require('../assets/top-icon.png')} alt="top" />
-          </li>
-          {kitData.top.map(function (item) {
-            return (
-              <li
-                key={item.sku}
-                className={getItemClass(item.available, item, 0)}
-                onClick={selectSku.bind('', item.sku, 0)}
-              >
-                {item.dimensions.tamanho}
-              </li>
-            )
-          })}
-        </ul>
-        <ul className={handles.shelf__skus}>
-          <li className={handles['shelf__skus--itemImage']}>
-            <img src={require('../assets/bottom-icon.png')} alt="bottom" />
-          </li>
-          {kitData.bottom.map(function (item) {
-            return (
-              <li
-                key={item.sku}
-                onClick={selectSku.bind('', item.sku, 1)}
-                className={getItemClass(item.available, item, 1)}
-              >
-                {item.dimensions.tamanho}
-              </li>
-            )
-          })}
-        </ul>
+        {kitData.top.length ? (
+          <ul className={handles.shelf__skus}>
+            <li
+              className={applyModifiers(
+                handles['shelf__skus--itemImageTop'],
+                kitData.topCategory
+              )}
+            ></li>
+            {kitData.top.map(function (item) {
+              return (
+                <li
+                  key={item.sku}
+                  className={getItemClass(item.available, item, 0)}
+                  onClick={selectSku.bind('', item.sku, 0)}
+                >
+                  {item.dimensions.tamanho}
+                </li>
+              )
+            })}
+          </ul>
+        ) : (
+          ''
+        )}
+        {kitData.bottom.length ? (
+          <ul className={handles.shelf__skus}>
+            <li
+              className={applyModifiers(
+                handles['shelf__skus--itemImageBottom'],
+                kitData.bottomCategory
+              )}
+            ></li>
+            {kitData.bottom.map(function (item) {
+              return (
+                <li
+                  key={item.sku}
+                  onClick={selectSku.bind('', item.sku, 1)}
+                  className={getItemClass(item.available, item, 1)}
+                >
+                  {item.dimensions.tamanho}
+                </li>
+              )
+            })}
+          </ul>
+        ) : (
+          ''
+        )}
       </div>
+
       <button
         className={applyModifiers(
           handles.shelf__buybutton,

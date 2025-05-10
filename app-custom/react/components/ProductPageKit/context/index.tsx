@@ -105,12 +105,15 @@ const KitDataProvider: React.FC<KitDataProviderType> = ({ children }) => {
         const data = []
         if (response[0]) {
           const product = response[0][0]
-          data.push(formatInfo(product))
+          if (product) {
+            data.push(formatInfo(product))
+          }
         }
         if (response[1]) {
           const product = response[1][0]
-          console.log(product, 'la ele')
-          data.push(formatInfo(product))
+          if (product) {
+            data.push(formatInfo(product))
+          }
         }
         dispatch({ type: 'SET_DATA', data })
       })

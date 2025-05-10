@@ -6,7 +6,8 @@ export const HANDLES_SHELF = [
   'shelf',
   'shelf__skus',
   'shelf__skus--item',
-  'shelf__skus--itemImage',
+  'shelf__skus--itemImageTop',
+  'shelf__skus--itemImageBottom',
   'shelf__skus--item--unavailable',
   'shelf__buybutton',
 ] as const

@@ -49,6 +49,7 @@
     "render": "server"
   },
   "cg-shelf-kitprices": {
-    "component": "ShelfKitPrices"
+    "component": "ShelfKitPrices",
+    "render": "server"
   }
 }

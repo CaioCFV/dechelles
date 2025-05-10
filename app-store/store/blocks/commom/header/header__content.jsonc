@@ -92,7 +92,7 @@
     "title": "icone - busca",
     "props": {
       "blockClass": "lupa",
-      "src": "assets/icons/icon-lupa.png"
+      "src": "assets/icons/icon-lupa.svg"
     }
   }
 }
