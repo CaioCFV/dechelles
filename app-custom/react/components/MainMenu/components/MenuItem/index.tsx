@@ -10,6 +10,7 @@ export const MenuItem = ({
   __editorItemTitle,
   href,
   columns = [],
+  banners = [],
   closeMenu,
 }: ItemType) => {
   const { handles } = useCssHandles(HANDLES_MAIN_MENU)
@@ -71,7 +72,7 @@ export const MenuItem = ({
       <Link className={handles.menu__item__link} to={href}>
         {__editorItemTitle}
       </Link>
-      {columns.length ? (
+      {columns.length || banners.length ? (
         <div className={handles.menu__item__submenu}>
           {columns.map(column => (
             <ul className={handles.menu__item__submenu__links}>
@@ -80,6 +81,17 @@ export const MenuItem = ({
               ))}
             </ul>
           ))}
+
+          <div className={handles.menu__item__submenu__images}>
+            {banners.length
+              ? banners.map(item => (
+                  <img
+                    src={item.image}
+                    className={handles.menu__item__submenu__image}
+                  />
+                ))
+              : ''}
+          </div>
         </div>
       ) : (
         ''

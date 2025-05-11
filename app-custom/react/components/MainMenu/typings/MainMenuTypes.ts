@@ -7,6 +7,7 @@ export interface ItemType {
   href: string
   columns: MenuChildren[]
   closeMenu: React.MouseEventHandler
+  banners: { image: string }[]
 }
 export interface MenuChildren {
   children: SubItemType[]

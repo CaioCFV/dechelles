@@ -1,0 +1,69 @@
+{
+  "search-not-found-layout#search": {
+    "children": ["flex-layout.row#search__not-found"]
+  },
+  "flex-layout.row#search__not-found": {
+    "title": "BUSCA - NÃO ENCONTRADO",
+    "children": [
+      //"not-found",
+      "rich-text#search__not-found__text",
+      "flex-layout.row#search__not-found__images"
+    ],
+    "props": {
+      "blockClass": "search__not-found",
+      "colSizing": "auto"
+    }
+  },
+  "rich-text#search__not-found__text": {
+    "props": {
+      "text": "**Não encontramos o que você buscou**Sua busca não obteve nenhum resultado. Tente novamente com as dicas abaixo:\n- Tente palavras menos específicas\n- escreve ao menos 4 caracteres\n- Caso não ache, busque usando o menu do site",
+      "blockClass": "search__not-found__text"
+    }
+  },
+  "search-bar#search__not-found": {
+    "props": {
+      "blockClass": "search__not-found"
+    }
+  },
+  "flex-layout.row#search__not-found__images": {
+    "children": [
+      "cg-image#search__not-found__images-1",
+      "cg-image#search__not-found__images-2",
+      "cg-image#search__not-found__images-3"
+    ],
+    "props": {
+      "blockClass": "search__not-found__images",
+      "colSizing": "auto"
+    }
+  },
+  "cg-image#search__not-found__images-1": {
+    "props": {
+      "desktop": "https://dechelles.vtexassets.com/assets/vtex.file-manager-graphql/images/913744f4-913f-4a0d-82c9-04c46ef765ed___e653b410645602645fe57cfa54d9f71e.png",
+      "mobile": "https://dechelles.vtexassets.com/assets/vtex.file-manager-graphql/images/21bec1c2-eafa-426c-a50f-77b9784230ce___59516d307fbf9a3720882b54540e4329.png",
+      "alt": "SALE 50%",
+      "link": "/",
+      "blockClass": "search__not-found__images",
+      "preload": true
+    }
+  },
+  "cg-image#search__not-found__images-2": {
+    "props": {
+      "desktop": "https://dechelles.vtexassets.com/assets/vtex.file-manager-graphql/images/913744f4-913f-4a0d-82c9-04c46ef765ed___e653b410645602645fe57cfa54d9f71e.png",
+      "mobile": "https://dechelles.vtexassets.com/assets/vtex.file-manager-graphql/images/21bec1c2-eafa-426c-a50f-77b9784230ce___59516d307fbf9a3720882b54540e4329.png",
+      "alt": "SALE 50%",
+      "link": "/",
+      "blockClass": "search__not-found__images",
+      "preload": true
+    }
+  },
+  "cg-image#search__not-found__images-3": {
+    "props": {
+      "desktop": "https://dechelles.vtexassets.com/assets/vtex.file-manager-graphql/images/913744f4-913f-4a0d-82c9-04c46ef765ed___e653b410645602645fe57cfa54d9f71e.png",
+      "mobile": "https://dechelles.vtexassets.com/assets/vtex.file-manager-graphql/images/21bec1c2-eafa-426c-a50f-77b9784230ce___59516d307fbf9a3720882b54540e4329.png",
+      "alt": "SALE 50%",
+      "link": "/",
+      "blockClass": "search__not-found__images",
+      "preload": true
+    }
+  }
+}

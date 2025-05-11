@@ -1,5 +1,5 @@
 {
-  "disclosure-layout#footer__central-de-atendimento": {
+  "disclosure-layout#footer__central-de-atendimento_v1": {
     "children": [
       "disclosure-trigger#footer__trigger--central-de-atendimento-title",
       "disclosure-content#footer__trigger--central-de-atendimento-content"
@@ -47,7 +47,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/institucional/#duvidas-frequentes",
+            "href": "/institucional/duvidas-frequentes",
             "noFollow": false,
             "tagTitle": "Dúvidas frequentes",
             "text": "Dúvidas frequentes"
@@ -59,7 +59,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/institucional/#trocas-e-devolucoes",
+            "href": "/institucional/trocas-e-devolucoes",
             "noFollow": false,
             "tagTitle": "Trocas e devoluções",
             "text": "Trocas e devoluções"
@@ -71,7 +71,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/institucional/#compra-segura",
+            "href": "/institucional/compra-segura",
             "noFollow": false,
             "tagTitle": "Compra Segura",
             "text": "Compra Segura"
@@ -83,7 +83,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/institucional/#politica-privacidade",
+            "href": "/institucional/politica-privacidade",
             "noFollow": false,
             "tagTitle": "Política de privacidade",
             "text": "Política de privacidade"

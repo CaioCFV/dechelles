@@ -180,7 +180,7 @@
                 visibility: hidden;
                 transition: .3s;
                 background: #fff;
-                padding: 35px 0px 50px;
+                padding: 35px 40px 50px;
                 display: flex;
                 align-items: flex-start;
                 justify-content: center;
@@ -196,6 +196,20 @@
             &--active {
                 max-height: 1000px;
                 padding-top: 10px;
+            }
+
+            &__images {
+                display: grid;
+                gap: 20px;
+                grid-template-columns: auto auto;
+                justify-content: center;
+
+            }
+
+            &__image {
+                display: block;
+                width: 100%;
+                height: auto;
             }
 
             &__links {

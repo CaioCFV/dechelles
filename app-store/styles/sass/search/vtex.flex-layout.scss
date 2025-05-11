@@ -45,6 +45,22 @@
         @media (min-width: 1025px) {
             width: calc(100% - 100px);
         }
+
+        :global(.vtex-search-result-3-x-searchNotFoundInfo) {
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        :global(.vtex-search-result-3-x-searchNotFoundWhatDoIDo),
+        :global(.vtex-search-result-3-x-searchNotFoundWhatToDoDotsContainer) {
+            display: block !important;
+            list-style: none;
+            padding: 0;
+            line-height: 27px;
+            max-width: 250px;
+            text-align: center;
+            margin: 20px auto 0;
+        }
     }
 
     &--search__not-found {
@@ -67,4 +83,5 @@
             }
         }
     }
+
 }

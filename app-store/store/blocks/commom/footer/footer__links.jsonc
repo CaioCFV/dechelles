@@ -3,7 +3,7 @@
     "title": "FOOTER - Links",
     "children": [
       "disclosure-layout#footer__sobre-a-empresa",
-      "disclosure-layout#footer__central-de-atendimento",
+      "disclosure-layout#footer__central-de-atendimento_v1",
       "disclosure-layout#footer__minha-conta",
       "disclosure-layout#footer__pagamento"
     ],

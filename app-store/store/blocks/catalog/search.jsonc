@@ -1,6 +1,6 @@
 {
   "store.search": {
-    "blocks": ["search-result-layout#search"],
+    "blocks": ["search-result-layout#searchv1"],
     "props": {
       "context": {
         "skusFilter": "ALL",
@@ -9,8 +9,8 @@
       }
     }
   },
-  "search-result-layout#search": {
-    "blocks": ["search-result-layout.desktop", "search-not-found-layout"]
+  "search-result-layout#searchv1": {
+    "blocks": ["search-result-layout.desktop", "search-not-found-layout#search"]
   },
   "search-result-layout.desktop": {
     "children": [
