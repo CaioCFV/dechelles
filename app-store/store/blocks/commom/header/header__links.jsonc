@@ -1,104 +1,115 @@
 {
-  "cg-main-menu#v1": {
+  "cg-main-menu#v2": {
     "props": {
       "customLinks": [
         {
           "__editorItemTitle": "Lingerie",
           "href": "/lingerie",
           "columns": [
-            { "__editorItemTitle": "Lingerie", "isTitle": true },
             {
-              "__editorItemTitle": "Acessórios",
-              "href": "/lingerie/acessorios-lingerie"
-            },
-            { "__editorItemTitle": "calcinhas", "href": "/lingerie/calcinha" },
-            { "__editorItemTitle": "Sutiã", "href": "/lingerie/sutia" },
-            { "__editorItemTitle": "Ver Todos", "href": "/lingerie" }
+              "children": [
+                { "__editorItemTitle": "Lingerie", "isTitle": true },
+                {
+                  "__editorItemTitle": "Acessórios",
+                  "href": "/lingerie/acessorios-lingerie"
+                },
+                {
+                  "__editorItemTitle": "calcinhas",
+                  "href": "/lingerie/calcinha"
+                },
+                { "__editorItemTitle": "Sutiã", "href": "/lingerie/sutia" },
+                { "__editorItemTitle": "Ver Todos", "href": "/lingerie" }
+              ]
+            }
           ]
         },
         {
           "__editorItemTitle": "Praia",
           "href": "/praia",
           "columns": [
-            { "__editorItemTitle": "Praia", "isTitle": true },
             {
-              "__editorItemTitle": "Biquinis avulsos",
-              "href": "/praia/biquinis-avulsos"
-            },
-            {
-              "__editorItemTitle": "cangas e parêos",
-              "href": "/agilita/calcas?order=OrderByScoreDESC"
-            },
-            {
-              "__editorItemTitle": "Maios",
-              "href": "/agilita/blusas?order=OrderByScoreDESC"
-            },
-            {
-              "__editorItemTitle": "SAida de praia",
-              "href": "/agilita/camisas?order=OrderByScoreDESC"
-            },
-            { "__editorItemTitle": "infantil", "href": "/infantil" },
-            { "__editorItemTitle": "ver todos", "href": "/praia" }
+              "children": [
+                { "__editorItemTitle": "Praia", "isTitle": true },
+                {
+                  "__editorItemTitle": "Biquinis avulsos",
+                  "href": "/praia/biquinis-avulsos"
+                },
+                {
+                  "__editorItemTitle": "cangas e parêos",
+                  "href": "/agilita/calcas?order=OrderByScoreDESC"
+                },
+                {
+                  "__editorItemTitle": "Maios",
+                  "href": "/agilita/blusas?order=OrderByScoreDESC"
+                },
+                {
+                  "__editorItemTitle": "SAida de praia",
+                  "href": "/agilita/camisas?order=OrderByScoreDESC"
+                },
+                { "__editorItemTitle": "infantil", "href": "/infantil" },
+                { "__editorItemTitle": "ver todos", "href": "/praia" }
+              ]
+            }
           ]
         },
         {
           "__editorItemTitle": "Fitness",
           "href": "/fitness",
           "columns": [
-            { "__editorItemTitle": "Fitness", "isTitle": true },
             {
-              "__editorItemTitle": "Leggins e calças",
-              "href": "/fitness/calcas-e-leggings"
-            },
-            { "__editorItemTitle": "Tops", "href": "/fitness/tops" },
-            {
-              "__editorItemTitle": "Blusas e Regatas",
-              "href": "/fitness/blusas-e-camisetas"
-            },
-            {
-              "__editorItemTitle": "Shorts e bermudas ",
-              "href": "/fitness/shorts-e-bermudas"
-            },
-            {
-              "__editorItemTitle": "Jaquetas e Casacos",
-              "href": "/fitness/jaquetas-e-casacos"
-            },
-            {
-              "__editorItemTitle": "Saias e Vestidos",
-              "href": "/fitness/vestidos-e-saias"
-            },
-            {
-              "__editorItemTitle": "Bodies e Macacões",
-              "href": "/fitness/bodies-e-macacoes"
-            },
-            {
-              "__editorItemTitle": "Acessórios",
-              "href": "/fitness/acessorios"
-            },
-            { "__editorItemTitle": "Coleções", "href": "#" },
-            { "__editorItemTitle": "Ver Todos", "href": "/fitness" }
+              "children": [
+                { "__editorItemTitle": "Fitness", "isTitle": true },
+                {
+                  "__editorItemTitle": "Leggins e calças",
+                  "href": "/fitness/calcas-e-leggings"
+                },
+                { "__editorItemTitle": "Tops", "href": "/fitness/tops" },
+                {
+                  "__editorItemTitle": "Blusas e Regatas",
+                  "href": "/fitness/blusas-e-camisetas"
+                },
+                {
+                  "__editorItemTitle": "Shorts e bermudas ",
+                  "href": "/fitness/shorts-e-bermudas"
+                },
+                {
+                  "__editorItemTitle": "Jaquetas e Casacos",
+                  "href": "/fitness/jaquetas-e-casacos"
+                },
+                {
+                  "__editorItemTitle": "Saias e Vestidos",
+                  "href": "/fitness/vestidos-e-saias"
+                },
+                {
+                  "__editorItemTitle": "Bodies e Macacões",
+                  "href": "/fitness/bodies-e-macacoes"
+                },
+                {
+                  "__editorItemTitle": "Acessórios",
+                  "href": "/fitness/acessorios"
+                },
+                { "__editorItemTitle": "Coleções", "href": "#" },
+                { "__editorItemTitle": "Ver Todos", "href": "/fitness" }
+              ]
+            }
           ]
         },
         {
           "__editorItemTitle": "New In",
-          "href": "/lancamentos",
-          "columns": []
+          "href": "/lancamentos"
         },
-        { "__editorItemTitle": "Off", "href": "/outlet", "columns": [] },
+        { "__editorItemTitle": "Off", "href": "/outlet" },
         {
           "__editorItemTitle": "Universo De Chelles",
-          "href": "https://universo.dechelles.com.br/",
-          "columns": []
+          "href": "https://universo.dechelles.com.br/"
         },
         {
           "__editorItemTitle": "Lojas",
-          "href": "/institucional/nossas-lojas",
-          "columns": []
+          "href": "/institucional/nossas-lojas"
         },
         {
           "__editorItemTitle": "Blog",
-          "href": "https://universo.dechelles.com.br/blog/",
-          "columns": []
+          "href": "https://universo.dechelles.com.br/blog/"
         }
       ]
     }
