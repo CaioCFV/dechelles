@@ -1,33 +1,64 @@
-## minha conta
+### Comprar no site dechelles.com.br é seguro?
 
-### fiz o meu pedido, mas não consigo acessar a minha conta.
+A De Chelles Fashion | Acqua | Fitness possui rigorosos padrões de segurança e confidencialidade, a fim de proteger toda e qualquer informação dos seus usuários. Nossa plataforma é completamente segura. Todas as informações são criptografadas com a tecnologia SSL (Secure Socket Layer).
+<br />
 
-provavelmente você optou por não criar uma conta na hora da compra, pra resolver isso, basta criar uma senha utilizando o mesmo email que você usou pra fazer a compra, daí você vai conseguir rastrear o seu pedido.
+### Como posso entrar em contato direto com vocês?
 
-### criei minha conta e o meu pedido não aparece, e agora?
+Você pode entrar em contato conosco através da nossa Central de Atendimento no e-mail: faleconosco@dechelles.com.br , pelo telefone (22) 2525-0800 ou Whatsapp: (22) 99819-8629. Nosso horário de atendimento nestes canais é de segunda a sexta-feira, de 08h as 17h.
+<br />
 
-manda um email pra gente [clicando aqui.](/)
+### Gostaria de receber promoções, novidades e lançamentos, como faço?
 
-## minha compra
+Basta cadastrar seu nome e e-mail no card que aparece em nossa página inicial (www.dechelles.com.br) ou ir na sessão De Chelles News na parte inferior da nossa página.
+<br />
 
-### quais os métodos de pagamento que vocês aceitam?
+### Não recebi minha compra, o que devo fazer?
 
-cartão de crédito (em até 10x sem juros) e boleto.
+Em todos os pedidos enviados, o cliente recebe um e-mail automático com o código de rastreio, para acompanhamento através do site dos Correios ou da Transportadora. É de extrema importância o cliente acompanhar a entrega. São feitas 2 tentativas de entrega e necessariamente precisa ter alguém para receber a mercadoria, caso contrário, o pedido é devolvido para nosso Centro de Distribuição. Neste caso, entre em contato com nossa Central de Atendimento no e-mail: faleconosco@dechelles.com.br ou pelo telefone (22) 2525-0800 (nosso horário de atendimento nestes canais é de segunda a sexta-feira, de 08h as 17h).
+<br />
 
-### quais os métodos de pagamento que vocês aceitam?
+### Comprei um produto, mas não serviu, como devo prosseguir?
 
-Você pode conferir [clicando aqui.](/)
+Você pode realizar a troca do produto até 07 dias após a data de recebimento do mesmo. As orientações para realizar a troca, podem ser acessadas em ENTREGAS, TROCAS E DEVOLUÇÕES, ou entrar em contato com nossa Central de Atendimento no e-mail: faleconosco@dechelles.com.br ou pelo telefone (22) 2525-0800 (nosso horário de atendimento nestes canais é de segunda a sexta-feira, de 08h as 17h).
+<br />
 
-## meu pedido
+### Como faço para revender os produtos da De Chelles?
 
-### já fiz o pedido e ainda não recebi a confirmação de pagamento.
+Para revenda, faça o cadastro no site: institucional.dechelles.com.br/cadastro ou entre em contato com nossa Central de Atendimento no e-mail: faleconosco@dechelles.com.br ou pelo telefone (22) 2525-0800 (nosso horário de atendimento nestes canais é de segunda a sexta-feira, de 08h as 17h). Após o cadastro, uma de nossas consultoras entrará em contato para maiores informações.
+<br />
 
-alguns pedidos podem levar até 48h para serem aprovados. isso acontece porque o pedido caiu na análise manual de pagamento, essa análise serve para que possamos confirmar que a compra é legítima :)
+### Posso trocar um produto comprado no site, em uma loja física?
 
-### por que o meu pedido não foi aprovado?
+Ao adquirir um produto em nosso site, a troca deverá ser feita apenas em nosso site, conforme nossa política de trocas.
+<br />
 
-o seu pedido pode não ter sido aprovado por ter apresentado alguma inconsistência entre os dados do comprador e os dados do titular do cartão e não termos conseguido entrar contato para confirmar os dados. se tiver alguma dúvida, entre em contato aqui.
+### Posso fazer a troca ou devolução do pedido sem Nota Fiscal?
 
-### meu pedido não foi aprovado, mas o valor está constando na fatura do meu cartão.
+Caso a Nota Fiscal tenha sido perdida, por favor entre em contato com nossa Central de Atendimento, para que possamos emitir uma segunda via. Todos os produtos em trânsito precisam estar acompanhados de Nota Fiscal.
+<br />
 
-quando um pedido é realizado e vai pra análise manual, o valor do pedido é reservado para que seja liberado assim que o pagamento for aprovado. se o pagamento não foi aprovado, o valor que foi reservado irá desaparecer da sua fatura em até 7 dias úteis.
+### Tenho um cupom de desconto, como usar?
+
+Após fazer suas compras, no Carrinho, digite o código do seu cupom de desconto, localizado logo acima do subtotal da compra.
+<br />
+
+### Como utilizar meu vale-compras?
+
+O Vale-compras deve ser inserido juntamente com a forma de pagamento escolhida (cartão ou Boleto Bancário), ao finalizar as compras no Carrinho de Compras.
+<br />
+
+### Posso realizar meu pedido por telefone?
+
+Passamos todas as orientações para o cliente realizar sua compra por telefone, através do número (22) 2525-0800 ou no whatsapp: (22) 99819-8629.
+<br />
+
+### Regulamento Promoção Frete Fixo
+
+Para as regiões Sul e Sudeste, o frete fixo possui o custo de R\$5,00. Promoção válida até dia 31/10.
+<br />
+
+### Regulamento Promoção Frete Grátis
+
+Compras acima de R\$399,00 possuem frete grátis, a promoção é valida para todo Brasil, exceto Sul e Sudeste.
+<br />

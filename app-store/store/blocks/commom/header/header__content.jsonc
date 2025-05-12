@@ -5,7 +5,7 @@
       "image#icon-logo",
       "login",
       "minicart.v2#header__minicart",
-      "cg-main-menu"
+      "cg-main-menu#v1"
     ],
     "props": {
       "blockClass": ["header__content"],
@@ -16,7 +16,7 @@
   },
   "flex-layout.row#header__content--mobile": {
     "children": [
-      "cg-main-menu",
+      "cg-main-menu#v1",
       "image#icon-logo",
       "disclosure-layout#header__search",
       "minicart.v2#header__minicart"

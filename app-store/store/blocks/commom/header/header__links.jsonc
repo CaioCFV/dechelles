@@ -1,180 +1,105 @@
 {
-  "cg-main-menu": {
+  "cg-main-menu#v1": {
     "props": {
       "customLinks": [
-        { "__editorItemTitle": "Lingerie", "href": "/winter-sale24" },
+        {
+          "__editorItemTitle": "Lingerie",
+          "href": "/lingerie",
+          "columns": [
+            { "__editorItemTitle": "Lingerie", "isTitle": true },
+            {
+              "__editorItemTitle": "Acessórios",
+              "href": "/lingerie/acessorios-lingerie"
+            },
+            { "__editorItemTitle": "calcinhas", "href": "/lingerie/calcinha" },
+            { "__editorItemTitle": "Sutiã", "href": "/lingerie/sutia" },
+            { "__editorItemTitle": "Ver Todos", "href": "/lingerie" }
+          ]
+        },
         {
           "__editorItemTitle": "Praia",
-          "href": "/agilita?order=OrderByScoreDESC",
+          "href": "/praia",
           "columns": [
+            { "__editorItemTitle": "Praia", "isTitle": true },
             {
-              "children": [
-                {
-                  "__editorItemTitle": "Fitness",
-                  "isTitle": true
-                },
-                {
-                  "__editorItemTitle": "Biquinis avulsos",
-                  "href": "/agilita/vestidos?order=OrderByScoreDESC"
-                },
-                {
-                  "__editorItemTitle": "Biquini conjuntos",
-                  "href": "/agilita/macacao?order=OrderByScoreDESC"
-                },
-                {
-                  "__editorItemTitle": "cangas e parêos",
-                  "href": "/agilita/calcas?order=OrderByScoreDESC"
-                },
-                {
-                  "__editorItemTitle": "Maios",
-                  "href": "/agilita/blusas?order=OrderByScoreDESC"
-                },
-                {
-                  "__editorItemTitle": "SAida de praia",
-                  "href": "/agilita/camisas?order=OrderByScoreDESC"
-                },
-                {
-                  "__editorItemTitle": "ver todos",
-                  "href": "/agilita/saias?order=OrderByScoreDESC"
-                }
-              ]
+              "__editorItemTitle": "Biquinis avulsos",
+              "href": "/praia/biquinis-avulsos"
             },
             {
-              "children": [
-                {
-                  "__editorItemTitle": "explorer",
-                  "isTitle": true
-                },
-                {
-                  "__editorItemTitle": "wild side",
-                  "href": "/agilita/alfaiataria?order=OrderByScoreDESC"
-                },
-                {
-                  "__editorItemTitle": "pause & reflect",
-                  "href": "/agilita/couro?order=OrderByScoreDESC"
-                },
-                {
-                  "__editorItemTitle": "explorer",
-                  "href": "/agilita/estampas?order=OrderByScoreDESC"
-                },
-                {
-                  "__editorItemTitle": "simbiose",
-                  "href": "/agilita/jeans?order=OrderByScoreDESC"
-                },
-                {
-                  "__editorItemTitle": "geometric tiger",
-                  "href": "/agilita/renda?order=OrderByScoreDESC"
-                },
-                {
-                  "__editorItemTitle": "pink blocks",
-                  "href": "/agilita/tricot?order=OrderByScoreDESC"
-                },
-                {
-                  "__editorItemTitle": "bloc basic",
-                  "href": "/agilita/bordado?order=OrderByScoreDESC"
-                },
-                {
-                  "__editorItemTitle": "not so basic",
-                  "href": "/agilita/malha?order=OrderByScoreDESC"
-                },
-                {
-                  "__editorItemTitle": "macramê",
-                  "href": "/agilita/sarja?order=OrderByScoreDESC"
-                }
-              ]
+              "__editorItemTitle": "cangas e parêos",
+              "href": "/agilita/calcas?order=OrderByScoreDESC"
             },
             {
-              "children": [
-                {
-                  "__editorItemTitle": "Fractal",
-                  "isTitle": true
-                },
-                {
-                  "__editorItemTitle": "dc army",
-                  "href": "/agilita/casual?order=OrderByScoreDESC"
-                },
-                {
-                  "__editorItemTitle": "get your greens",
-                  "href": "/agilita/festa?order=OrderByScoreDESC"
-                },
-                {
-                  "__editorItemTitle": "blue marine",
-                  "href": "/agilita/work?order=OrderByScoreDESC"
-                },
-                {
-                  "__editorItemTitle": "Y.o.l.o",
-                  "href": "/agilita/work?order=OrderByScoreDESC"
-                },
-                {
-                  "__editorItemTitle": "texture",
-                  "href": "/agilita/work?order=OrderByScoreDESC"
-                },
-                {
-                  "__editorItemTitle": "desert",
-                  "href": "/agilita/work?order=OrderByScoreDESC"
-                }
-              ]
+              "__editorItemTitle": "Maios",
+              "href": "/agilita/blusas?order=OrderByScoreDESC"
             },
             {
-              "children": [
-                {
-                  "__editorItemTitle": "core",
-                  "isTitle": true
-                },
-                {
-                  "__editorItemTitle": "brio",
-                  "href": "/agilita/casual?order=OrderByScoreDESC"
-                },
-                {
-                  "__editorItemTitle": "âmbar",
-                  "href": "/agilita/festa?order=OrderByScoreDESC"
-                },
-                {
-                  "__editorItemTitle": "essência",
-                  "href": "/agilita/work?order=OrderByScoreDESC"
-                },
-                {
-                  "__editorItemTitle": "amanhecer",
-                  "href": "/agilita/work?order=OrderByScoreDESC"
-                },
-                {
-                  "__editorItemTitle": "plenitude",
-                  "href": "/agilita/work?order=OrderByScoreDESC"
-                },
-                {
-                  "__editorItemTitle": "vigor",
-                  "href": "/agilita/work?order=OrderByScoreDESC"
-                },
-                {
-                  "__editorItemTitle": "núcleo",
-                  "href": "/agilita/work?order=OrderByScoreDESC"
-                },
-                {
-                  "__editorItemTitle": "celeste",
-                  "href": "/agilita/work?order=OrderByScoreDESC"
-                },
-                {
-                  "__editorItemTitle": "direção",
-                  "href": "/agilita/work?order=OrderByScoreDESC"
-                }
-              ]
-            }
+              "__editorItemTitle": "SAida de praia",
+              "href": "/agilita/camisas?order=OrderByScoreDESC"
+            },
+            { "__editorItemTitle": "infantil", "href": "/infantil" },
+            { "__editorItemTitle": "ver todos", "href": "/praia" }
+          ]
+        },
+        {
+          "__editorItemTitle": "Fitness",
+          "href": "/fitness",
+          "columns": [
+            { "__editorItemTitle": "Fitness", "isTitle": true },
+            {
+              "__editorItemTitle": "Leggins e calças",
+              "href": "/fitness/calcas-e-leggings"
+            },
+            { "__editorItemTitle": "Tops", "href": "/fitness/tops" },
+            {
+              "__editorItemTitle": "Blusas e Regatas",
+              "href": "/fitness/blusas-e-camisetas"
+            },
+            {
+              "__editorItemTitle": "Shorts e bermudas ",
+              "href": "/fitness/shorts-e-bermudas"
+            },
+            {
+              "__editorItemTitle": "Jaquetas e Casacos",
+              "href": "/fitness/jaquetas-e-casacos"
+            },
+            {
+              "__editorItemTitle": "Saias e Vestidos",
+              "href": "/fitness/vestidos-e-saias"
+            },
+            {
+              "__editorItemTitle": "Bodies e Macacões",
+              "href": "/fitness/bodies-e-macacoes"
+            },
+            {
+              "__editorItemTitle": "Acessórios",
+              "href": "/fitness/acessorios"
+            },
+            { "__editorItemTitle": "Coleções", "href": "#" },
+            { "__editorItemTitle": "Ver Todos", "href": "/fitness" }
           ]
         },
         {
           "__editorItemTitle": "New In",
-          "href": "/fabulous-agilita?order=OrderByScoreDESC"
+          "href": "/lancamentos",
+          "columns": []
         },
-        {
-          "__editorItemTitle": "Off",
-          "href": "/off?order=OrderByScoreDESC"
-        },
+        { "__editorItemTitle": "Off", "href": "/outlet", "columns": [] },
         {
           "__editorItemTitle": "Universo De Chelles",
-          "href": "/winter-sale24"
+          "href": "https://universo.dechelles.com.br/",
+          "columns": []
         },
-        { "__editorItemTitle": "Lojas", "href": "/winter-sale24" },
-        { "__editorItemTitle": "Blog", "href": "/winter-sale24" }
+        {
+          "__editorItemTitle": "Lojas",
+          "href": "/institucional/nossas-lojas",
+          "columns": []
+        },
+        {
+          "__editorItemTitle": "Blog",
+          "href": "https://universo.dechelles.com.br/blog/",
+          "columns": []
+        }
       ]
     }
   }
