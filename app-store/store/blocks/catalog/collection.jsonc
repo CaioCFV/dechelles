@@ -1,0 +1,9 @@
+{
+  "store.custom#collection": {
+    "blocks": ["search-result-layout.customQuery#collection"]
+  },
+
+  "search-result-layout.customQuery#collection": {
+    "blocks": ["search-result-layout.desktop", "search-not-found-layout#search"]
+  }
+}
