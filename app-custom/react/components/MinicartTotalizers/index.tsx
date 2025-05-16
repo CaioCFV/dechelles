@@ -108,7 +108,7 @@ export const Minicart = () => {
       />
 
       <a href="/checkout" className={handles.minicartFooter_finish}>
-        ADICIONAR AO CARRINHO
+        Finalizar compra
       </a>
 
       <button
