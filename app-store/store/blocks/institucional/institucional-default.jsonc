@@ -48,7 +48,7 @@
       ]
     }
   },
-  "menu#institucional-default__menu_v1": {
+  "menu#institucional-default__menu_v2": {
     "title": "INSTITUCIONAL - menu",
     "props": {
       "blockClass": "institucional-default__menu",
@@ -59,7 +59,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/institucional/sobre-dechele",
+            "href": "/institucional/sobre-dechelles",
             "noFollow": false,
             "tagTitle": "SOBRE A DE CHELLES FASHION | ACQUA | FITNESS",
             "text": "SOBRE A DE CHELLES FASHION | ACQUA | FITNESS"
@@ -111,18 +111,6 @@
             "noFollow": false,
             "tagTitle": "Dúvidas Frequentes",
             "text": "Dúvidas Frequentes"
-          }
-        },
-        {
-          "id": "menu-item-6",
-          "type": "custom",
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "/institucional/entrega-e-frete",
-            "noFollow": false,
-            "tagTitle": "entrega e frete",
-            "text": "entrega e frete"
           }
         },
         {
@@ -189,7 +177,7 @@
     }
   },
   "disclosure-content#institucional-default__menu-content": {
-    "children": ["menu#institucional-default__menu_v1"],
+    "children": ["menu#institucional-default__menu_v2"],
     "props": {
       "blockClass": "institucional-default__menu-content"
     }
