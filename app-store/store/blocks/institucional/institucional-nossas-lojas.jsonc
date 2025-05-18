@@ -1,0 +1,34 @@
+{
+  "store.custom#institucional-nossas-lojas": {
+    "blocks": ["flex-layout.row#institucional-nossas-lojas"]
+  },
+  "flex-layout.row#institucional-nossas-lojas": {
+    "title": "INSTITUCIONAL",
+    "children": ["flex-layout.col#institucional-nossas-lojas__store1"],
+    "props": {
+      "blockClass": "institucional-default__container",
+      "colSizing": "auto"
+    }
+  },
+  "flex-layout.col#institucional-nossas-lojas__store1": {
+    "children": [
+      "cg-image#institucional-nossas-lojas__store1",
+      "rich-text#institucional-nossas-lojas__store1"
+    ],
+    "props": {
+      "blockClass": "institucional-nossas-lojas__store"
+    }
+  },
+  "cg-image#institucional-nossas-lojas__store1": {
+    "props": {
+      "desktop": "https://dechelles.vteximg.com.br/arquivos/ids/243746/IMG_6105.jpg",
+      "mobile": "https://dechelles.vteximg.com.br/arquivos/ids/243746/IMG_6105.jpg",
+      "blockClass": "institucional-nossas-lojas__store"
+    }
+  },
+  "rich-text#institucional-nossas-lojas__store1": {
+    "props": {
+      "text": "## Nova Friburgo\nRua Vereador José Martins da Costa, 202 - Loja 02 - Ponta da Saudade - Nova Friburgo - RJ\n*(22) 2525-0825*\n**vendas@dechelles.com.br**[como chegar](https://goo.gl/maps/cqj9sQmmWTY5y6kt5)"
+    }
+  }
+}
