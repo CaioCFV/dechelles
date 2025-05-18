@@ -8,9 +8,6 @@
     "docs": "0.x",
     "checkout-ui-custom": "0.x"
   },
-  "scripts": {
-    "prereleasy": "bash lint.sh"
-  },
   "credentialType": "absolute",
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
