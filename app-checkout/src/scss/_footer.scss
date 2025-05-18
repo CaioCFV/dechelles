@@ -1,5 +1,10 @@
+footer.footer {
+    display: none !important;
+}
+
 #footer {
     border-top: 1px solid #b3b3b3;
+    display: block !important;
 
     .footer-infos {
         width: 100%;
@@ -28,7 +33,7 @@
 
         p {
             color: #595959;
-            font-family: 'Usual', sans-serif;
+            font-family: 'Encode Sans';
             font-size: 12px;
             font-weight: 300;
             font-style: normal;
@@ -47,7 +52,7 @@
 
             strong {
                 color: #000000;
-                font-family: 'Usual', sans-serif;
+                font-family: 'Encode Sans';
                 font-size: 12px;
                 font-weight: 400;
                 letter-spacing: 4.07px;
@@ -116,7 +121,7 @@
 
         p {
             color: #595959;
-            font-family: 'Usual', sans-serif;
+            font-family: 'Encode Sans';
             font-size: 10px;
             font-weight: 300;
             font-style: normal;

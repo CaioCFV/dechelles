@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 // @ts-ignore
 import { useOrderForm } from 'vtex.order-manager/OrderForm'
 import { useCssHandles } from 'vtex.css-handles'
@@ -7,6 +7,9 @@ import {
   useMinicartContext,
 } from '../MinicartTotalizers/context'
 import { toMoney } from '../utils/toMoney'
+import { useQuery } from 'react-apollo'
+//@ts-ignore
+import OrderFormQuery from 'vtex.checkout-resources/QueryOrderForm'
 
 export const HANDLES_FREESHIPPING = [
   'minicart__shipping',
@@ -16,18 +19,38 @@ export const HANDLES_FREESHIPPING = [
   'minicart__shipping__background',
 ] as const
 
+let blockRequest = false
+
 const FreeShipping = () => {
   const { handles } = useCssHandles(HANDLES_FREESHIPPING)
   const { orderForm }: any = useMinicartContext()
+  const [data, setData] = useState(orderForm)
 
+  const { refetch } = useQuery<{
+    orderForm: OrderForm
+  }>(OrderFormQuery, {
+    ssr: false,
+    fetchPolicy: 'no-cache',
+  })
+
+  const dispatchUpdate = async function () {
+    const newD: any = await refetch()
+    setData(newD.data.orderForm)
+  }
+
+  if (!blockRequest) {
+    blockRequest = true
+    setTimeout(() => {
+      dispatchUpdate()
+      blockRequest = false
+    }, 3000)
+  }
   let totalItems = 0
   const freeShippingRJ = 50000
   const freeShippingOthers = 80000
   freeShippingOthers
 
-  const itemsTotal = orderForm.totalizers.find(
-    (item: any) => (item.id = 'Items')
-  )
+  const itemsTotal = data.totalizers.find((item: any) => (item.id = 'Items'))
 
   if (itemsTotal) {
     totalItems = itemsTotal.value

@@ -6,7 +6,12 @@ Footer()
 setInterval(function () {
   $('#payment-group-payMeePaymentGroup').children().html('Transferência Bancária')
 }, 100)
-$('[href*="checkout-custom.css"]').remove()
+$('[href*="checkout-custom.css"], [href*="3-dch-web-style.css"]').remove()
+setInterval(() => {
+  $('[href*="3-dch-web-style.css"]').remove()
+  $('[href*="DeChelles3.css"]').remove()
+}, 500)
+
 const emptyCart = function () {
   const emptyCartContainer = document.querySelector('.empty-cart-content[style="display: block;"]')
   if (emptyCartContainer) {
@@ -319,7 +324,7 @@ const dataLayerToDispatchEvents = setInterval(function () {
   })
   if (dataLayerCartLoaded.length) {
     setTimeout(function () {
-      shareCart()
+      //shareCart()
       changeSteps()
       copyProductGiftElement()
       sellerCode()

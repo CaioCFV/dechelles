@@ -4,9 +4,13 @@
   },
   "flex-layout.row#institucional-nossas-lojas": {
     "title": "INSTITUCIONAL",
-    "children": ["flex-layout.col#institucional-nossas-lojas__store1"],
+    "children": [
+      "flex-layout.col#institucional-nossas-lojas__store1",
+      "flex-layout.col#institucional-nossas-lojas__store2",
+      "flex-layout.col#institucional-nossas-lojas__store3"
+    ],
     "props": {
-      "blockClass": "institucional-default__container",
+      "blockClass": "institucional-nossas-lojas__store",
       "colSizing": "auto"
     }
   },
@@ -28,7 +32,52 @@
   },
   "rich-text#institucional-nossas-lojas__store1": {
     "props": {
-      "text": "## Nova Friburgo\nRua Vereador José Martins da Costa, 202 - Loja 02 - Ponta da Saudade - Nova Friburgo - RJ\n*(22) 2525-0825*\n**vendas@dechelles.com.br**[como chegar](https://goo.gl/maps/cqj9sQmmWTY5y6kt5)"
+      "text": "## Nova Friburgo\nRua Vereador José Martins da Costa, 202 - Loja 02 - Ponta da Saudade - Nova Friburgo - RJ\n*(22) 2525-0825* **vendas@dechelles.com.br**[como chegar](https://goo.gl/maps/cqj9sQmmWTY5y6kt5)",
+      "blockClass": "institucional-nossas-lojas__store"
+    }
+  },
+  "flex-layout.col#institucional-nossas-lojas__store2": {
+    "children": [
+      "cg-image#institucional-nossas-lojas__store2",
+      "rich-text#institucional-nossas-lojas__store2"
+    ],
+    "props": {
+      "blockClass": "institucional-nossas-lojas__store"
+    }
+  },
+  "cg-image#institucional-nossas-lojas__store2": {
+    "props": {
+      "desktop": "https://dechelles.vteximg.com.br/arquivos/ids/246933/cabo_frio1.jpg",
+      "mobile": "https://dechelles.vteximg.com.br/arquivos/ids/246933/cabo_frio1.jpg",
+      "blockClass": "institucional-nossas-lojas__store"
+    }
+  },
+  "rich-text#institucional-nossas-lojas__store2": {
+    "props": {
+      "text": "## Cabo Frio - Filial 1\nShopping Rua dos Biquinis - Filial 1: Rua Jorge Veiga, 310 - Loja 10\n*(22) 2525-0830* **cabofriofilial1@dechelles.com.br**[como chegar](https://www.google.com/maps/search/Shopping+Rua+dos+Biquinis+-+Filial+1:+Rua+Jorge+Veiga,+310+-+Loja+10/@-22.8764289,-42.0223801,17z/data=!3m1!4b1)",
+      "blockClass": "institucional-nossas-lojas__store"
+    }
+  },
+  "flex-layout.col#institucional-nossas-lojas__store3": {
+    "children": [
+      "cg-image#institucional-nossas-lojas__store3",
+      "rich-text#institucional-nossas-lojas__store3"
+    ],
+    "props": {
+      "blockClass": "institucional-nossas-lojas__store"
+    }
+  },
+  "cg-image#institucional-nossas-lojas__store3": {
+    "props": {
+      "desktop": "https://dechelles.vtexassets.com/arquivos/ids/243746/IMG_6105.jpg",
+      "mobile": "https://dechelles.vtexassets.com/arquivos/ids/243746/IMG_6105.jpg",
+      "blockClass": "institucional-nossas-lojas__store"
+    }
+  },
+  "rich-text#institucional-nossas-lojas__store3": {
+    "props": {
+      "text": "## Cabo Frio - Filial 2\nShopping Rua dos Biquinis - Filial 2: Rua José Rodrigues Povoas - Loja 22A\n*(22) 2525-0835* **cabofriofilial2@dechelles.com.br**[como chegar](https://www.google.com/maps/search/Shopping+Rua+dos+Biquinis+-+Filial+2:+Rua+Jos%C3%A9+Rodrigues+Povoas+-+Loja+22A/@-22.8777717,-42.0341625,15z/data=!3m1!4b1)",
+      "blockClass": "institucional-nossas-lojas__store"
     }
   }
 }

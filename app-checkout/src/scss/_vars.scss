@@ -7,7 +7,7 @@
     font-size: 11px;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: 4.07px;
+    letter-spacing: 4px;
     line-height: 35px;
     padding: 0;
     border-radius: 0;
@@ -37,7 +37,6 @@
     text-decoration: underline;
     display: block;
     color: #000;
-    font-family: usual;
     font-size: 12px;
     font-weight: 400;
     font-style: normal;
@@ -46,11 +45,10 @@
 
 %label {
     color: #000000;
-    font-family: Usual;
     font-size: 12px;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.3px;
     line-height: 1;
     display: block;
     margin-bottom: 10px;
@@ -58,7 +56,6 @@
 
 %title {
     color: #000000;
-    font-family: Usual;
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
@@ -66,7 +63,7 @@
     padding-bottom: 10px;
     border-bottom: 1px solid #b3b3b3;
     text-transform: uppercase;
-    letter-spacing: 5.92px;
+    letter-spacing: 1px;
     line-height: 1;
 }
 
@@ -76,11 +73,10 @@
     padding: 0 10px;
     outline: none;
     color: #000000;
-    font-family: Usual;
     font-size: 12px;
     font-weight: 300;
     font-style: normal;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.1px;
     line-height: 20px;
     border-radius: 0;
     box-shadow: none;
