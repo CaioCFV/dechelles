@@ -20,6 +20,8 @@ Temos o compromisso de manter em segurança as informações coletadas através 
 - Ao se cadastrar, o usuário precisa fornecer alguns dados para que possa prosseguir com sua compra, podendo ele gerenciar quais informações quer fornecer, entretanto, algumas delas são essenciais para a conclusão de pedidos.
 
 - Reservamo-nos o direito de compartilhar quaisquer dados pessoais que sejam necessários para cumprimento de obrigação legal perante as autoridades competentes.
+  <br />
+  <br />
 
 ## CADASTRO:
 

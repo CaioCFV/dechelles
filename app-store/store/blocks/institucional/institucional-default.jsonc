@@ -48,7 +48,7 @@
       ]
     }
   },
-  "menu#institucional-default__menu": {
+  "menu#institucional-default__menu_v1": {
     "title": "INSTITUCIONAL - menu",
     "props": {
       "blockClass": "institucional-default__menu",
@@ -59,7 +59,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/institucional/duvidas-frequentes",
+            "href": "/institucional/sobre-dechele",
             "noFollow": false,
             "tagTitle": "SOBRE A DE CHELLES FASHION | ACQUA | FITNESS",
             "text": "SOBRE A DE CHELLES FASHION | ACQUA | FITNESS"
@@ -71,7 +71,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/institucional/vem-trabalhar-com-a-gente",
+            "href": "/institucional/politica-privacidade",
             "noFollow": false,
             "tagTitle": "Política de Privacidade",
             "text": "Política de Privacidade"
@@ -83,7 +83,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/institucional/compras-em-atacado",
+            "href": "/institucional/entrega",
             "noFollow": false,
             "tagTitle": "Entregas, Trocas e Devoluções",
             "text": "Entregas, Trocas e Devoluções"
@@ -95,7 +95,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/institucional/lojas",
+            "href": "/institucional/pagamento",
             "noFollow": false,
             "tagTitle": "Formas de Pagamento",
             "text": "Formas de Pagamento"
@@ -107,7 +107,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/institucional/trocas-e-devolucoes",
+            "href": "/institucional/duvidas-frequentes",
             "noFollow": false,
             "tagTitle": "Dúvidas Frequentes",
             "text": "Dúvidas Frequentes"
@@ -131,7 +131,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/institucional/seguranca-e-privacidade",
+            "href": "/institucional/compra-segura",
             "noFollow": false,
             "tagTitle": "Compra Segura",
             "text": "Compra Segura"
@@ -189,7 +189,7 @@
     }
   },
   "disclosure-content#institucional-default__menu-content": {
-    "children": ["menu#institucional-default__menu"],
+    "children": ["menu#institucional-default__menu_v1"],
     "props": {
       "blockClass": "institucional-default__menu-content"
     }

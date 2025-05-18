@@ -56,6 +56,10 @@ export const MincartContextProvider = ({ children }: IProps) => {
     }
   }
 
+  if (orderForm.value != data.value) {
+    updateOrderForm()
+  }
+
   if (
     orderShippingValue &&
     orderShippingValue?.value != contextShippinpValue?.value
