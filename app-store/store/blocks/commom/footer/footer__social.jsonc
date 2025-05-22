@@ -1,5 +1,5 @@
 {
-  "flex-layout.row#footer__social": {
+  "flex-layout.row#footer__socialv1": {
     "children": [
       "image#social-1",
       "image#social-2",
@@ -15,31 +15,47 @@
   "image#social-1": {
     "props": {
       "src": "assets/icons/icon-face.png",
-      "blockClass": "selo"
+      "blockClass": "selo",
+      "link": {
+        "url": "https://www.facebook.com/dechelles/"
+      }
     }
   },
   "image#social-2": {
     "props": {
       "src": "assets/icons/icon-insta.png",
-      "blockClass": "selo"
+      "blockClass": "selo",
+      "link": {
+        "url": "https://www.instagram.com/dechelles/?hl=en"
+      }
     }
   },
   "image#social-3": {
     "props": {
       "src": "assets/icons/icon-linkedin.png",
-      "blockClass": "selo"
+      "blockClass": "selo",
+      "link": {
+        "url": "https://www.linkedin.com/company/de-chelles"
+      }
     }
   },
   "image#social-4": {
     "props": {
       "src": "assets/icons/icon-youtube.png",
-      "blockClass": "selo"
+      "blockClass": "selo",
+      "link": {
+        "url": "https://www.youtube.com/channel/UCY0xCP-E4_NZokim5ShK-HQ"
+      }
     }
   },
   "image#social-5": {
     "props": {
       "src": "assets/icons/icon-blog.png",
-      "blockClass": "selo"
+      "blockClass": "selo",
+      "link": {
+        "url": "https://universo.dechelles.com.br/blog/",
+        "newTab": "true"
+      }
     }
   }
 }

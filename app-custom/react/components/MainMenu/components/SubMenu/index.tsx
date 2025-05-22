@@ -9,6 +9,7 @@ export const SubmenuItem = ({
   href,
   isTitle,
   closeMenu,
+  isExternal,
 }: SubItemType) => {
   const { handles } = useCssHandles(HANDLES_MAIN_MENU)
   return (
@@ -23,6 +24,7 @@ export const SubmenuItem = ({
             to={href}
             onClick={closeMenu}
             className={handles.menu__item__submenu__link}
+            target={isExternal ? '_blank' : '_self'}
           >
             {__editorItemTitle}
           </Link>

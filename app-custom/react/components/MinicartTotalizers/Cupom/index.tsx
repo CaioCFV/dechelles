@@ -16,7 +16,6 @@ export const Cupom = () => {
   })
 
   useEffect(() => {
-    console.log(orderForm.marketingData.coupon)
     if (orderForm.marketingData.coupon) {
       setData(() => ({
         ...data,

@@ -20,7 +20,7 @@
     "props": {
       "blockClass": "product__info--shipping"
     },
-    "children": ["shipping-simulator#pdp"]
+    "children": ["shipping-simulator"]
   },
   "rich-text#product__shipping--triggertext": {
     "props": {
@@ -28,7 +28,7 @@
       "blockClass": "product__info--shipping"
     }
   },
-  "shipping-simulator#pdp": {
+  "shipping-simulator": {
     "props": {
       "blockClass": "product__info--shipping"
     }

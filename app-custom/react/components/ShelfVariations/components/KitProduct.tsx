@@ -84,7 +84,10 @@ export const KitProduct: React.FC<Props> = function ({
   })
 
   const renderKit = async function () {
-    const requests = kitInfo.specifications.map(item => {
+    const kitSpecIds = kitInfo.specifications.filter(function (item: any) {
+      return item.name == 'Parte de cima' || item.name == 'Parte de baixo'
+    })
+    const requests = kitSpecIds.map(item => {
       return fetch(
         `/api/catalog_system/pub/products/search?fq=alternateIds_RefId:${item.values[0]}`
       )
@@ -150,7 +153,6 @@ export const KitProduct: React.FC<Props> = function ({
     handleAddToCart(skus.map(item => ({ ...item, id: parseInt(item.id) })))
   }
 
-  console.log(kitData.top, 'la ele', kitData.bottomCategory)
   return (
     <div
       className={handles.shelf + ' vtex-shelf-variations'}

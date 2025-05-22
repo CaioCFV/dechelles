@@ -22,7 +22,6 @@ document
           submenu.__editorItemTitle = subitem.textContent
           submenu.isTitle = true
         } else {
-          console.log(subitem)
           submenu.__editorItemTitle = subitem.querySelector('a').textContent
           submenu.href = subitem.querySelector('a').getAttribute('href')
         }

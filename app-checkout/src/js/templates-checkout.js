@@ -5,8 +5,6 @@ export function Header() {
   setTimeout(() => {
     const header = document.getElementById('header-checkout')
     header.innerHTML = ADV_HEADER
-
-    console.log('HEADER')
   }, 1000)
 }
 

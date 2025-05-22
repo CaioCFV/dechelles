@@ -49,6 +49,10 @@
                 "type": "string",
                 "title": "Link"
               },
+              "isExternal": {
+                "type": "boolean",
+                "title": "É externo ?"
+              },
               "highlight": {
                 "type": "boolean",
                 "title": "Destaque"
@@ -99,6 +103,10 @@
                             "type": "boolean",
                             "title": "É titulo ?",
                             "default": false
+                          },
+                          "isExternal": {
+                            "type": "boolean",
+                            "title": "É externo ?"
                           }
                         }
                       }

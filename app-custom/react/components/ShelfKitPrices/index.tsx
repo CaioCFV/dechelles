@@ -59,7 +59,10 @@ export function ShelfKitPrices() {
   })
 
   const renderKit = async function () {
-    const requests = kitInfo.specifications.map(item => {
+    const kitSpecIds = kitInfo.specifications.filter(function (item: any) {
+      return item.name == 'Parte de cima' || item.name == 'Parte de baixo'
+    })
+    const requests = kitSpecIds.map(item => {
       return fetch(
         `/api/catalog_system/pub/products/search?fq=alternateIds_RefId:${item.values[0]}`
       )

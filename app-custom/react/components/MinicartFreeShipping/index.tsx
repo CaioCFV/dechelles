@@ -46,8 +46,8 @@ const FreeShipping = () => {
     }, 3000)
   }
   let totalItems = 0
-  const freeShippingRJ = 50000
-  const freeShippingOthers = 80000
+  const freeShippingRJ = 29900
+  const freeShippingOthers = 39900
   freeShippingOthers
 
   const itemsTotal = data.totalizers.find((item: any) => (item.id = 'Items'))
@@ -79,7 +79,7 @@ const FreeShipping = () => {
       </div>
       <span className={handles.minicart__shipping__small}>
         {rj.rest < 0
-          ? 'Você consegui frete grátis'
+          ? 'Parabéns! Você ganhou frete grátis!'
           : `Faltam ${toMoney(rj.rest)} para o frete grátis!`}
       </span>
       <p className={handles.minicart__shipping__label}>Outras regiões</p>

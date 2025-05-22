@@ -8,6 +8,7 @@ export interface ItemType {
   columns: MenuChildren[]
   closeMenu: React.MouseEventHandler
   banners: { image: string }[]
+  isExternal: boolean
 }
 export interface MenuChildren {
   children: SubItemType[]
@@ -18,4 +19,5 @@ export interface SubItemType {
   href: string
   isTitle: boolean
   closeMenu: React.MouseEventHandler
+  isExternal: boolean
 }

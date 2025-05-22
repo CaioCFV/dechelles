@@ -12,6 +12,7 @@ export const MenuItem = ({
   columns = [],
   banners = [],
   closeMenu,
+  isExternal,
 }: ItemType) => {
   const { handles } = useCssHandles(HANDLES_MAIN_MENU)
   const { isMobile } = useDevice()
@@ -69,7 +70,11 @@ export const MenuItem = ({
 
   return (
     <li className={handles.menu__item}>
-      <Link className={handles.menu__item__link} to={href}>
+      <Link
+        className={handles.menu__item__link}
+        to={href}
+        target={isExternal ? '_blank' : '_self'}
+      >
         {__editorItemTitle}
       </Link>
       {columns.length || banners.length ? (

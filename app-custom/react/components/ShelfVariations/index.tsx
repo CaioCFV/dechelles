@@ -50,7 +50,11 @@ export function ShelfVariations() {
     setTimeout(handleMinicart, 500)
   }
 
-  if (!kitInfo) {
+  const parts = kitInfo?.specifications.find((item: any) => {
+    return item.name == 'Parte de cima' || item.name == 'Parte de baixo'
+  })
+
+  if (!kitInfo || !parts) {
     const availableSkus: Sku[] = product.items
     return (
       <DefaultProduct
@@ -60,5 +64,6 @@ export function ShelfVariations() {
       />
     )
   }
+
   return <KitProduct kitInfo={kitInfo} handleAddToCart={handleAddToCart} />
 }
