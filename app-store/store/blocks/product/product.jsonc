@@ -3,7 +3,7 @@
     "children": [
       "breadcrumb#product__breadcrumb",
       "flex-layout.row#product__wrapper",
-      "tab-layout#product__description",
+      //"tab-layout#product__description",
       "rich-text#product__shelf--title",
       "list-context.product-list#product__shelf--1",
       "flex-layout.row#home__benefits"
@@ -42,6 +42,7 @@
       "flex-layout.row#product__info--skuWrapper",
       "add-to-cart-button#product__info--buy",
       "disclosure-layout#product__description",
+      "disclosure-layout#product__description2",
       "disclosure-layout#product__shipping"
       //"share"
     ]

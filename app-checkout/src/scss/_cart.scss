@@ -274,12 +274,11 @@
 
             .quantity {
                 @media all and (max-width: 767px) {
-                    width: auto;
-                    order: 3;
-                    padding: 0;
-                    margin-top: 20px;
-                    padding-left: 105px;
-                    text-align: left;
+                    margin: 0px 0 0 0;
+                    width: 70px;
+                    margin-left: auto;
+                    position: relative;
+                    top: -20px;
                 }
 
                 @media all and (max-width: 490px) {

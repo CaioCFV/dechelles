@@ -5,14 +5,14 @@
         .productImage {
             display: block;
             border-radius: 0;
-            width: 80px;
+            width: 100px;
             aspect-ratio: 2 / 3;
             object-fit: cover;
         }
 
         .productImageAnchor {
             display: block;
-            margin-right: 30px;
+            margin-right: 20px;
         }
     }
 }

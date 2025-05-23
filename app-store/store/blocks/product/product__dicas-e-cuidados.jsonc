@@ -1,0 +1,31 @@
+{
+  "disclosure-layout#product__description2": {
+    "props": {
+      "blockClass": "product__info--description",
+      "animated": true,
+      "initialVisibility": "hidden"
+    },
+    "children": [
+      "disclosure-trigger#product__description2--trigger",
+      "disclosure-content#product__description2--content"
+    ]
+  },
+  "disclosure-trigger#product__description2--trigger": {
+    "props": {
+      "blockClass": "product__info--description"
+    },
+    "children": ["rich-text#product__description2--triggertext"]
+  },
+  "disclosure-content#product__description2--content": {
+    "props": {
+      "blockClass": "product__info--description"
+    },
+    "children": ["cg-product-especification#product__description--2"]
+  },
+  "rich-text#product__description2--triggertext": {
+    "props": {
+      "blockClass": "product__info--description",
+      "text": "Dicas e cuidados"
+    }
+  }
+}

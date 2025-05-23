@@ -87,7 +87,7 @@ export const MainMenu = ({ customLinks }: MainMenuProps) => {
             })}
           </ul>
           <div className={handles.menu__footer}>
-            <Link
+            {/* <Link
               className={handles.menu__footer__link}
               to="/account#/wishlist"
             >
@@ -105,7 +105,7 @@ export const MainMenu = ({ customLinks }: MainMenuProps) => {
                 />
               </svg>
               Wishlist
-            </Link>
+            </Link> */}
             <Link
               className={handles.menu__footer__link}
               to="/institucional/a-marca"
