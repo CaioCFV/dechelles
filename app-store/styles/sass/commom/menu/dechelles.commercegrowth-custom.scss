@@ -179,7 +179,7 @@
                 opacity: 0;
                 visibility: hidden;
                 transition: .3s;
-                background: rgba(255, 255, 255, .8);
+                background: rgba(255, 255, 255, .95);
                 padding: 35px 40px 50px;
                 display: flex;
                 align-items: flex-start;
@@ -219,6 +219,9 @@
 
                 @media (min-width: 1025px) {
                     margin: 0;
+                    display: grid;
+                    grid-auto-flow: column;
+                    grid-template-rows: repeat(15, auto);
                 }
             }
 
@@ -237,6 +240,7 @@
                 @media (min-width: 1025px) {
                     margin-bottom: 40px;
                     font-size: 18px;
+                    grid-column: 1 / span 2;
                 }
             }
 
