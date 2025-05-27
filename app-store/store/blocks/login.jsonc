@@ -15,7 +15,8 @@
   "login": {
     "props": {
       "logInButtonBehavior": "popover",
-      "accountOptionsButtonBehavior": "link"
+      "accountOptionsButtonBehavior": "link",
+      "hideIconLabel": true
     }
   },
   "login-content": {

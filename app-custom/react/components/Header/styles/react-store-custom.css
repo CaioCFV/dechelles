@@ -56,3 +56,11 @@
   top: unset !important;
   display: block;
 }
+
+:global(.vtex-login-2-x-portalWrapper) :global(.absolute),
+:global(.vtex-login-2-x-portalWrapper) :global(.flex.justify-start) {
+  position: unset !important;
+  left: unset !important;
+  top: unset !important;
+  display: block;
+}

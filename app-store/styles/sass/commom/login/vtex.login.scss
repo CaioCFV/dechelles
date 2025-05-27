@@ -1,27 +1,59 @@
-%btn {
-    background: #e5e0d2 !important;
+%btnblack {
+    background: #000;
     height: 40px;
+    min-width: 80px;
+    line-height: 40px;
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid #000;
+}
+
+%btnlight {
+    background: #fff;
+    height: 40px;
+    min-width: 80px;
+    line-height: 40px;
+    display: block;
+    color: #000;
+    cursor: pointer;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border: 1px solid #000;
+}
+
+%btn {
+    background: #000 !important;
+    height: 45px;
     text-transform: lowercase;
-    color: #4d4d4d;
-    font-family: 'Inter', sans-serif;
-    font-size: 13px;
-    font-weight: 400;
+    color: #FFF;
+    font-size: 10px;
     font-style: normal;
-    letter-spacing: .65px;
-    line-height: 35px;
+    line-height: 45px;
     padding: 0;
     border-radius: 0;
     box-shadow: none;
-    border: 1px solid #e5e0d2 !important;
+    border: 1px solid #000 !important;
     box-shadow: none;
     transition: 0.3s;
     box-sizing: border-box;
+    text-transform: uppercase;
+    text-decoration: none;
+    min-width: 80px;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
 
 
     &:hover {
-        border: 1px solid #e6964b !important;
+        border: 1px solid #000 !important;
         color: #fff;
-        background: #e6964b !important;
+        background: #000 !important;
 
         &::before {
             filter: brightness(100);
@@ -32,35 +64,49 @@
 %link {
     text-decoration: underline;
     display: block;
-    color: #e6964b;
-    font-family: 'Inter', sans-serif;
-    font-size: 13px;
-    font-weight: 600;
+    color: #707070;
+    font-size: 11px;
+    font-weight: 400;
     font-style: normal;
-    letter-spacing: .65px;
     line-height: 1;
-    text-transform: lowercase;
 }
 
 %input {
-    height: auto;
     border: 0;
-    border-bottom: 1px solid #000;
     width: 100%;
     background: rgba(0, 0, 0, 0) !important;
     box-sizing: border-box;
-    border-radius: 0;
     padding: 0;
     box-shadow: none !important;
-    max-width: unset;
-    color: #1a1a1a;
-    font-family: 'Inter', sans-serif;
+    color: #6C717A;
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
-    letter-spacing: .65px;
-    padding: 0px 5px 5px;
+    padding: 10px;
     border-radius: 0;
+    height: 40px;
+    border: 1px solid #E8E9EB;
+    max-width: 473px;
+    margin: 0 auto;
+
+    &::placeholder {
+        color: #6C717A;
+    }
+}
+
+%title {
+    color: #000;
+    line-height: 1;
+    margin: 0 auto 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1.95px;
+    line-height: 20px;
+    font-weight: 400;
 }
 
 .container {
@@ -80,10 +126,27 @@
     }
 }
 
+
 .portalContainer {
-    background: rgba(255, 255, 255, .8);
+    background: rgba(0, 0, 0, .5);
     width: 100%;
     height: 100%;
+    background-size: cover;
+    position: relative;
+
+    // &::before {
+    //     content: "" !important;
+    //     width: 150px;
+    //     height: 150px;
+    //     background: url(/assets/icons/logo_aloyogabr.svg) no-repeat;
+    //     background-size: contain;
+    //     background-position: center;
+    //     position: absolute;
+    //     left: 50%;
+    //     transform: translate(-50%, - 50%);
+    //     top: calc(50% - 300px);
+    //     z-index: 10;
+    // }
 
     .portalWrapper {
         position: absolute;
@@ -98,38 +161,33 @@
 
     .box {
         margin: 0;
-        min-width: 430px;
-        width: 430px;
+        width: 450px;
     }
 
     .contentContainer {
         box-shadow: none;
-        min-width: 430px;
-        width: 430px;
         margin: 0;
     }
 
     .contentInitialScreen {
-        background: #faf8f2;
+        background: #fff;
         box-sizing: border-box;
         display: block;
+    }
+
+    .dontHaveAccount {
+        @extend %link;
+        margin-top: -30px;
     }
 
     .formTitle {
         padding: 0;
         font-size: 0;
-        margin: 0 auto 15px;
+        margin: 0;
 
         &::before {
-            content: "Entrar";
-            font-size: 18px;
-            display: block;
-            color: #1a1a1a;
-            font-weight: 500;
-            font-style: normal;
-            letter-spacing: 0.9px;
-            text-align: center;
-            text-transform: lowercase;
+            content: "Use uma das opções para fazer login";
+            @extend %title;
         }
     }
 
@@ -140,19 +198,10 @@
             margin-bottom: 15px;
         }
 
-        &::before {
-            content: "use uma das opções para fazer login";
-            color: #4d4d4d;
-            font-family: 'Inter', sans-serif;
-            font-size: 13px;
-            font-weight: 300;
-            font-style: normal;
-            letter-spacing: 0.65px;
-            line-height: 1;
-            display: block;
-            text-align: center;
-            margin-bottom: 30px;
-        }
+        // &::before {
+        //     content: "use uma das opções para fazer login";
+        //     display: none;
+        // }
 
         .button {
 
@@ -172,36 +221,53 @@
     }
 
     .content {
-        background: #faf8f2;
+        background: #fff;
         box-sizing: border-box;
         display: block;
         min-height: unset;
 
-        &--emailVerification,
+
+        &--emailVerification {
+            :global(.vtex-login-2-x-formTitle) {
+                &::before {
+                    display: none;
+                }
+
+                &::after {
+                    content: "Por favor informe seu email";
+                    @extend %title;
+                }
+            }
+        }
+
         &--emailAndPassword {
             :global(.vtex-login-2-x-formTitle) {
+                &::before {
+                    display: none;
+                }
+
                 &::after {
-                    content: "por favor, informe seu e-mail";
-                    color: #4d4d4d;
-                    font-family: 'Inter', sans-serif;
-                    font-size: 13px;
-                    font-weight: 300;
-                    font-style: normal;
-                    letter-spacing: 0.65px;
-                    line-height: 1;
-                    display: block;
-                    text-align: center;
-                    margin-bottom: 30px;
-                    margin-top: 15px;
+                    content: "Entrar com email e senha";
+                    @extend %title;
                 }
             }
         }
 
         .contentForm {
-            padding: 30px;
+            padding: 15px;
+        }
+
+        .formLinkContainer {
+            max-width: 473px;
+            margin: 0 auto;
+
+            .forgotPasswordLink {
+                @extend %link;
+            }
         }
 
         .inputContainer {
+
             :global(.vtex-input-prefix__group) {
                 height: unset;
                 border: 0;
@@ -215,7 +281,7 @@
 
         .inputContainerPassword {
             padding: 0;
-            margin: 20px 0;
+            margin: 20px auto;
 
             :global(.vtex-input__suffix) {
                 display: none;
@@ -225,7 +291,11 @@
         .formFooter {
             border: 0;
             padding: 0;
-            margin-top: 30px;
+            margin: 0;
+            //width: calc(100% + 60px);
+            //border-top: 1px solid #ddd;
+            padding: 30px 0px 0;
+            //margin-left: -30px;
 
             .sendButton {
 
@@ -246,10 +316,8 @@
                     }
 
                     &::before {
-                        content: "confirmar";
-                        @extend %link;
-                        text-transform: lowercase;
-                        font-weight: 600;
+                        content: "ENTRAR";
+                        @extend %btnblack;
                     }
                 }
             }
@@ -275,10 +343,7 @@
 
                     &::before {
                         content: "voltar";
-                        @extend %link;
-                        text-transform: lowercase;
-                        font-weight: 600;
-                        color: #999;
+                        @extend %btnlight;
                     }
                 }
             }
@@ -295,13 +360,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(/assetsimages/bg-login-desktop.png);
+    //background: url(https://aloyogabr.vtexassets.com/arquivos/banner-login.jpg) no-repeat #fff;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
 
     @media all and (max-width: 767px) {
-        background: url(/assetsimages/bg-login-mobile.png) no-repeat;
+        //background: url(/assets/images/bg-login-mobile.png) no-repeat;
         background-size: cover;
     }
 
@@ -309,100 +374,126 @@
         min-width: unset
     }
 
+    .inputContainerAccessCode {
+        max-width: 215px;
+        margin: 0 auto;
+        display: block;
+    }
+
     .contentForm {
         box-shadow: none;
-        min-width: 430px;
-        width: 430px;
+        width: 100%;
         margin: 0;
-        background: #faf8f2;
-        padding: 30px;
+        background: #fff;
+        padding: 30px 15px;
         box-sizing: border-box;
         display: block;
+        width: 450px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .07);
 
         @media all and (max-width: 767px) {
             min-width: auto;
             width: calc(100% - 30px);
-            max-width: 430px;
-            padding: 20px;
+            max-width: 450px;
+            padding: 20px 15px;
         }
     }
 
     .formTitle {
         padding: 0;
         font-size: 0;
-        margin: 0 auto 15px;
+        margin: 0;
 
         &::before {
-            content: "Entrar";
-            font-size: 18px;
-            display: block;
-            color: #1a1a1a;
-            font-weight: 500;
-            font-style: normal;
-            letter-spacing: 0.9px;
-            text-align: center;
-            text-transform: lowercase;
+            content: "Use uma das opções para confirmar sua identidade";
+            @extend %title;
         }
     }
 
     .optionsList {
-        margin: 0;
+        margin: 0 auto;
+        // max-width: 475px;
+        display: block;
 
         .optionsListItem {
             margin-bottom: 15px;
         }
 
-        &::before {
-            content: "use uma das opções para fazer login";
-            color: #4d4d4d;
-            font-family: 'Inter', sans-serif;
-            font-size: 13px;
-            font-weight: 300;
-            font-style: normal;
-            letter-spacing: 0.65px;
-            line-height: 1;
-            display: block;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
         .emailPasswordOptionBtn {
             position: relative;
-            background: #e5e0d2;
+            //background: #e5e0d2;
 
             :global(.vtex-button__label) {
-                &::before {
-                    content: "";
-                    width: 16px;
-                    height: 20px;
-                    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14.347" height="16" viewBox="0 0 14.347 16"><g id="icon-password" transform="translate(0 0)"><path id="Caminho_2025" data-name="Caminho 2025" d="M25.436,25.016a1.331,1.331,0,0,0-.383-.821l-2.327-2.327a.746.746,0,0,0-1.03,0,.728.728,0,0,0,0,1.03l1.524,1.524h-8.47a.729.729,0,1,0,0,1.458h8.47L21.695,27.4a.729.729,0,1,0,1.03,1.03l2.327-2.327a1.331,1.331,0,0,0,.383-.821.725.725,0,0,0,0-.27" transform="translate(-11.102 -17.151)" fill="%234d4d4d"/><path id="Caminho_2026" data-name="Caminho 2026" d="M4.493,14.542H2.543a1.087,1.087,0,0,1-1.086-1.086V2.543A1.087,1.087,0,0,1,2.543,1.458h1.95A.729.729,0,0,0,4.493,0H2.543A2.546,2.546,0,0,0,0,2.543V13.457A2.546,2.546,0,0,0,2.543,16h1.95a.729.729,0,0,0,0-1.458" transform="translate(0 0)" fill="%234d4d4d"/></g></svg>') no-repeat;
-                    display: block;
-                    position: absolute;
-                    left: 17px;
-                    top: 10px;
-                    z-index: 10;
-                    background-size: contain;
-                }
+                // &::before {
+                //     content: "";
+                //     width: 20px;
+                //     height: 20px;
+                //     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14.347" height="16" viewBox="0 0 14.347 16"><g id="icon-password" transform="translate(0 0)"><path id="Caminho_2025" data-name="Caminho 2025" style="fill: #222;" d="M25.436,25.016a1.331,1.331,0,0,0-.383-.821l-2.327-2.327a.746.746,0,0,0-1.03,0,.728.728,0,0,0,0,1.03l1.524,1.524h-8.47a.729.729,0,1,0,0,1.458h8.47L21.695,27.4a.729.729,0,1,0,1.03,1.03l2.327-2.327a1.331,1.331,0,0,0,.383-.821.725.725,0,0,0,0-.27" transform="translate(-11.102 -17.151)" fill="#4d4d4d"/><path id="Caminho_2026" data-name="Caminho 2026" style="fill: #222;" d="M4.493,14.542H2.543a1.087,1.087,0,0,1-1.086-1.086V2.543A1.087,1.087,0,0,1,2.543,1.458h1.95A.729.729,0,0,0,4.493,0H2.543A2.546,2.546,0,0,0,0,2.543V13.457A2.546,2.546,0,0,0,2.543,16h1.95a.729.729,0,0,0,0-1.458" transform="translate(0 0)" fill="#4d4d4d"/></g></svg>') no-repeat;
+                //     display: block;
+                //     position: absolute;
+                //     left: 17px;
+                //     top: 10px;
+                //     z-index: 10;
+                //     background-size: contain;
+                // }
             }
         }
 
         .accessCodeOptionBtn {
             position: relative;
-            background: #e5e0d2;
+            //background: #e5e0d2;
 
             :global(.vtex-button__label) {
-                &::before {
-                    content: "";
-                    width: 20px;
-                    height: 20px;
-                    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20.493" height="16" viewBox="0 0 20.493 16"><path id="icon-mail" d="M18.9,0H1.594A1.6,1.6,0,0,0,0,1.594V14.406A1.6,1.6,0,0,0,1.594,16H18.9a1.6,1.6,0,0,0,1.594-1.594V1.594A1.6,1.6,0,0,0,18.9,0M11.123,7.231a1.337,1.337,0,0,1-1.758,0L2.619,1.411H17.884Zm7.959-4.989V14.406a.184.184,0,0,1-.183.183H1.594a.184.184,0,0,1-.183-.183V2.233L8.443,8.293a2.738,2.738,0,0,0,3.6.007Z" fill="%234d4d4d"/></svg>') no-repeat;
-                    display: block;
-                    position: absolute;
-                    left: 15px;
-                    top: 12px;
-                    z-index: 10;
-                    background-size: contain;
-                }
+                // &::before {
+                //     content: "";
+                //     width: 20px;
+                //     height: 20px;
+                //     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20.493" height="16" viewBox="0 0 20.493 16"><path id="icon-mail" style="fill: #222;" d="M18.9,0H1.594A1.6,1.6,0,0,0,0,1.594V14.406A1.6,1.6,0,0,0,1.594,16H18.9a1.6,1.6,0,0,0,1.594-1.594V1.594A1.6,1.6,0,0,0,18.9,0M11.123,7.231a1.337,1.337,0,0,1-1.758,0L2.619,1.411H17.884Zm7.959-4.989V14.406a.184.184,0,0,1-.183.183H1.594a.184.184,0,0,1-.183-.183V2.233L8.443,8.293a2.738,2.738,0,0,0,3.6.007Z" fill="#4d4d4d"/></svg>') no-repeat;
+                //     display: block;
+                //     position: absolute;
+                //     left: 15px;
+                //     top: 12px;
+                //     z-index: 10;
+                //     background-size: contain;
+                // }
+            }
+        }
+
+        .googleOptionBtn {
+            position: relative;
+
+            :global(.vtex-button__label) {
+                // &::before {
+                //     content: "";
+                //     width: 20px;
+                //     height: 20px;
+                //     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20.493" height="16" viewBox="0 0 20.493 16"><path id="icon-mail" style="fill: #222;" d="M18.9,0H1.594A1.6,1.6,0,0,0,0,1.594V14.406A1.6,1.6,0,0,0,1.594,16H18.9a1.6,1.6,0,0,0,1.594-1.594V1.594A1.6,1.6,0,0,0,18.9,0M11.123,7.231a1.337,1.337,0,0,1-1.758,0L2.619,1.411H17.884Zm7.959-4.989V14.406a.184.184,0,0,1-.183.183H1.594a.184.184,0,0,1-.183-.183V2.233L8.443,8.293a2.738,2.738,0,0,0,3.6.007Z" fill="#4d4d4d"/></svg>') no-repeat;
+                //     display: block;
+                //     position: absolute;
+                //     left: 15px;
+                //     top: 12px;
+                //     z-index: 10;
+                //     background-size: contain;
+                // }
+            }
+        }
+
+        .facebookOptionBtn {
+            position: relative;
+
+            :global(.vtex-button__label) {
+                // &::before {
+                //     content: "";
+                //     width: 20px;
+                //     height: 20px;
+                //     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20.493" height="16" viewBox="0 0 20.493 16"><path id="icon-mail" style="fill: #222;" d="M18.9,0H1.594A1.6,1.6,0,0,0,0,1.594V14.406A1.6,1.6,0,0,0,1.594,16H18.9a1.6,1.6,0,0,0,1.594-1.594V1.594A1.6,1.6,0,0,0,18.9,0M11.123,7.231a1.337,1.337,0,0,1-1.758,0L2.619,1.411H17.884Zm7.959-4.989V14.406a.184.184,0,0,1-.183.183H1.594a.184.184,0,0,1-.183-.183V2.233L8.443,8.293a2.738,2.738,0,0,0,3.6.007Z" fill="#4d4d4d"/></svg>') no-repeat;
+                //     display: block;
+                //     position: absolute;
+                //     left: 15px;
+                //     top: 12px;
+                //     z-index: 10;
+                //     background-size: contain;
+                // }
             }
         }
 
@@ -417,9 +508,19 @@
                 min-height: unset;
             }
 
+            :global(.vtex-login-2-x-oauthLabel) {
+                font-size: 16px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                color: #fff;
+                margin: 0;
+
+            }
+
             :global(.vtex-button__label) {
                 @extend %btn;
-                padding-left: 20px;
+                padding-left: 20px !important;
+                text-align: left;
             }
         }
     }
@@ -448,7 +549,11 @@
     .formFooter {
         border: 0;
         padding: 0;
-        margin-top: 30px;
+        margin: 0;
+        //width: calc(100% + 60px);
+        //border-top: 1px solid #ddd;
+        padding: 30px 0px 0;
+        //margin-left: -30px;
 
         .sendButton {
 
@@ -459,6 +564,7 @@
                 background: transparent;
                 border: 0;
                 min-height: unset;
+                //@extend %btn;
             }
 
             :global(.vtex-button__label) {
@@ -469,10 +575,8 @@
                 }
 
                 &::before {
-                    content: "confirmar";
-                    @extend %link;
-                    text-transform: lowercase;
-                    font-weight: 600;
+                    content: "ENTRAR";
+                    @extend %btnblack;
                 }
             }
         }
@@ -498,10 +602,7 @@
 
                 &::before {
                     content: "voltar";
-                    @extend %link;
-                    text-transform: lowercase;
-                    font-weight: 600;
-                    color: #999;
+                    @extend %btnlight;
                 }
             }
         }
