@@ -2446,9 +2446,9 @@ decamelize@^1.2.0:
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
   integrity sha512-z2S+W9X73hAUUki+N+9Za2lBlun89zigOyGrsax+KUQ6wKW4ZoWpEYBkGhQjwAjjDCkWxhY0VKEhk8wzY7F5cA==
 
-"dechelles.commercegrowth-custom@https://store--dechelles.myvtex.com/_v/private/typings/linked/v1/dechelles.commercegrowth-custom@0.0.2+build1740583868/public/@types/dechelles.commercegrowth-custom":
-  version "0.0.2"
-  resolved "https://store--dechelles.myvtex.com/_v/private/typings/linked/v1/dechelles.commercegrowth-custom@0.0.2+build1740583868/public/@types/dechelles.commercegrowth-custom#1b3c59e6df0d83ee344d6bf5c9abb5be46a7b422"
+"dechelles.commercegrowth-custom@http://dechelles.vtexassets.com/_v/public/typings/v1/dechelles.commercegrowth-custom@0.0.13/public/@types/dechelles.commercegrowth-custom":
+  version "0.0.13"
+  resolved "http://dechelles.vtexassets.com/_v/public/typings/v1/dechelles.commercegrowth-custom@0.0.13/public/@types/dechelles.commercegrowth-custom#0ef9fc36e2b32874507d7f8152133d5529e46d3c"
 
 decode-uri-component@^0.2.0:
   version "0.2.2"
@@ -5333,17 +5333,17 @@ verror@1.10.0:
   version "0.10.1"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.1/public/@types/vtex.product-context#86ceba68085420edcf54749f07e51a257d2e5d94"
 
-"vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.135.1/public/@types/vtex.render-runtime":
-  version "8.135.1"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.135.1/public/@types/vtex.render-runtime#357ddee2f9249db4209de73b26c43997a5ca4422"
+"vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.136.1/public/@types/vtex.render-runtime":
+  version "8.136.1"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.136.1/public/@types/vtex.render-runtime#f163acbdb0fcc9be2065a34eb4fc797093f6d0ce"
 
 "vtex.responsive-values@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.responsive-values@0.4.2/public/@types/vtex.responsive-values":
   version "0.4.2"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.responsive-values@0.4.2/public/@types/vtex.responsive-values#ba7b7a888e931be81d64e8348d99bd6310385ac9"
 
-"vtex.search-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.65.0/public/@types/vtex.search-graphql":
-  version "0.65.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.65.0/public/@types/vtex.search-graphql#5f3d202bb6818842d1be258fa8ca849f5ef386a1"
+"vtex.search-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.68.1/public/@types/vtex.search-graphql":
+  version "0.68.1"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.68.1/public/@types/vtex.search-graphql#80f9f29f0791cdc1370553901f9959ad267b0f4f"
 
 "vtex.search-page-context@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-page-context@0.2.0/public/@types/vtex.search-page-context":
   version "0.2.0"
