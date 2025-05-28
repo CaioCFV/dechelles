@@ -219,10 +219,6 @@
 
                 @media (min-width: 1025px) {
                     margin: 0;
-                    display: grid;
-                    grid-auto-flow: column;
-                    grid-template-rows: repeat(15, auto);
-                    gap: 0px 20px;
                 }
             }
 
@@ -239,7 +235,7 @@
                 letter-spacing: 5px;
 
                 @media (min-width: 1025px) {
-                    margin-bottom: 40px;
+                    margin-bottom: 20px;
                     font-size: 18px;
                     grid-column: 1 / span 2;
                 }
@@ -270,8 +266,8 @@
 
                 @media (min-width: 1025px) {
                     padding: 0;
-                    font-size: 13px;
-                    margin-bottom: 18px;
+                    font-size: 11px;
+                    margin-bottom: 10px;
                     white-space: nowrap;
                 }
             }

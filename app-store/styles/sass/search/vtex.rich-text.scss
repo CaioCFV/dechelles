@@ -53,6 +53,36 @@
         }
     }
 
+    &--search__seo__bottom {
+        display: block;
+        margin-bottom: 30px;
+
+        @extend %maxcontainer;
+
+        .wrapper {
+            display: block;
+
+            @media (min-width: 1025px) {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .paragraph {
+            color: #666;
+            font-size: 12px;
+            font-weight: 400;
+            font-style: normal;
+            line-height: 23px;
+            text-align: center;
+
+            @media (min-width: 1025px) {
+                text-align: left;
+                font-size: 14px;
+            }
+        }
+    }
+
     &--search__filter--triggertext,
     &--search__orderby--triggertext {
         display: block;

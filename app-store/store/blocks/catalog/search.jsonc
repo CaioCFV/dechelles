@@ -19,7 +19,8 @@
       "flex-layout.row#search__filter-container",
       "search-fetch-previous",
       "flex-layout.row#search__products",
-      "search-fetch-more"
+      "search-fetch-more",
+      "rich-text#search__seo__bottom"
     ],
     "props": {
       "pagination": "show-more",
