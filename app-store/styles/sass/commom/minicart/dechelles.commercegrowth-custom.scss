@@ -60,7 +60,11 @@
 
 .CommonForm {
     @extend %flex;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+
+    @media (min-width: 1025px) {
+        margin-bottom: 15px;
+    }
 
     .CommonForm_label {
         @extend %label;
@@ -87,6 +91,7 @@
 
         @media all and (max-width: 1024px) {
             width: 95px;
+            height: 25px;
         }
     }
 
@@ -104,6 +109,10 @@
         line-height: 25px;
         display: block;
         cursor: pointer;
+
+        @media all and (max-width: 1024px) {
+            height: 25px;
+        }
     }
 
     .CommonForm_buttonRemove {
@@ -145,9 +154,61 @@
     }
 }
 
+.minicartFooter {
+    @media (max-width: 1025px) {
+
+        .CommonForm,
+        .minicartFooter_finish,
+        .minicartFooter_keepBuying,
+        .minicartFooter_totalizer_totalwrapper,
+        .minicartFooter_totalizer_subtotalwrapper {
+            display: none;
+        }
+
+
+
+        &--active {
+            .minicartFooter_toggler {
+                transform: rotate(45deg);
+                top: -4px;
+            }
+
+            .minicartFooter_finish {
+                display: block;
+            }
+
+            .CommonForm,
+            .minicartFooter_keepBuying,
+            .minicartFooter_totalizer_totalwrapper,
+            .minicartFooter_totalizer_subtotalwrapper {
+                display: flex;
+            }
+        }
+
+    }
+}
+
+.minicartFooter_toggler {
+    display: block;
+    margin: 0 auto 15px;
+    border: 0;
+    background: transparent;
+    min-width: 10px;
+    min-height: 12px;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    transform: rotate(-135deg);
+    position: relative;
+    top: 10px
+}
+
 .minicartFooter_totalizer_subtotalwrapper {
     @extend %flex;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
+
+    @media (min-width: 1025px) {
+        margin-bottom: 15px;
+    }
 
     .minicartFooter_totalizer_label {
         @extend %label;
@@ -163,7 +224,12 @@
 
 .minicartFooter_totalizer_totalwrapper {
     @extend %flex;
-    margin-top: 15px;
+    margin-bottom: 8px;
+
+    @media (min-width: 1025px) {
+        margin-bottom: 15px;
+    }
+
 
     .minicartFooter_totalizer_label {
         @extend %label;
@@ -180,14 +246,14 @@
 .minicartFooter_finish {
     display: block;
     margin-top: 15px;
-    height: 40px;
+    height: 30px;
     background-color: #000;
     width: 100%;
     color: #ffffff;
     font-size: 14px;
     font-weight: 300;
     font-style: normal;
-    line-height: 40px;
+    line-height: 30px;
     text-align: center;
     margin-bottom: 10px;
     letter-spacing: 1.4px;
@@ -196,6 +262,13 @@
     padding: 0;
     text-decoration: none;
     font-family: "Encode Sans Condensed";
+
+
+    @media (min-width: 1025px) {
+        height: 40px;
+        line-height: 40px;
+    }
+
 }
 
 .minicartFooter_keepBuying {

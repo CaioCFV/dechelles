@@ -43,8 +43,9 @@
 
         .minicartProductListContainer {
             padding: 10px 20px !important;
-            max-height: calc(100vh - 450px);
+            //max-height: calc(100vh - 450px);
             overflow-y: auto;
+            flex: 1;
         }
     }
 }

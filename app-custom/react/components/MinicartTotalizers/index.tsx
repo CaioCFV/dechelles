@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import getFormattedPrice from '../utils/getFormatedPrice'
-import { useCssHandles } from 'vtex.css-handles'
+import { applyModifiers, useCssHandles } from 'vtex.css-handles'
 import { canUseDOM } from 'vtex.render-runtime'
 import { Cupom } from './Cupom'
 import { Shipping } from './Shipping'
@@ -17,6 +17,7 @@ const HANDLES_MINICART_FOOTER = [
   'minicartFooter_totalizer_totalwrapper',
   'minicartFooter_totalizer_label',
   'minicartFooter_totalizer_value',
+  'minicartFooter_toggler',
 ] as const
 
 interface TotalizersProps {
@@ -64,6 +65,7 @@ export const Minicart = () => {
 
   const { orderForm }: any = useMinicartContext()
   const { handles } = useCssHandles(HANDLES_MINICART_FOOTER)
+  const [active, setActive] = useState(false)
 
   function handleCloseMinicart() {
     const closeMinicart = document.querySelector(
@@ -82,7 +84,13 @@ export const Minicart = () => {
   )
 
   return (
-    <div className={handles.minicartFooter}>
+    <div
+      className={applyModifiers(handles.minicartFooter, active ? 'active' : '')}
+    >
+      <button
+        className={handles.minicartFooter_toggler}
+        onClick={() => setActive(!active)}
+      ></button>
       <SellerCode />
       <Cupom />
       <Shipping />
