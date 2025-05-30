@@ -158,7 +158,6 @@
     @media (max-width: 1025px) {
 
         .CommonForm,
-        .minicartFooter_finish,
         .minicartFooter_keepBuying,
         .minicartFooter_totalizer_totalwrapper,
         .minicartFooter_totalizer_subtotalwrapper {
@@ -171,10 +170,6 @@
             .minicartFooter_toggler {
                 transform: rotate(45deg);
                 top: -4px;
-            }
-
-            .minicartFooter_finish {
-                display: block;
             }
 
             .CommonForm,
@@ -199,7 +194,11 @@
     border-bottom: 1px solid #000;
     transform: rotate(-135deg);
     position: relative;
-    top: 10px
+    top: 5px;
+
+    @media (min-width: 1025px) {
+        display: none;
+    }
 }
 
 .minicartFooter_totalizer_subtotalwrapper {

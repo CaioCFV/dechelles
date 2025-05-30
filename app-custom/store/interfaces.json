@@ -51,5 +51,9 @@
   "cg-shelf-kitprices": {
     "component": "ShelfKitPrices",
     "render": "server"
+  },
+  "cg-size-guide": {
+    "component": "SizeGuide",
+    "render": "server"
   }
 }

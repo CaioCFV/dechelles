@@ -3,7 +3,6 @@
     "children": [
       "breadcrumb#product__breadcrumb",
       "flex-layout.row#product__wrapper",
-      //"tab-layout#product__description",
       "rich-text#product__shelf--title",
       "list-context.product-list#product__shelf--1",
       "flex-layout.row#home__benefits"
@@ -40,6 +39,7 @@
       "vtex.store-components:product-name#product__info--name",
       "flex-layout.row#product__info--priceWrapper",
       "flex-layout.row#product__info--skuWrapper",
+      "cg-size-guide",
       "add-to-cart-button#product__info--buy",
       "disclosure-layout#product__description",
       "disclosure-layout#product__description2",
