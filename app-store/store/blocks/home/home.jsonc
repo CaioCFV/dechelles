@@ -12,7 +12,7 @@
       "flex-layout.row#home__double-banner",
       "rich-text#home__shelf--title-2",
       "list-context.product-list#home__shelf--2",
-      "flex-layout.row#home__benefits"
+      "flex-layout.row#home__benefits_v1"
     ]
   }
 }

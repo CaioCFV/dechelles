@@ -13,6 +13,7 @@
   },
   "flex-layout.row#footer": {
     "children": [
+      "helper-button",
       "flex-layout.row#footer__newsletter",
       "flex-layout.row#footer__links",
       "flex-layout.row#footer__socialv1",

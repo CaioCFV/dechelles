@@ -5,7 +5,7 @@
       "flex-layout.row#product__wrapper",
       "rich-text#product__shelf--title",
       "list-context.product-list#product__shelf--1",
-      "flex-layout.row#home__benefits"
+      "flex-layout.row#home__benefits_v1"
     ]
   },
   "flex-layout.row#product__wrapper": {

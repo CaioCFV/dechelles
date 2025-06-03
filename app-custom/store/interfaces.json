@@ -55,5 +55,9 @@
   "cg-size-guide": {
     "component": "SizeGuide",
     "render": "server"
+  },
+  "helper-button": {
+    "component": "HelperButton",
+    "render": "server"
   }
 }

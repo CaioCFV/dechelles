@@ -1,5 +1,5 @@
 {
-  "flex-layout.row#home__benefits": {
+  "flex-layout.row#home__benefits_v1": {
     "title": "HOME - Benefícios",
     "children": [
       "rich-text#home__benefits--item-1",
@@ -14,7 +14,7 @@
   },
   "rich-text#home__benefits--item-1": {
     "props": {
-      "text": "![troca fácil](assets/icons/icon-change.svg) **1ª troca grátis** Rápido. Fácil e ágil",
+      "text": "![troca fácil](https://dechelles.vtexassets.com/assets/vtex/assets-builder/dechelles.commercegrowth-store/0.0.19/icons/icon-change___cd062f8dec2c4ef27bb37fa2731c62f6.svg) **1ª troca grátis** Rápido | Fácil | ágil",
       "blockClass": "home__benefits--item"
     }
   },
@@ -32,7 +32,7 @@
   },
   "rich-text#home__benefits--item-4": {
     "props": {
-      "text": "![em até 10x](assets/icons/icon-card.svg) **até 6x sem juros** sul e sudeste acima de R$299.\ndemais regiões R$399",
+      "text": "![em até 10x](https://dechelles.vtexassets.com/assets/vtex/assets-builder/dechelles.commercegrowth-store/0.0.19/icons/icon-card___4af559da46bb406c0b2d7fe4f9283bdd.svg) **até 6x sem juros** Parcele suas compras em até 6x sem juros",
       "blockClass": "home__benefits--item"
     }
   }
