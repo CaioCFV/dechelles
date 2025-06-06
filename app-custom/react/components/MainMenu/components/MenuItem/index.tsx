@@ -45,7 +45,7 @@ export const MenuItem = ({
           >
             {columns.map(column => (
               <ul className={handles.menu__item__submenu__links}>
-                {column.children.map(children => (
+                {column?.children?.map(children => (
                   <SubmenuItem {...children} closeMenu={closeMenu} />
                 ))}
               </ul>
@@ -81,7 +81,7 @@ export const MenuItem = ({
         <div className={handles.menu__item__submenu}>
           {columns.map(column => (
             <ul className={handles.menu__item__submenu__links}>
-              {column.children.map(children => (
+              {column?.children?.map(children => (
                 <SubmenuItem {...children} />
               ))}
             </ul>
