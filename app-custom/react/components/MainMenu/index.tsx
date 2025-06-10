@@ -70,9 +70,9 @@ export const MainMenu = ({ customLinks }: MainMenuProps) => {
                 Olá, {orderForm.clientProfileData.email.split('@')[0]}
               </Link>
             ) : (
-              <Link to="/account" className={handles.menu__header__login}>
+              <a href="/account" className={handles.menu__header__login}>
                 Cadastro / Login
-              </Link>
+              </a>
             )}
           </div>
           <ul className={handles.menu__wrapper}>
