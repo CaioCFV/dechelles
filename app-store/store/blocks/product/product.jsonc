@@ -13,20 +13,12 @@
       "blockClass": "product__wrapper",
       "colSizing": "auto"
     },
-    "children": [
-      "cg-slider-product",
-      "condition-layout.product#product__unavailable"
-    ]
+    "children": ["cg-slider-product", "cg-conditional-kit#productinfo"]
   },
-  "condition-layout.product#product__unavailable": {
+  "cg-conditional-kit#productinfo": {
     "props": {
-      "conditions": [
-        {
-          "subject": "isProductAvailable"
-        }
-      ],
-      "Then": "flex-layout.col#product__info",
-      "Else": "flex-layout.col#product__info--unavailable"
+      "Then": "flex-layout.col#product__info__kit",
+      "Else": "flex-layout.col#product__info"
     }
   },
   "flex-layout.col#product__info": {
@@ -47,7 +39,7 @@
       //"share"
     ]
   },
-  "flex-layout.col#product__info--unavailable": {
+  "flex-layout.col#product__info__kit": {
     "props": {
       "preventVerticalStretch": true,
       "rowGap": 0,
