@@ -3,22 +3,10 @@
     "children": [
       "flex-layout.row#shelf__image",
       "product-summary-name",
-      "condition-layout.product#1"
-      //"flex-layout.row#shelf__flags"
+      "cg-conditional-kit#shelf__kit"
     ],
     "props": {
       "blockClass": "shelf"
-    }
-  },
-  "condition-layout.product#1": {
-    "props": {
-      "conditions": [
-        {
-          "subject": "isProductAvailable"
-        }
-      ],
-      "Then": "flex-layout.row#shelf__prices",
-      "Else": "cg-conditional-kit#shelf__kit"
     }
   },
   "rich-text#shelf__unavailable": {
@@ -30,7 +18,7 @@
   "cg-conditional-kit#shelf__kit": {
     "props": {
       "Then": "cg-shelf-kitprices",
-      "Else": "rich-text#shelf__unavailable"
+      "Else": "flex-layout.row#shelf__prices"
     }
   },
   "flex-layout.row#shelf__prices": {
